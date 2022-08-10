@@ -4,8 +4,17 @@ nav div {
 
 nav div ul {
     border: none;
+
 }
 
+.custom{
+    border-bottom: #dbc3da solid 1px;
+    background-color: #ead3c7;
+    border-radius: 0.25rem !important
+}
+coler-primary{
+    color: #ead3c7;
+}
 body {
     background-color: #e9d5ca
 }

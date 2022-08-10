@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="Description" content="Enter your description here" />
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
@@ -20,13 +20,12 @@
     <title>Title</title>
   </head>
 
-  <body>
+  <body ng-app="myApp" ng-controller="myController">
     <nav
-      class="navbar navbar-expand-sm navbar-light fixed-top"
-      style="background-color: #e9d5ca; border-radius: 0.25rem !important"
+      class="navbar navbar-expand-sm navbar-light fixed-top custom"      
     >
       <div class="container-fluid">
-        <a class="navbar-brand" href="javascript:void(0)">Thrift Fashion</a>
+        <a class="navbar-brand" href="#!/">Thrift Fashion</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -38,33 +37,45 @@
         <div class="collapse navbar-collapse" id="mynavbar">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link addressClick" class="addressClick"  href="/html/test.html">Link</a>
+              <a class="nav-link" href="#!prod">Product</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)">Link</a>
-            </li>
+           
           </ul>
           <form class="d-flex">
             <input class="form-control me-2" type="text" placeholder="Search" />
-            <button class="btn btn-primary" type="button">Search</button>
+            <button class="btn btn-primary primary" type="button">Search</button>
           </form>
         </div>
       </div>
     </nav>
-    <div ng-app="myApp" ng-controller="myCtrl">
-      
-    </div>
-   
-      <div>
-        
-        <!-- Code của mọi người ở đây nha -->
-      </div>
     
+   
+     
+        <div ng-view></div>
 
-    </div>   
+        <script>
+          var app = angular.module('myApp', ['ngRoute']);
+          app.controller('myController', function($scope) {
+  
+          });
+          app.config(function($routeProvider) {
+              $routeProvider
+                  .when("/", {
+                      templateUrl: "home.html"
+                  })
+                  .when("/prod", {
+                      templateUrl: "prod.html"
+                  })
+                  .when("/ab", {
+                      templateUrl: "ab.html"
+                  })
+  
+  
+          });
+          // $routeProvider
+      </script>
+
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
