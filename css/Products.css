@@ -38,37 +38,27 @@ div.stars {
     content: '\f006';
     font-family: FontAwesome;
   }
-  .others{
-    flex: 1;
-    display: flex;
+.card{
+  background-color: rgb(247, 242, 246);
+  padding: 0px;
 }
-.others li{
-    padding: 0 12px;
-    position: relative;
+.card-footer{
+  background-color: rgb(247, 242, 246);
+  margin: auto;
+  border: none;
 }
-.others li::after{
-    content: "";
-    display: block;
-    width: 1px;
-    height: 80%;
-    background: #cccccc;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+h2{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
 }
-.others li:first-child{
-    position: relative;
+.tieude{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+
 }
-.others li:first-child input{
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #333;
-    background: transparent;
-    outline: none;
-    
+.gia a{
+  color: rgb(250, 56, 56);
 }
-.others li:first-child i{
-    position: absolute;
-    right: 10px;
+.active{
+  padding: 20px 20px;
 }
