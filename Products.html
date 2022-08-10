@@ -1,178 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="/css/Products.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/products2.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-light ">
-          
-          <div class="container-fluid inner-header">
-            <a class="navbar-brand logo" href="/component/home.html"><i class="fa-solid ">Thrift Fashion
-                Store</i></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-              <span class="navbar-toggler-icon mai"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mynavbar">
-              <ul class="navbar-nav me-auto" id="main-menu">
-                <li class="nav-item">
-                  <a class="nav-link" href="/component/home.html">Products</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link  active"  href="/component/seven.html"  >Find Product</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/component/gallery.html">Checkout</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/component/about.html">About Us and Contact Us</a>
-                </li>
-              </ul>
-              <!-- <form class="d-flex">
-                <input class="form-control me-2" type="text" placeholder="Search">
-                <button class="btn btn-none" type="button">
-                  <i class="fa fa-search " aria-hidden="true"></i>
-                </button>
-              </form> -->
-              <div class="others">
-                <li><input type="text" placeholder="search"><i class="fas fa-search"></i></li>
-                <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-cc-visa "></i></a></li>
-                <li><a href=""><i class="fa-brands fa-cc-paypal"></i></a></li>
-                <li><a href=""><i class="bi bi-cart2"></i></a></li>
-            </div>
-            </div>
-          </div>
-        </nav>
-        </header>
-        <div>
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-2">
-                <ul class="nav flex-column" role="tablist">
-                  <li class="nav-item">
-                      <a class="nav-link active" data-bs-toggle="tab" href="#asia">Asia</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" data-bs-toggle="tab" href="#vietnam">VietNam</a>
-                  </li>
-              </ul>
-              </div>
-              <div class="col-sm-10">
-                <div class="tab-content">
-                  <div id="asia" class="container tab-pane active">
-                    <h3>Asia</h3>
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <div class="card">
-                          <div class="card-header">
-                            <a href="/ProminentPlace/angkor.html"><img src="/img/quancu.webp" alt="" width="100%"></a>
-                          </div>
-                          <div class="card-body">
-                            <h2>Quan Jean</h2>
-                            <div> <a href="">So Luong: con hang</a></div>
-                            <div><a href="">Gia: $100</a></div>
-
-                           </div>
-                          <div class="card-footer"><button class="badge "><a href="/ProminentPlace/angkor.html">VietNam</a></button></div>
-                        </div>
-
-                      </div>
-                      <div class="col-sm-4">
-                        <div class="card">
-                          <div class="card-header">
-                            <a href="/ProminentPlace/angkor.html"><img src="/img/quancu.webp" alt="" width="100%"></a>
-                          </div>
-                          <div class="card-body">
-                            <h2>Quan Jean</h2>
-                            <div> <a href="">So Luong: con hang</a></div>
-                            <div><a href="">Gia: $100</a></div>
-
-                           </div>
-                          <div class="card-footer"><button class="badge "><a href="/ProminentPlace/angkor.html">VietNam</a></button></div>
-                        </div>
-                      </div>
-                      <div class="col-sm-4">
-                        <div class="card">
-                          <div class="card-header">
-                            <a href="/ProminentPlace/angkor.html"><img src="/img/quancu.webp" alt="" width="100%"></a>
-                          </div>
-                          <div class="card-body">
-                            <h2>Quan Jean</h2>
-                            <div> <a href="">So Luong: con hang</a></div>
-                            <div><a href="">Gia: $100</a></div>
-
-                           </div>
-                          <div class="card-footer"><button class="badge "><a href="/ProminentPlace/angkor.html">VietNam</a></button></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="vietnam" class="container tab-pane active">
-                    <h3>Vietnam</h3>
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <div class="card">
-                          <div class="card-header">
-                            <a href="/ProminentPlace/angkor.html"><img src="/img/quancu.webp" alt="" width="100%"></a>
-                          </div>
-                          <div class="card-body">
-                            <h2>Quan Jean</h2>
-                            <div> <a href="">So Luong: con hang</a></div>
-                            <div><a href="">Gia: $100</a></div>
-
-                           </div>
-                          <div class="card-footer"><button class="badge "><a href="/ProminentPlace/angkor.html">VietNam</a></button></div>
-                        </div>
-                      </div>
-                      <div class="col-sm-4">
-                        <div class="card">
-                          <div class="card-header">
-                            <a href="/ProminentPlace/angkor.html"><img src="/img/quancu.webp" alt="" width="100%"></a>
-                          </div>
-                          <div class="card-body">
-                            <h2>Quan Jean</h2>
-                            <div> <a href="">So Luong: con hang</a></div>
-                            <div><a href="">Gia: $100</a></div>
-
-                           </div>
-                          <div class="card-footer"><button class="badge "><a href="/ProminentPlace/angkor.html">VietNam</a></button></div>
-                        </div>
-                      </div>
-                      <div class="col-sm-4">
-                        <div class="card">
-                          <div class="card-header">
-                            <a href="/ProminentPlace/angkor.html"><img src="/img/quancu.webp" alt="" width="100%"></a>
-                          </div>
-                          <div class="card-body">
-                            <h2>Quan Jean</h2>
-                            <div> <a href="">So Luong: con hang</a></div>
-                            <div><a href="">Gia: $100</a></div>
-
-                           </div>
-                          <div class="card-footer"><button class="badge "><a href="/ProminentPlace/angkor.html">VietNam</a></button></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <div>
+    <div class="card">
+      <div class="card_heart">
+        <i class='bx bx-heart'></i>
+      </div>
+      <div class="card_cart">
+        <i class='bx bx-cart'></i>
+      </div>
+      <div class="card_img">
+        <img src="/img/" alt="">
+      </div>
+      <div class="card_title"></div>
+      <div class="card_price"></div>
+      <div class="card_size"></div>
+      <div class="card_color"></div>
+      <div class="card_action"></div>
+    </div>
+  </div>
 </body>
 </html>
