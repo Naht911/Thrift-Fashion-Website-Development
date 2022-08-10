@@ -6,11 +6,20 @@ box-sizing: border-box;
 /* Contact */
 /* style rieng*/
 .Bao_w70_center{
-    margin:auto;
-    width:70%;
+    width: 70%;
+    margin: auto;
+
 }
 /* style rieng*/
-
+.Bao_body_contact{
+    background-color: #e9d5ca;
+    height:1000px;
+   
+};
+.Bao_containerform{
+    background-color: black;
+    height:100px;
+}
 /* Contact */
 
 
