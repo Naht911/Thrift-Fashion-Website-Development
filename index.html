@@ -22,9 +22,7 @@
   </head>
 
   <body ng-app="myApp" ng-controller="myController">
-    <nav
-      class="navbar navbar-expand-sm navbar-light fixed-top custom"      
-    >
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top nav-custom">
       <div class="container-fluid">
         <a class="navbar-brand" href="#!/">Thrift Fashion</a>
         <button
@@ -40,43 +38,72 @@
             <li class="nav-item">
               <a class="nav-link" href="#!prod">Product</a>
             </li>
-           
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="text" placeholder="Search" />
-            <button class="btn btn-primary primary" type="button">Search</button>
-          </form>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <p ng-show="hideForm" class="mCustom"> Welcome, <span class="mName">{{name}}</span>!!! </p>
+            </li>
+            <form action="#" method="post" class="d-flex" return false ng-hide="hideForm">
+              <li class="nav-item">
+                <input
+                  type="input"
+                  class="form__field"
+                  placeholder="Name"
+                  name="name"
+                  id="saveName"
+                  ng-model="name"
+                  
+                  required
+                />
+                <label for="saveName" class="form__label">Enter Your Name</label>
+              </li>
+
+              <li class="nav-item">
+                <button type="button" class="btn btn-primary-custom" ng-click="saveName()">Save <i class="fa-solid fa-floppy-disk"></i></button>
+              </li>
+            </form>
+            <form class="d-flex">
+              <li class="nav-item">
+              <button class="btn btn-primary-custom" type="button">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </li>
+            </form>
+          </ul>
+          
         </div>
       </div>
     </nav>
-    
+
+    <div ng-view style="margin-top: 50px"></div>
+    <script></script>
+    <script>
+      var app = angular.module("myApp", ["ngRoute"]);
+      app.controller("myController", function ($scope) {
+
+        $scope.saveName = function() {
+                $scope.hideForm = !$scope.hideForm;
    
-     
-        <div ng-view style="margin-top:60px;"></div>
+            }
+            
 
-        <script>
-          var app = angular.module('myApp', ['ngRoute']);
-          app.controller('myController', function($scope) {
-  
-          });
-          app.config(function($routeProvider) {
-              $routeProvider
-                  .when("/", {
-                      templateUrl: "home.html"
-                  })
-                  .when("/prod", {
-                      templateUrl: "prod.html"
-                  })
-                  .when("/ab", {
-                      templateUrl: "ab.html"
-                  })
-  
-  
-          });
-          // $routeProvider
-      </script>
 
-    
+      });
+      app.config(function ($routeProvider) {
+        $routeProvider
+          .when("/", {
+            templateUrl: "home.html",
+          })
+          .when("/prod", {
+            templateUrl: "prod.html",
+          })
+          .when("/ab", {
+            templateUrl: "ab.html",
+          });
+      });
+      // $routeProvider
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
