@@ -1,34 +1,206 @@
-<div>
-    <div class="container mt-3">
-        <h2>Toggleable Tabs</h2>
-        <br>
-        <!-- Nav tabs -->
-        <!-- Tab panes -->
-        <div class="tab-content">
-          <div id="home" class="container tab-pane active"><br>
-            <h3>HOME</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-          <div id="menu1" class="container tab-pane fade"><br>
-            <h3>Menu 1</h3>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-          <div id="menu2" class="container tab-pane fade"><br>
-            <h3>Menu 2</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-          </div>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/css/duong.css" />
+    <link rel="stylesheet" href="/css/Products.css">
+    <title>Title</title>
+  </head>
 
-        <ul class="nav nav-tabs" role="tablist">
+  <body ng-app="myApp" ng-controller="myController">
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top nav-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#!/">Thrift Fashion</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mynavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a>
+              <a class="nav-link" href="#!prod">Product</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#menu1">Menu 1</a>
+              <a class="nav-link" href="#!ab">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#menu2">Menu 2</a>
+              <a class="nav-link" href="#!contact">Contact Us</a>
             </li>
           </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <p ng-show="hideForm" class="mCustom"> Welcome, <span class="mName">{{name}}</span>!!! </p>
+            </li>
+            <form action="#" method="post" class="d-flex" return false ng-hide="hideForm">
+              <li class="nav-item">
+                <input
+                  type="input"
+                  class="form__field"
+                  placeholder="Name"
+                  name="name"
+                  id="saveName"
+                  ng-model="name"                  
+                  required
+                />
+                <label for="saveName" class="form__label">Enter Your Name</label>
+              </li>
+
+              <li class="nav-item">
+                <button type="button" class="btn btn-primary-custom" ng-click="saveName()">Save <i class="fa-solid fa-floppy-disk"></i></button>
+              </li>
+            </form>
+            <form class="d-flex">
+              <li class="nav-item">
+              <button class="btn btn-primary-custom" type="button">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </li>
+            </form>
+          </ul>          
+        </div>
       </div>
-</div>
+    </nav>
+
+
+   
+    
+    <div>
+        <div class="container mt-3">
+            <h2>Toggleable Tabs</h2>
+            <br>
+            <!-- Nav tabs -->
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="home" class="container tab-pane active"><br>
+                    <img src="/" alt="">
+                </div>
+                <div id="menu1" class="container tab-pane fade"><br>
+                    <img src="" alt="">
+                </div>
+                <div id="menu2" class="container tab-pane fade"><br>
+                    <img src="" alt="">
+                </div>
+                <div id="menu3" class="container tab-pane fade"><br>
+                    <img src="" alt="">
+                </div>
+                <div id="menu4" class="container tab-pane fade"><br>
+                    <img src="" alt="">
+                <div id="menu5" class="container tab-pane fade"><br>
+                    <img src="" alt="">
+                </div>
+                <div id="menu6" class="container tab-pane fade"><br>
+                    <img src="" alt="">
+                </div>
+                <div id="menu7" class="container tab-pane fade"><br>
+                    <img src="" alt="">
+                  </div>
+                  <div id="menu8" class="container tab-pane fade"><br>
+                    <img src="" alt="">
+                  </div>
+              </div>
+            </div>
+      
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" data-bs-toggle="tab" href="#home">
+                    <img src="" alt="">
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#menu1">
+                    <img src="" alt="">
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#menu2">
+                    <img src="" alt="">
+                  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#menu3">
+                      <img src="" alt="">
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#menu4">
+                      <img src="" alt="">
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#menu5">
+                      <img src="" alt="">
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#menu6">
+                      <img src="" alt="">
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#menu7">
+                      <img src="" alt="">
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#menu8">
+                      <img src="" alt="">
+                    </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+
+    <script></script>
+    <script>
+      var app = angular.module("myApp", ["ngRoute"]);
+      app.controller("myController", function ($scope) {
+
+        $scope.saveName = function() {
+                $scope.hideForm = !$scope.hideForm;
+   
+            }
+            
+
+
+      });
+      app.config(function ($routeProvider) {
+        $routeProvider
+          .when("/", {
+            templateUrl: "home.html",
+          })
+          .when("/prod", {
+            templateUrl: "prod.html",
+          })
+          .when("/ab", {
+            templateUrl: "AboutUS.html",
+          })          
+          .when("/contact", {
+            templateUrl: "ContactUS.html",
+          });
+      });
+      // $routeProvider
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
