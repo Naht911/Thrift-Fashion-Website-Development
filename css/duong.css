@@ -1,9 +1,73 @@
 nav div {
-    border:none ;
+    border: none;
 }
+
 nav div ul {
-    border:none ;
+    border: none;
+
 }
-body{
+
+.custom{
+    border-bottom: #dbc3da solid 1px;
+    background-color: #ead3c7;
+    border-radius: 0.25rem !important
+}
+coler-primary{
+    color: #ead3c7;
+}
+body {
     background-color: #e9d5ca
+}
+
+.web_title {
+    color: #d54d7b;
+    font-family: 'Allan';
+    font-size: 22px;
+    font-size: 135px;
+    line-height: 160px;
+    font-weight: normal;
+    margin-bottom: 0px;
+    margin-top: 40px;
+    text-align: center;
+    text-shadow: 0 1px 1px #fff;
+    font-style: italic;
+}
+
+.navbar-brand {
+    color: #d54d7b !important;
+    font-family: 'Allan';
+    font-size: 22px;
+    text-align: center;
+    text-shadow: 0 1px 1px #fff;
+    font-style: italic;
+}
+
+p {
+    color: #7a7c7f;
+    font-size: 29px;
+    font-family: "Libre Baskerville", serif;
+    line-height: 45px;
+    text-align: center;
+    text-shadow: 0 1px 1px #fff;
+    padding-top: 20px;
+}
+
+
+p.byline {
+    font-style: italic;
+    color: #822525;
+    font-size: 24px;
+
+    text-align: center;
+    text-shadow: 0 1px 1px #fff;
+}
+
+.quoter {
+    color: #a7e8f8;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 32px;
+    margin: 0 0 24px;
+    text-shadow: 1px 1px 1px #082b34;
 }
