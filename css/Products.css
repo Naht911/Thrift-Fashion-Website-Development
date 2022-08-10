@@ -38,3 +38,11 @@ div.stars {
     content: '\f006';
     font-family: FontAwesome;
   }
+.card{
+  background-color: rgb(247, 242, 246);
+}
+.card-footer{
+  background-color: rgb(247, 242, 246);
+  margin: auto;
+  border: none;
+}
