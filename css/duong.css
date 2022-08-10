@@ -12,7 +12,8 @@ body {
 
 .web_title {
     color: #d54d7b;
-    font-family: 'Allan';font-size: 22px;
+    font-family: 'Allan';
+    font-size: 22px;
     font-size: 135px;
     line-height: 160px;
     font-weight: normal;
@@ -22,9 +23,11 @@ body {
     text-shadow: 0 1px 1px #fff;
     font-style: italic;
 }
+
 .navbar-brand {
     color: #d54d7b !important;
-    font-family: 'Allan';font-size: 22px;
+    font-family: 'Allan';
+    font-size: 22px;
     text-align: center;
     text-shadow: 0 1px 1px #fff;
     font-style: italic;
@@ -43,9 +46,19 @@ p {
 
 p.byline {
     font-style: italic;
-    color: #B6B6B6;
+    color: #822525;
     font-size: 24px;
-    margin-top: 20px;
+
     text-align: center;
     text-shadow: 0 1px 1px #fff;
+}
+
+.quoter {
+    color: #a7e8f8;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 32px;
+    margin: 0 0 24px;
+    text-shadow: 1px 1px 1px #082b34;
 }
