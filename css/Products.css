@@ -1,3 +1,9 @@
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
 div.stars {
     width: 270px;
     display: inline-block;
@@ -32,3 +38,37 @@ div.stars {
     content: '\f006';
     font-family: FontAwesome;
   }
+  .others{
+    flex: 1;
+    display: flex;
+}
+.others li{
+    padding: 0 12px;
+    position: relative;
+}
+.others li::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 80%;
+    background: #cccccc;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.others li:first-child{
+    position: relative;
+}
+.others li:first-child input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #333;
+    background: transparent;
+    outline: none;
+    
+}
+.others li:first-child i{
+    position: absolute;
+    right: 10px;
+}
