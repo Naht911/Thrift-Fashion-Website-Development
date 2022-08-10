@@ -1,9 +1,51 @@
 nav div {
-    border:none ;
+    border: none;
 }
+
 nav div ul {
-    border:none ;
+    border: none;
 }
-body{
+
+body {
     background-color: #e9d5ca
+}
+
+.web_title {
+    color: #d54d7b;
+    font-family: 'Allan';font-size: 22px;
+    font-size: 135px;
+    line-height: 160px;
+    font-weight: normal;
+    margin-bottom: 0px;
+    margin-top: 40px;
+    text-align: center;
+    text-shadow: 0 1px 1px #fff;
+    font-style: italic;
+}
+.navbar-brand {
+    color: #d54d7b !important;
+    font-family: 'Allan';font-size: 22px;
+    text-align: center;
+    text-shadow: 0 1px 1px #fff;
+    font-style: italic;
+}
+
+p {
+    color: #7a7c7f;
+    font-size: 29px;
+    font-family: "Libre Baskerville", serif;
+    line-height: 45px;
+    text-align: center;
+    text-shadow: 0 1px 1px #fff;
+    padding-top: 20px;
+}
+
+
+p.byline {
+    font-style: italic;
+    color: #B6B6B6;
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
+    text-shadow: 0 1px 1px #fff;
 }
