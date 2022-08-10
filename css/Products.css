@@ -1,3 +1,9 @@
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
 div.stars {
     width: 270px;
     display: inline-block;
@@ -32,3 +38,27 @@ div.stars {
     content: '\f006';
     font-family: FontAwesome;
   }
+.card{
+  background-color: rgb(247, 242, 246);
+  padding: 0px;
+}
+.card-footer{
+  background-color: rgb(247, 242, 246);
+  margin: auto;
+  border: none;
+}
+h2{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+}
+.tieude{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+
+}
+.gia a{
+  color: rgb(250, 56, 56);
+}
+.active{
+  padding: 20px 20px;
+}
