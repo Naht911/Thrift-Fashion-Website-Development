@@ -173,7 +173,7 @@ document.getElementById("electronics").onclick = function () {
         <h2>${data.title}</h2>
         <p>${data.description}</p>
         <p>$${data.price}</p>
-        <button>Add</button>
+         <button>Add</button>
         </td>`
     }
     document.getElementById("myTable").innerHTML = table
