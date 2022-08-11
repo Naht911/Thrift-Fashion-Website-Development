@@ -70,6 +70,20 @@
             "category": "1"
         },
         {
+            "id": 11,
+            "name": "MLB Bucket",
+            "description": "Nón MLB Bucket Hat MONOGRAM BLUE JACQUARD NY",
+            "price": 500,
+            "image":"non6.webp",
+            "isSale": true,
+            "saleOff": "70%",
+            "quantity": 50,
+            "quality": "70%",
+            "rating": 5,
+            "ratingCount": 50,
+            "category": "1"
+        },
+        {
             "id": 6,
             "name": "Long Sleeve",
             "description": "Men's gray long-sleeved shirt 5SMDH002GHS",
@@ -131,6 +145,20 @@
             "description": "St John's Bay Shirt Long Sleeve Plaid Brown White Green Button Down Men's Size L",
             "price": 200,
             "image": "aosomi5.webp",
+            "isSale": false,
+            "saleOff": "",
+            "quantity": 80,
+            "quality": "",
+            "rating": 4,
+            "ratingCount": 80,
+            "category": "2"
+        },
+        {
+            "id": 12,
+            "name": "Regular Fit",
+            "description": "Arrow Regular Fit Aroflex Collar Button Down Shirt Men's Sz 16-16.5 34/35 Blue",
+            "price": 200,
+            "image": "aosomi6.webp",
             "isSale": false,
             "saleOff": "",
             "quantity": 80,
