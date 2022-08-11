@@ -1,0 +1,14 @@
+{
+    "id": 2,
+    "name": "Product 2",
+    "description": "This is a product2",
+    "price": 200,
+    "image": ["non2.1.jpg","non2.2.jpg","non2.3.jpg","non2.4.jpg","non2.5.jpg","non2.6.jpg"],
+    "isSale": false,
+    "saleOff": "",
+    "quantity": 20,
+    "quality": "",
+    "rating": 5,
+    "ratingCount": 20,
+    "category": "2"
+}
