@@ -1,120 +1,130 @@
-{
-    "category": [
-        {"id": "1", "product_list": [
-            {
-                "id": 1,
-                "name": "Product 2",
-                "description": "This is a product",
-                "price": 100,
-                "image": "/img2.png",
-                "isSale": true,
-                "saleOff": "90%",
-                "quantity": 10,
-                "quality": "90%"
-            },
-            {
-                "id": 2,
-                "name": "Product 2",
-                "description": "This is a product",
-                "price": 100,
-                "image": "/img2.png",
-                "isSale": true,
-                "saleOff": "90%",
-                "quantity": 10,
-                "quality": "90%"
-            },
-            {
-                "id": 3,
-                "name": "Product 2",
-                "description": "This is a product",
-                "price": 100,
-                "image": "/img2.png",
-                "isSale": true,
-                "saleOff": "90%",
-                "quantity": 10,
-                "quality": "90%"
-            },
-            {
-                "id": 4,
-                "name": "Product 2",
-                "description": "This is a product",
-                "price": 100,
-                "image": "/img2.png",
-                "isSale": true,
-                "saleOff": "90%",
-                "quantity": 10,
-                "quality": "90%"
-            },
-            {
-                "id": 5,
-                "name": "Product 2",
-                "description": "This is a product",
-                "price": 100,
-                "image": "/img2.png",
-                "isSale": true,
-                "saleOff": "90%",
-                "quantity": 10,
-                "quality": "90%"
-            }
-            
-        ]},
-        {"id": "2", "product_list": [
-            {
-                "id": 1,
-                "name": "Product 2",
-                "description": "This is a product",
-                "price": 100,
-                "image": "/img2.png",
-                "isSale": true,
-                "saleOff": "90%",
-                "quantity": 10,
-                "quality": "90%"
-            },
-            {
-                "id": 2,
-                "name": "Product 2",
-                "description": "This is a product",
-                "price": 100,
-                "image": "/img2.png",
-                "isSale": true,
-                "saleOff": "90%",
-                "quantity": 10,
-                "quality": "90%"
-            },
-            {
-                "id": 3,
-                "name": "Product 2",
-                "description": "This is a product",
-                "price": 100,
-                "image": "/img2.png",
-                "isSale": true,
-                "saleOff": "90%",
-                "quantity": 10,
-                "quality": "90%"
-            },
-            {
-                "id": 4,
-                "name": "Product 2",
-                "description": "This is a product",
-                "price": 100,
-                "image": "/img2.png",
-                "isSale": true,
-                "saleOff": "90%",
-                "quantity": 10,
-                "quality": "90%"
-            },
-            {
-                "id": 5,
-                "name": "Product 2",
-                "description": "This is a product",
-                "price": 100,
-                "image": "/img2.png",
-                "isSale": true,
-                "saleOff": "90%",
-                "quantity": 10,
-                "quality": "90%"
-            }
-        ]}
+[
+        {
+            "id": 1,
+            "name": "Product 1",
+            "description": "This is a product1",
+            "price": 100,
+            "image": ["image1_1.jpg", "image1_2.jpg"],
+            "isSale": true,
+            "saleOff": "90%",
+            "quantity": 10,
+            "quality": "90%",
+            "rating": 4,
+            "ratingCount": 10,
+            "category": "1"
+        },
+        {
+            "id": 2,
+            "name": "Product 2",
+            "description": "This is a product2",
+            "price": 200,
+            "image": ["image2_1.jpg", "image2_2.jpg"],
+            "isSale": false,
+            "saleOff": "",
+            "quantity": 20,
+            "quality": "",
+            "rating": 5,
+            "ratingCount": 20,
+            "category": "2"
+        },
+        {
+            "id": 3,
+            "name": "Product 3",
+            "description": "This is a product3",
+            "price": 300,
+            "image": ["image3_1.jpg", "image3_2.jpg"],
+            "isSale": true,
+            "saleOff": "80%",
+            "quantity": 30,
+            "quality": "80%",
+            "rating": 3,
+            "ratingCount": 30,
+            "category": "3"
+        },
+        {
+            "id": 4,
+            "name": "Product 4",
+            "description": "This is a product4",
+            "price": 400,
+            "image": ["image4_1.jpg", "image4_2.jpg"],
+            "isSale": false,
+            "saleOff": "",
+            "quantity": 40,
+            "quality": "",
+            "rating": 4,
+            "ratingCount": 40,
+            "category": "4"
+        },
+        {
+            "id": 5,
+            "name": "Product 5",
+            "description": "This is a product5",
+            "price": 500,
+            "image": ["image5_1.jpg", "image5_2.jpg"],
+            "isSale": true,
+            "saleOff": "70%",
+            "quantity": 50,
+            "quality": "70%",
+            "rating": 5,
+            "ratingCount": 50,
+            "category": "1"
+        },
+        {
+            "id": 6,
+            "name": "Product 6",
+            "description": "This is a product6",
+            "price": 600,
+            "image": ["image6_1.jpg", "image6_2.jpg"],
+            "isSale": false,
+            "saleOff": "",
+            "quantity": 60,
+            "quality": "",
+            "rating": 4,
+            "ratingCount": 60,
+            "category": "1"
+        },
+        {
+            "id": 7,
+            "name": "Product 7",
+            "description": "This is a product7",
+            "price": 700,
+            "image": ["image7_1.jpg", "image7_2.jpg"],
+            "isSale": true,
+            "saleOff": "60%",
+            "quantity": 70,
+            "quality": "60%",
+            "rating": 3,
+            "ratingCount": 70,
+            "category": "1"
+        },
+        {
+            "id": 8,
+            "name": "Product 8",
+            "description": "This is a product8",
+            "price": 800,
+            "image": ["image8_1.jpg", "image8_2.jpg"],
+            "isSale": false,
+            "saleOff": "",
+            "quantity": 80,
+            "quality": "",
+            "rating": 4,
+            "ratingCount": 80,
+            "category": "1"
+        },
+        {
+            "id": 9,
+            "name": "Product 9",
+            "description": "This is a product9",
+            "price": 900,
+            "image": ["image9_1.jpg", "image9_2.jpg"],
+            "isSale": true,
+            "saleOff": "50%",
+            "quantity": 90,
+            "quality": "50%",
+            "rating": 5,
+            "ratingCount": 90,
+            "category": "1"
+        }
+       
+       
     ]
-    
-    }
