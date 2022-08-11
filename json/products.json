@@ -4,7 +4,7 @@
             "name": "MLB Korea",
             "description": "MLB New York Yankees Heroes Adjustable Cap",
             "price": 100,
-            "image": ["non1.jpg"],
+            "image": "non1.jpg",
             "isSale": true,
             "saleOff": "90%",
             "quantity": 10,
