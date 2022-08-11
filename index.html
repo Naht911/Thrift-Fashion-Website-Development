@@ -15,11 +15,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/Tri.js"></script>
+    <!-- <script src="js/Tri.js"></script> -->
     <link rel="stylesheet" href="/css/duong.css" />
-    <link rel="stylesheet" href="/css/Products.css" />
-    <link rel="stylesheet" href="/css/Products_01.css">
+
+    <link rel="stylesheet" href="/css/Products_01.css" />
     <title>Title</title>
   </head>
 
@@ -53,7 +55,7 @@
                 Welcome, <span class="mName">{{name}}</span>!!!
               </p>
             </li>
-            
+
             <form class="d-flex">
               <li class="nav-item">
                 <button class="btn btn-primary-custom" type="button">
@@ -67,23 +69,21 @@
     </nav>
 
     <div ng-view style="margin-top: 50px"></div>
-    <script></script>
+    <script src="/js/qui.js"></script>
     <script>
       var app = angular.module("myApp", ["ngRoute"]);
       app.controller("myController", function ($scope, $rootScope) {
         $scope.saveName = function () {
           $scope.hideForm = !$scope.hideForm;
         };
-        
+
         $scope.checkvalues = function (user) {
           var category_id = $('input[name="category_id"]:checked').val();
           console.log(category_id);
-          if(category_id){
-
+          if (category_id) {
             return user.category == category_id;
           }
           return user.category != 0;
-
         };
       });
       app.config(function ($routeProvider) {
@@ -96,18 +96,18 @@
           })
           .when("/product/:id", {
             templateUrl: "productDetail.html",
-           
           })
           .when("/ab", {
             templateUrl: "AboutUS.html",
           })
           .when("/contact", {
             templateUrl: "ContactUS.html",
-          }).otherwise({
-                redirectTo: "/"
-            });
+          })
+          .otherwise({
+            redirectTo: "/",
+          });
       });
-      
+
       // $routeProvider
       app.run(function ($rootScope, $http) {
         $http.get("json/category.json").then(function (rsp) {
@@ -123,6 +123,7 @@
       });
     </script>
 
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
