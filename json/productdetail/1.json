@@ -1,9 +1,9 @@
 {
     "id": 1,
-    "name": "non vang",
-    "description": "This is a product1",
-    "price": 300,
-    "image": ["image1_1.jpg", "image1_2.jpg"],
+    "name": "MLB Korea",
+    "description": " 👉 PRODUCT DESCRIPTION: /n MLB  is made of high quality cotton, durable during use The seam of the hat is extremely delicate and meticulous conquering even the most demanding customers the breathable mlb hat is easy to wash and easy to maintain /n 👉 HOW TO KEEP SHOES: /n We have gone through a careful screening process, choosing the best products, in order to give customers the best choice./n ✔️ SHOP COMMITMENT /n ➡️ 100% STANDARD AS PICTURES /n ➡️ 100% MONEY BACK IF NOT LIKE THE PHOTO /n ➡️ SUPPORT FOR EXCHANGE AND RETURN WITHIN 30 DAYS /n  ",
+    "price": 100,
+    "image": ["non1.jpg", "non2.jpg","non3.jpg","non4.jpg","non5.jpg"],
     "isSale": true,
     "saleOff": "90%",
     "quantity": 10,
