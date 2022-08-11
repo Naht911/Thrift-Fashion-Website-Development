@@ -54,8 +54,9 @@ div.addr{
     
 
 };
-.contact .infor h3{
-    width: 100%;
-    /* text-align: center; */
-    
+span.huchua-icon{
+    display:block;
+    width: 100px ;
+    background-color: red ;
+    height:100px ;
 }
