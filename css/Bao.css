@@ -37,6 +37,9 @@ form.mFormCustom {
     background-color: transparent;
     border: none;
     color: black;
+    
+
+   
 }
 
 img.contact {
@@ -54,9 +57,3 @@ div.addr{
     
 
 };
-span.huchua-icon{
-    display:block;
-    width: 100px ;
-    background-color: red ;
-    height:100px ;
-}
