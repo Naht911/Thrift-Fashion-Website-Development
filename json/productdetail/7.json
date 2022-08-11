@@ -1,0 +1,14 @@
+{
+    "id": 7,
+    "name": "Savile Row Shirt Long",
+    "description": "This is a men's button-up shirt made by Savile Row in a size large. \n The shirt is green, white, blue, and red in a plaid pattern and features a button-down collar, long sleeves with button-up sleeve cuffs, a full button-up front closure, a front pocket, and a round bottom hemline. \n It measures approximately 23.5 from underarm to underarm, 25 from top of shoulder to sleeve opening, and 30.25 from the back of neck to bottom hemline when laid flat. \nThis shirt was made in Ukraine of 100% cotton.\n The shirt comes in good pre-owned condition. ",
+    "price": 700,
+    "image": ["aosomi2.webp","aosimi2_1.webp","aosomi2_2.webp","aosomi2_3.webp","aosomi2_4.webp"],
+    "isSale": true,
+    "saleOff": "60%",
+    "quantity": 70,
+    "quality": "60%",
+    "rating": 3,
+    "ratingCount": 70,
+    "category": "2"
+}

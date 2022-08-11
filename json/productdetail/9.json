@@ -1,0 +1,14 @@
+{
+    "id": 9,
+    "name": "Vintage Sears Roebuck & Co",
+    "description": "This is a vintage button-up shirt in men's size 16 by Sears Roebuck & Co. \n The shirt is white and plaid with purple, teal, orange, and black stripes. It has a button-down collar, asymmetrical hem, and long-sleeves.\n The shirt measures approximately 32.5 from the back of the neck to the bottom hem, 23 from underarm to underarm, and 24.5 from the top of the shoulder to the cuff when laid flat. \n It was made in the U.S.A. from a 55/45 cotton/polyester blend.\n The shirt comes in very good pre-owned condition. ",
+    "price": 900,
+    "image": ["aosomi4.webp","aosomi4_1.webp","aosomi4_2.webp","aosomi4_3.webp","aosomi4_4.webp"],
+    "isSale": true,
+    "saleOff": "50%",
+    "quantity": 90,
+    "quality": "50%",
+    "rating": 5,
+    "ratingCount": 90,
+    "category": "2"
+}

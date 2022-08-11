@@ -11,7 +11,7 @@
             "quality": "90%",
             "rating": 4,
             "ratingCount": 10,
-            "category": "2"
+            "category": "1"
         },
         {
             "id": 2,
@@ -25,11 +25,11 @@
             "quality": "",
             "rating": 5,
             "ratingCount": 20,
-            "category": "2"
+            "category": "1"
         },
         {
             "id": 3,
-            "name": "MLB Rookie Ball",
+            "name": "MLB Rookie",
             "description": "NEW BACK MLB Rookie Ball Cap LA Dodgers Green",
             "price": 300,
             "image": "non3_6.jpeg",
@@ -39,7 +39,7 @@
             "quality": "80%",
             "rating": 3,
             "ratingCount": 30,
-            "category": "3"
+            "category": "1"
         },
         {
             "id": 4,
@@ -53,7 +53,7 @@
             "quality": "",
             "rating": 4,
             "ratingCount": 40,
-            "category": "4"
+            "category": "1"
         },
         {
             "id": 5,
@@ -70,60 +70,102 @@
             "category": "1"
         },
         {
+            "id": 11,
+            "name": "MLB Bucket",
+            "description": "Nón MLB Bucket Hat MONOGRAM BLUE JACQUARD NY",
+            "price": 500,
+            "image":"non6.webp",
+            "isSale": true,
+            "saleOff": "70%",
+            "quantity": 50,
+            "quality": "70%",
+            "rating": 5,
+            "ratingCount": 50,
+            "category": "1"
+        },
+        {
             "id": 6,
-            "name": "Product 6",
-            "description": "This is a product6",
-            "price": 600,
-            "image": ["image6_1.jpg", "image6_2.jpg"],
+            "name": "Long Sleeve",
+            "description": "Men's gray long-sleeved shirt 5SMDH002GHS",
+            "price": 300,
+            "image": "aosomi1.webp",
             "isSale": false,
             "saleOff": "",
             "quantity": 60,
             "quality": "",
             "rating": 4,
             "ratingCount": 60,
-            "category": "1"
+            "category": "2"
         },
         {
             "id": 7,
-            "name": "Product 7",
-            "description": "This is a product7",
-            "price": 700,
-            "image": ["image7_1.jpg", "image7_2.jpg"],
+            "name": "Savile Row",
+            "description": "Savile Row Shirt Long Sleeve Plaid Red Blue Green Button Down Men's Size L",
+            "price": 250,
+            "image": "aosomi2.webp",
             "isSale": true,
             "saleOff": "60%",
             "quantity": 70,
             "quality": "60%",
             "rating": 3,
             "ratingCount": 70,
-            "category": "1"
+            "category": "2"
         },
         {
             "id": 8,
-            "name": "Product 8",
-            "description": "This is a product8",
-            "price": 800,
-            "image": ["image8_1.jpg", "image8_2.jpg"],
+            "name": "Shirt Large ",
+            "description": "Arrow Fitted Men's Button Down Shirt Large Red Gray Striped Size 34/35",
+            "price": 200,
+            "image": "aosomi3.webp",
             "isSale": false,
             "saleOff": "",
             "quantity": 80,
             "quality": "",
             "rating": 4,
             "ratingCount": 80,
-            "category": "1"
+            "category": "2"
         },
         {
             "id": 9,
-            "name": "Product 9",
-            "description": "This is a product9",
+            "name": " Roebuck & Co",
+            "description": "Vintage Sears Roebuck & Co Plaid Button Up Shirt Men's Size 16 Multi Color",
             "price": 900,
-            "image": ["image9_1.jpg", "image9_2.jpg"],
+            "image": "aosomi4.webp",
             "isSale": true,
             "saleOff": "50%",
             "quantity": 90,
             "quality": "50%",
             "rating": 5,
             "ratingCount": 90,
-            "category": "1"
+            "category": "2"
+        },
+        {
+            "id": 10,
+            "name": "St John's ",
+            "description": "St John's Bay Shirt Long Sleeve Plaid Brown White Green Button Down Men's Size L",
+            "price": 200,
+            "image": "aosomi5.webp",
+            "isSale": false,
+            "saleOff": "",
+            "quantity": 80,
+            "quality": "",
+            "rating": 4,
+            "ratingCount": 80,
+            "category": "2"
+        },
+        {
+            "id": 12,
+            "name": "Regular Fit",
+            "description": "Arrow Regular Fit Aroflex Collar Button Down Shirt Men's Sz 16-16.5 34/35 Blue",
+            "price": 200,
+            "image": "aosomi6.webp",
+            "isSale": false,
+            "saleOff": "",
+            "quantity": 80,
+            "quality": "",
+            "rating": 4,
+            "ratingCount": 80,
+            "category": "2"
         }
        
        

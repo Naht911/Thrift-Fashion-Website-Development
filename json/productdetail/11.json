@@ -1,0 +1,14 @@
+{
+    "id": 11,
+    "name": "MLB Bucket",
+    "description": "Made of high quality materials, durable throughout use, can be comfortably waterproof \n The seam of the hat is extremely delicate and meticulous, conquering even the most demanding customers. The MLB hat is breathable, easy to wash and easy to maintain. \n Embroidered motifs add a fashionable style to the hat \n Modern bucket hat design \n Design inspired by baseball association MLB \n Baseball logo details prominently printed on the front \n Soft fabric, good absorbency \n Modern color palette that is easy to coordinate with many outfits and accessories",
+    "price": 500,
+    "image":["non6.webp","non6_1.webp","non6_2.webp","non6_3.webp","non6_4.webp0"],
+    "isSale": true,
+    "saleOff": "70%",
+    "quantity": 50,
+    "quality": "70%",
+    "rating": 5,
+    "ratingCount": 50,
+    "category": "1"
+}
