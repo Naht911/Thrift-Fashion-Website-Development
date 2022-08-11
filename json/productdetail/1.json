@@ -2,12 +2,11 @@
     "id": 1,
     "name": "non vang",
     "description": "This is a product1",
-    "price": 100,
+    "price": 300,
     "image": ["image1_1.jpg", "image1_2.jpg"],
     "isSale": true,
     "saleOff": "90%",
     "quantity": 10,
     "quality": "90%",
-
     "category": "1"
 }
