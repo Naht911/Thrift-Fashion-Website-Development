@@ -1,0 +1,14 @@
+{
+    "id": 13,
+    "name": "ADIDAS",
+    "description": "Adidas Ultra Boost 3.0 Legendary walking shoes \n Adidas ultra boost shoes with a design of 3000 Boost beads, so it can be said that wearing this Adidas ultraboost shoe is super smooth. Can't fault it at any point \n ",
+    "price": 500,
+    "image":["home.jpg","menu2.jpg","menu3.jpg","menu5.jpg","menu6.jpg","menu8.jpg"],
+    "isSale": true,
+    "saleOff": "70%",
+    "quantity": 50,
+    "quality": "70%",
+    "rating": 5,
+    "ratingCount": 50,
+    "category": "3"
+}
