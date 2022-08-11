@@ -1,14 +1,10 @@
 {
-"category": [
+"category" : [
     {"id": "1", "name": "old hat"},
     {"id": "2", "name": "old shirt"},
     {"id": "3", "name": "old shoes"},
     {"id": "4", "name": "old pants"},
-    {"id": "5", "name": "old glasses"},
-    {"id": "6", "name": "old watch"},
-    {"id": "7", "name": "old belt"},
-    {"id": "8", "name": "old scarf"},
-    {"id": "9", "name": "old gloves"}   
+    {"id": "5", "name": "old glasses"}
 ]
 
 }
