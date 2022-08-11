@@ -34,12 +34,7 @@
     cursor: pointer;
 
 }
- img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
+
 .control{
     position: absolute;
     top: 50%;
@@ -54,7 +49,7 @@
     right: 10px;
 }
 .active{
-    background: rgb(241, 53, 53);
+    /* background: rgb(241, 53, 53); */
 }
 .Selling{
     text-align: center;
@@ -153,7 +148,7 @@
     
 }
 .products-content-right-products-price{
-    color: rgb(237, 71, 71);
+    /* color: rgb(237, 71, 71); */
     margin-top: 20px;
 }
 
