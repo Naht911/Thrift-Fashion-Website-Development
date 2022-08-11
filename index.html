@@ -71,18 +71,9 @@
     <script>
       var app = angular.module("myApp", ["ngRoute"]);
       app.controller("myController", function ($scope, $rootScope) {
-<<<<<<< HEAD
-
-        $scope.saveName = function() {
-                $scope.hideForm = !$scope.hideForm;
-   
-            }
-            // $rootScope.productlist=
-=======
         $scope.saveName = function () {
           $scope.hideForm = !$scope.hideForm;
         };
->>>>>>> 1c59405bf7af2eb661e68e9706ed9b68e8a4a1cf
         
         $scope.checkvalues = function (user) {
           var category_id = $('input[name="category_id"]:checked').val();
@@ -105,7 +96,7 @@
           })
           .when("/product/:id", {
             templateUrl: "productDetail.html",
-            controller: 'studentController'
+           
           })
           .when("/ab", {
             templateUrl: "AboutUS.html",
@@ -116,9 +107,7 @@
                 redirectTo: "/"
             });
       });
-      app.controller("studentController", function ($scope, $routeParams) {
-            $scope.username = $routeParams.username;
-        });
+      
       // $routeProvider
       app.run(function ($rootScope, $http) {
         $http.get("json/category.json").then(function (rsp) {
