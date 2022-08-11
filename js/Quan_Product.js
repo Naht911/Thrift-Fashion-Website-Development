@@ -58,8 +58,7 @@ document.getElementById("Quan_all").onclick = function () {
                 ${data.price}
                 </div>
           </figcaption>
-          <i class="fa-solid fa-cart-circle-plus"></i>
-                <a href="#"></a>
+          <button>Add</button>           
       </figure>
 
       </td>`
@@ -76,6 +75,7 @@ document.getElementById("1-20").onclick = function () {
         <h2>${data.category}</h2>
         <p>${data.description}</p>
         <p>$${data.price}</p>
+        <button>Add</button>
         </td>`
     }
     document.getElementById("myTable").innerHTML = table
@@ -91,6 +91,7 @@ document.getElementById("20-50").onclick = function () {
         <h2>${data.category}</h2>
         <p>${data.description}</p>
         <p>$${data.price}</p>
+        <button>Add</button>
         </td>`
     }
     document.getElementById("myTable").innerHTML = table
@@ -106,6 +107,7 @@ document.getElementById("100").onclick = function () {
         <h2>${data.category}</h2>
         <p>${data.description}</p>
         <p>$${data.price}</p>
+        <button>Add</button>
         </td>`
     }
     document.getElementById("myTable").innerHTML = table
@@ -122,6 +124,7 @@ document.getElementById("man-clothes").onclick = function () {
         <h2>${data.title}</h2>
         <p>${data.description}</p>
         <p>$${data.price}</p>
+        <button>Add</button>
         </td>`
     }
     document.getElementById("myTable").innerHTML = table
@@ -138,6 +141,7 @@ document.getElementById("women-clothes").onclick = function () {
         <h2>${data.title}</h2>
         <p>${data.description}</p>
         <p>$${data.price}</p>
+        <button>Add</button>
         </td>`
     }
     document.getElementById("myTable").innerHTML = table
@@ -153,6 +157,7 @@ document.getElementById("jewelery").onclick = function () {
         <h2>${data.title}</h2>
         <p>${data.description}</p>
         <p>$${data.price}</p>
+        <button>Add</button>
         </td>`
     }
     document.getElementById("myTable").innerHTML = table
@@ -168,6 +173,7 @@ document.getElementById("electronics").onclick = function () {
         <h2>${data.title}</h2>
         <p>${data.description}</p>
         <p>$${data.price}</p>
+        <button>Add</button>
         </td>`
     }
     document.getElementById("myTable").innerHTML = table

@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <script src="./js/Quan_addCard.js"></script>
+</head>
+<body>
+        <div>
+            <table class="productList">
+                <thead>
+                    <tr>
+                        <th>Mã</th>
+                        <th>Tên Sản Phẩm</th>
+                        <th>Giá</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Bikini</td>
+                        <td>$<span class="amount">300</span></td>
+                        <td><button type="button" onclick="addToCart(this)">Add</button></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Quần Lót</td>
+                        <td>$<span class="amount">400</span></td>
+                        <td><button type="button" onclick="addToCart(this)">Add</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+        <div class="shopping-cart">
+            <div class="title">Giỏ Hàng của Bạn</div>
+            <table id="cartItems" class="cart-items" style="display:none;">
+                <thead>
+                    <tr>
+                        <th>Mã</th>
+                        <th>Tên</th>
+                        <th>Giá</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-body">
+
+                </tbody>                
+            </table>
+            <div id="grandTotal" class="grandTotal" style="display:none;">
+                tổng tiền:$ <span id="total">400</span>
+            </div>
+            <div id="emptyCart" class="emptyCart">
+                Bạn Chưa Chọn sản Phẩm
+            </div>
+        </div>
+</body>
+</html>
