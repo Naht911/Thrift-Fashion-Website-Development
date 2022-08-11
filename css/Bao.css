@@ -47,6 +47,15 @@ img.contact {
     margin-right: auto;
     /* margin-top: auto; */
 }
-p.add{
+div.addr{
+    background-color:#ccc;
+    width: 100%;
+    height: 100%;
+    
+
+};
+.contact .infor h3{
+    width: 100%;
+    /* text-align: center; */
     
 }
