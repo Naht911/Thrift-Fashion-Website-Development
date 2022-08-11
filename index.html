@@ -84,12 +84,13 @@
     <script></script>
     <script>
       var app = angular.module("myApp", ["ngRoute"]);
-      app.controller("myController", function ($scope) {
+      app.controller("myController", function ($scope, $rootScope) {
 
         $scope.saveName = function() {
                 $scope.hideForm = !$scope.hideForm;
    
             }
+            $rootScope.productlist=
         
             
 
@@ -101,7 +102,7 @@
             templateUrl: "home.html",
           })
           .when("/prod", {
-            templateUrl: "prod.html",
+            templateUrl: "Product.html",
           })
           .when("/ab", {
             templateUrl: "AboutUS.html",
@@ -111,6 +112,18 @@
           });
       });
       // $routeProvider
+      app.run(function($rootScope, $http) {
+            $http.get("json/category.json").then(function(rsp) {
+                $rootScope.list = rsp.data.category;
+                
+            })
+        })  
+       app.run(function($rootScope, $http) {
+            $http.get("json/products.json").then(function(rsp) {
+                $rootScope.data = rsp.data.category;
+                console.log($rootScope.data)
+            })
+        })  
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"></script>

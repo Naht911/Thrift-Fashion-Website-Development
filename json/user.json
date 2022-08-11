@@ -1,0 +1,32 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "John",
+            "age": 30,
+            "username": "demo1",
+            "password": "demo1"
+        },
+        {
+            "id": 2,
+            "name": "Mary",
+            "age": 25,
+            "username": "demo2",
+            "password": "demo2"
+        },
+        {
+            "id": 3,
+            "name": "Peter",
+            "age": 35,
+            "username": "demo3",
+            "password": "demo3"
+        },
+        {
+            "id": 4,
+            "name": "James",
+            "age": 40,
+            "username": "demo4",
+            "password": "demo4"
+        }
+    ]
+}
