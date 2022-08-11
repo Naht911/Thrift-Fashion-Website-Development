@@ -84,6 +84,34 @@
             "category": "1"
         },
         {
+            "id": 13,
+            "name": "ADIDAS",
+            "description": "ADIDAS ULTRA BOOST 3.0",
+            "price": 500,
+            "image":"home.jpg",
+            "isSale": true,
+            "saleOff": "70%",
+            "quantity": 50,
+            "quality": "70%",
+            "rating": 5,
+            "ratingCount": 50,
+            "category": "3"
+        },
+        {
+            "id": 14,
+            "name": "Florsheim",
+            "description": "Florsheim D1103-03 Brown Leather Men's Dress Shoes Size 9 Square Toe",
+            "price": 1.500,
+            "image":"giay2.webp",
+            "isSale": true,
+            "saleOff": "70%",
+            "quantity": 50,
+            "quality": "70%",
+            "rating": 5,
+            "ratingCount": 50,
+            "category": "3"
+        },
+        {
             "id": 6,
             "name": "Long Sleeve",
             "description": "Men's gray long-sleeved shirt 5SMDH002GHS",
