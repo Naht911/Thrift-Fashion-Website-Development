@@ -21,14 +21,9 @@
 		<div class="col-sm-12 col-md-9" style="margin-top: 10px;">
 			<div class="row">
 				<div class="col-sm-12 col-md-4" ng-repeat="d in data | filter:checkvalues | filter:searchName">
-<<<<<<< HEAD
-					<div class="col-sm"> <img src="/img/prod/{{d.image}}" width="100%" class="img-prod">
-						<h1><a href="#!product/{{d.id}}">{{d.name}}</a></h1>
-=======
 					<div class="col-sm">
-						<a href="#!product/{{d.id}}"> <img src="img/hinhProducts/giay1.jpg" width="100%" class="img-prod product_list"></a>
+						<a href="#!product/{{d.id}}"> <img src="/img/prod/{{d.image}}" width="100%" class="img-prod product_list"></a>
 						<h1><a href="#!product/{{d.id}}" class="product_list">{{d.name}}</a></h1>
->>>>>>> f32597fd341c59f8fe5c8d6e5e94e6332aaec650
 						<p>{{d.description}}</p>
 						<p>{{d.name}}</p>
 						<p></p>
