@@ -3,16 +3,58 @@
 padding: 0;
 box-sizing: border-box;
 };
-/* Contact */
-/* style rieng*/
-
-/* style rieng*/
-
-/* Contact */
-
-/* .Bao_icon_about:hover{
+.info{
+    background:rgb(56, 55, 55) ;
+    border-radius: 30px;
+    
+   
+}
+.info h3{
     color: #fff;
-    background-color: rgb(157, 246, 73);
+    text-align: center;
+}
+.info .infoBox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 
-}; */
-
+}
+.info .infoBox div span{
+    min-width: 40px;
+    height: 40px;
+    /* color: #fff; */
+    background: #e3edf1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.info .infoBox div p{
+    color: #fff;
+    font-size: 1.1em;
+}
+.info .infoBox div a{
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.sci{
+    margin-top: 40px;
+    display: flex;
+}
+.sci li{
+    margin-right: 15px;
+}
+.sci li a{
+    color: #fff;
+    font-size: 2em;
+    color: #ccc;
+}
+.sci li a:hover{
+    color: #fff;
+}
+.map{
+    
+    justify-content: center;
+}
