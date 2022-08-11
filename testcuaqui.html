@@ -1,46 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/css/duong.css" />
+    <link rel="stylesheet" href="/css/Products_01.css">
+    <title>Title</title>
+  </head>
 
-  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="/css/Products_01.css">
-</head>
-<body>
-  <div>
-      <div class="container">
-        <div class="main">
-          <img src="/img/hinhProducts/home.jpg" class="img-feature">
-          <div class="control prev">
-            <i class='bx bx-chevron-left'></i>
-          </div>
-          <div class="control next">
-            <i class='bx bx-chevron-right'></i>
-          </div>
-         
+  <body ng-app="myApp" ng-controller="myController">
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top nav-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#!/">Thrift Fashion</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mynavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#!prod">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!ab">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!contact">Contact Us</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <p ng-show="hideForm" class="mCustom"> Welcome, <span class="mName">{{name}}</span>!!! </p>
+            </li>
+            <form action="#" method="post" class="d-flex" return false ng-hide="hideForm">
+              <li class="nav-item">
+                <input
+                  type="input"
+                  class="form__field"
+                  placeholder="Name"
+                  name="name"
+                  id="saveName"
+                  ng-model="name"                  
+                  required
+                />
+                <label for="saveName" class="form__label">Enter Your Name</label>
+              </li>
 
+              <li class="nav-item">
+                <button type="button" class="btn btn-primary-custom" ng-click="saveName()">Save <i class="fa-solid fa-floppy-disk"></i></button>
+              </li>
+            </form>
+            <form class="d-flex">
+              <li class="nav-item">
+              <button class="btn btn-primary-custom" type="button">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </li>
+            </form>
+          </ul>          
         </div>
-      <div class="list-image">
-        <div ><img src="/img/hinhProducts/home.jpg" alt=""></div> 
-        <div><img src="/img/hinhProducts/menu1.jpg" alt="" ></div> 
-        <div><img src="/img/hinhProducts/menu2.jpg" alt="" ></div> 
-        <div><img src="/img/hinhProducts/menu3.jpg" alt="" ></div> 
-        <div><img src="/img/hinhProducts/menu4.jpg" alt="" ></div> 
-        <div><img src="/img/hinhProducts/menu5.jpg" alt="" ></div> 
-        <div><img src="/img/hinhProducts/menu6.jpg" alt="" ></div> 
-        <div><img src="/img/hinhProducts/menu7.jpg" alt="" ></div> 
-        <div><img src="/img/hinhProducts/menu8.jpg" alt="" ></div>
-        
-        
       </div>
-            
-            
+    </nav>
+    <div>
+      <div class="container-fluid" style="margin-top:200px ;">
+        <div class="row">
+          <div class="col-sm-6">
+            <div style="width: 500px;">
+            <div class="contact map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.331961585641!2d106.6629935139512!3d10.785867061970777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f977ea563cf%3A0x19aa9abd6a1b441d!2sLe%20Thi%20Rieng%20Park!5e0!3m2!1sen!2s!4v1656887616281!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          </div>
+          </div>
+          <div class="col-sm-6">dâdaadafsfsfsfsfsfsfsfs</div>
+        </div>
       </div>
     </div>
+    <script src="/js/qui.js"></script>
+    <script>
+      var app = angular.module("myApp", ["ngRoute"]);
+      app.controller("myController", function ($scope) {
 
-</body>
-<script src="/js/qui.js"></script>
+        $scope.saveName = function() {
+                $scope.hideForm = !$scope.hideForm;
+   
+            }
+            
+
+
+      });
+      app.config(function ($routeProvider) {
+        $routeProvider
+          .when("/", {
+            templateUrl: "home.html",
+          })
+          .when("/prod", {
+            templateUrl: "prod.html",
+          })
+          .when("/ab", {
+            templateUrl: "AboutUS.html",
+          })          
+          .when("/contact", {
+            templateUrl: "ContactUS.html",
+          });
+      });
+      // $routeProvider
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  </body>
 </html>

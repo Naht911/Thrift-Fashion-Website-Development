@@ -32,7 +32,11 @@ body {
     background-color: #e9d5ca;
     border-color: #deb29a;
 }
-
+.btn-primary-custom :checked+label {
+    transform: scale(1.1);
+    box-shadow: 0 0 2px rgb(59, 196, 18);
+    z-index: -1;
+}
 .btn-primary-custom:hover {
     background-color: #eec8b3;
     border-color: #e3a888;
@@ -186,4 +190,27 @@ p.byline {
     line-height: 32px;
     margin: 0 0 24px;
     text-shadow: 1px 1px 1px #082b34;
+}
+.checkCat input[type="checkbox"][id^="checkCat"] {
+    display: none;
+}
+
+.checkCat label {
+    /* border: 1px solid #fff; */
+    padding: 5px;
+    /* display: block; */
+    position: relative;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+
+.checkCat label:hover:before {
+    transform: scale(1.5);
+}
+
+.checkCat :checked+label {
+    background-color: #eec8b3;
+    border-color: #e3a888;
 }

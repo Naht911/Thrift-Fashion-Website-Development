@@ -1,10 +1,10 @@
 {
 "category" : [
-    {"id": "1", "name": "Old hat"},
-    {"id": "2", "name": "Old shirt"},
-    {"id": "3", "name": "Old shoes"},
-    {"id": "4", "name": "Old pants"},
-    {"id": "5", "name": "Old glasses"}
+    {"id": "1", "name": "Hat"},
+    {"id": "2", "name": "Shirt"},
+    {"id": "3", "name": "Shoes"},
+    {"id": "4", "name": "Pants"},
+    {"id": "5", "name": "Glasses"}
 ]
 
 }
