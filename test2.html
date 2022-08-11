@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>angularjs filter json object to show/hide or update elements</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js"></script>
+    <script type="text/javascript">
+      var app = angular.module("sampleapp", []);
+      app.controller("samplecontrol", function ($scope) {
+        $scope.sample = [
+          {
+            id: "1",
+            name: "Suresh Dasari",
+          },
+          {
+            id: "2",
+            name: "Rohini Alavala",
+          },
+          {
+            id: "3",
+            name: "Mahendra Dasari",
+          },
+          {
+            id: "4",
+            name: "Madhav Sai",
+          },
+          {
+            id: "5",
+            name: "Mahesh Dasari",
+          },
+          {
+            id: "6",
+            name: "Sateesh Alavala",
+          },
+        ];
+
+        $scope.checkvalues = function (user) {
+          return user.id != "5";
+        };
+      });
+    </script>
+  </head>
+  <body data-ng-app="sampleapp" data-ng-controller="samplecontrol">
+    <form id="form1">
+      <div ng-repeat="user in sample | filter:checkvalues">
+        {{user.name}} {{user.id}} <br />
+      </div>
+    </form>
+  </body>
+</html>
