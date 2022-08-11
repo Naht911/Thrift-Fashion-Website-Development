@@ -32,11 +32,13 @@ body {
     background-color: #e9d5ca;
     border-color: #deb29a;
 }
+
 .btn-primary-custom :checked+label {
     transform: scale(1.1);
     box-shadow: 0 0 2px rgb(59, 196, 18);
     z-index: -1;
 }
+
 .btn-primary-custom:hover {
     background-color: #eec8b3;
     border-color: #e3a888;
@@ -51,6 +53,7 @@ body {
     background-color: #eec8b3;
     border-color: #e3a888;
 }
+
 .card.primary-custom {
     background-color: #e8c7b5 !important;
     border-color: #deb29a !important;
@@ -61,7 +64,7 @@ body {
     color: #d54d7b;
     font-family: 'Allan';
     font-style: italic;
-    font-size: 22px;
+
     font-size: 135px;
     line-height: 160px;
     font-weight: normal;
@@ -71,6 +74,7 @@ body {
     text-shadow: 0 1px 1px #fff;
     font-style: italic;
 }
+
 p.mCustom {
     margin-top: 15px;
     font-size: 20px;
@@ -78,12 +82,14 @@ p.mCustom {
     font-family: 'Allan';
     /* font-style: italic; */
 }
+
 span.mName {
     color: #d54d7b;
     font-family: 'Allan';
     font-style: italic;
     font-weight: bold;
 }
+
 .navbar-brand {
     color: #d54d7b !important;
     font-family: 'Allan';
@@ -191,6 +197,7 @@ p.byline {
     margin: 0 0 24px;
     text-shadow: 1px 1px 1px #082b34;
 }
+
 .checkCat input[type="checkbox"][id^="checkCat"] {
     display: none;
 }
@@ -214,7 +221,21 @@ p.byline {
     background-color: #eec8b3;
     border-color: #e3a888;
 }
+
 img.carousel-img {
     border-radius: 15px;
+
+}
+
+img.product_list {
+    border-radius: 15px;
+}
+
+a.product_list {
+    /* font-family: 'Allan'; */
+    color: black;
+    /* text-shadow: 0 1px 1px #fff; */
+    text-decoration: none;
+    /* font-style: italic; */
     
 }
