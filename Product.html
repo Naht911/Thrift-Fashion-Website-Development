@@ -9,9 +9,8 @@
 	<div class="row">
 		<div class="col-sm-12 col-md-3">
 			<form action="#" method="get" return false ng-hide="hideForm">
-                <label for="saveName" class="">Search</label>                
-					<input type="input" class="form__field" name="name" id="saveName" ng-model="searchName" required />		
-			</form>
+				<label for="saveName" class="">Search</label>
+				<input type="input" class="form__field" name="name" id="saveName" ng-model="searchName" required /> </form>
 			<div ng-repeat="s in list" class="fix-block">
 				<input type="radio" name="category_id" id="checkCat{{s.id}}" ng-model="category_id" style="display: none;" value="{{s.id}}" class="checkCat">
 				<label for="checkCat{{s.id}}" class="btn btn-primary-custom">Buy {{s.name}}</label>
@@ -22,8 +21,14 @@
 		<div class="col-sm-12 col-md-9" style="margin-top: 10px;">
 			<div class="row">
 				<div class="col-sm-12 col-md-4" ng-repeat="d in data | filter:checkvalues | filter:searchName">
+<<<<<<< HEAD
 					<div class="col-sm"> <img src="/img/prod/{{d.image}}" width="100%" class="img-prod">
 						<h1><a href="#!product/{{d.id}}">{{d.name}}</a></h1>
+=======
+					<div class="col-sm">
+						<a href="#!product/{{d.id}}"> <img src="img/hinhProducts/giay1.jpg" width="100%" class="img-prod product_list"></a>
+						<h1><a href="#!product/{{d.id}}" class="product_list">{{d.name}}</a></h1>
+>>>>>>> f32597fd341c59f8fe5c8d6e5e94e6332aaec650
 						<p>{{d.description}}</p>
 						<p>{{d.name}}</p>
 						<p></p>

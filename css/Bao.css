@@ -1,60 +1,61 @@
-*{
-    margin: 0;
-padding: 0;
-box-sizing: border-box;
-};
-.info{
-    background:rgb(56, 55, 55) ;
-    border-radius: 30px;
-    
+div.mFormCustom {
+    /* width: 100%; */
+    background-color: bisque;
+    height:auto;
+    border-radius: 10px;
+    box-shadow: 3px 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+input.mFormCustom {
+    /* margin-top: 1%; */
+    font-size: 16px;
+    width: 100%;
+    border-radius: 10px;
+   
+    border: 1px solid #ccc;
+    height: 60px;
+    margin-bottom: 30px;
    
 }
-.info h3{
-    color: #fff;
-    text-align: center;
-}
-.info .infoBox div{
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
 
+textarea.mFormCustom {
+    margin-top: 1%;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    height: 60px;
+    margin-bottom: 30px;
+  
 }
-.info .infoBox div span{
-    min-width: 40px;
-    height: 40px;
-    /* color: #fff; */
-    background: #e3edf1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-    border-radius: 50%;
-    margin-right: 15px;
+
+form.mFormCustom {
+    font-family: 'Courier New', Courier, monospace;
 }
-.info .infoBox div p{
-    color: #fff;
-    font-size: 1.1em;
+
+.card.mCardCustom {
+    background-color: transparent;
+    border: none;
+    color: black;
 }
-.info .infoBox div a{
-    text-decoration: none;
-    font-size: 1.1em;
+
+img.contact {
+    max-width: 100%;
+    margin-top: 45px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: auto; */
 }
-.sci{
-    margin-top: 40px;
-    display: flex;
-}
-.sci li{
-    margin-right: 15px;
-}
-.sci li a{
-    color: #fff;
-    font-size: 2em;
-    color: #ccc;
-}
-.sci li a:hover{
-    color: #fff;
-}
-.map{
+div.addr{
+    background-color:#ccc;
+    width: 100%;
+    height: 100%;
     
-    justify-content: center;
+
+};
+.contact .infor h3{
+    width: 100%;
+    /* text-align: center; */
+    
 }
