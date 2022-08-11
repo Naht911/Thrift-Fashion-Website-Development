@@ -1,0 +1,14 @@
+{
+    "id": 22,
+    "name": "Karen Scott ",
+    "description": "This is a pair of women's pants made by Karen Scott in a size petite large. \n The pants are black and feature an elastic waistline and 4 faux pockets. \n They measure about 15.25 across the waist with a 23.5 inseam and a 9.75 rise when laid flat \n These pants were made in Vietnam and are made of a 68/27/5 rayon/nylon/spandex blend. \n The garmet comes in good pre-owned condition. ",
+    "price": 800,
+    "image":["quan4.webp","quan4_1.webp","quan4_2.webp","quan4_3.webp","quan4_4.webp"],
+    "isSale": true,
+    "saleOff": "70%",
+    "quantity": 50,
+    "quality": "70%",
+    "rating": 5,
+    "ratingCount": 50,
+    "category": "4"
+}

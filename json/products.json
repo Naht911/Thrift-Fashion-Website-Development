@@ -291,7 +291,91 @@
             "quality": "",
             "rating": 4,
             "ratingCount": 80,
-            "category": "2"
+            "category": "4"
+        },
+        {
+            "id": 22,
+            "name": "Karen Scott ",
+            "description": "Karen Scott Sport Petite Black Pull On Pants Women's Size PL Cropped Mock Pocket",
+            "price": 800,
+            "image":"quan4.webp",
+            "isSale": true,
+            "saleOff": "70%",
+            "quantity": 50,
+            "quality": "70%",
+            "rating": 5,
+            "ratingCount": 50,
+            "category": "4"
+        },
+        {
+            "id": 23,
+            "name": "Nau Organic ",
+            "description": "Nau Organic Cotton Pants Women's Size 6 Brown Textured Pockets Cotton",
+            "price": 800,
+            "image":"quan5.webp",
+            "isSale": true,
+            "saleOff": "70%",
+            "quantity": 50,
+            "quality": "70%",
+            "rating": 5,
+            "ratingCount": 50,
+            "category": "4"
+        },
+        {
+            "id": 24,
+            "name": "Ella Moss",
+            "description": "Ella Moss Serena Pant Black Textured Crepe Slim Leg Sze XS New With Tags",
+            "price": 800,
+            "image":"quan6.webp",
+            "isSale": true,
+            "saleOff": "70%",
+            "quantity": 50,
+            "quality": "70%",
+            "rating": 5,
+            "ratingCount": 50,
+            "category": "4"
+        },
+        {
+            "id": 25,
+            "name": "Molsion Eyewear",
+            "description": "Frame Molsion Eyewear - Glasses",
+            "price": 800,
+            "image":"kinh1.webp",
+            "isSale": true,
+            "saleOff": "70%",
+            "quantity": 50,
+            "quality": "70%",
+            "rating": 5,
+            "ratingCount": 50,
+            "category": "5"
+        },
+        {
+            "id": 26,
+            "name": "CON",
+            "description": "Con AO01 high-end men's eyeglasses",
+            "price": 800,
+            "image":"kinh2.jpg",
+            "isSale": true,
+            "saleOff": "70%",
+            "quantity": 50,
+            "quality": "70%",
+            "rating": 5,
+            "ratingCount": 50,
+            "category": "5"
+        },
+        {
+            "id": 27,
+            "name": "SoLex",
+            "description": "Classy solex glasses are always confirmed with the years",
+            "price": 800,
+            "image":"kinh3.jpg",
+            "isSale": true,
+            "saleOff": "70%",
+            "quantity": 50,
+            "quality": "70%",
+            "rating": 5,
+            "ratingCount": 50,
+            "category": "5"
         }
        
        
