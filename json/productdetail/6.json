@@ -1,0 +1,14 @@
+{
+    "id": 6,
+    "name": "Long Sleeve Shirts",
+    "description": "Men's gray long-sleeved shirt 5SMDH002GHS",
+    "price": 600,
+    "image": ["aosomi1.webp","aosomi1_1.webp","aosomi1_2.webp","aosomi1_3.webp"],
+    "isSale": false,
+    "saleOff": "",
+    "quantity": 60,
+    "quality": "",
+    "rating": 4,
+    "ratingCount": 60,
+    "category": "2"
+}
