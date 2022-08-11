@@ -1,0 +1,14 @@
+{
+    "id": 21,
+    "name": "Lands",
+    "description": "This is a pair of women's pants from Lands' End in a size 10.\n These pants are light blue in color and feature a flat front, a mid-rise, two slash pockets, a button, bar hook and zipper front closure, two faux back pockets, and a straight leg style.\n These pants measure 16 across the waist with a 25 inseam and a 10.5 rise when laid flat. They were made in Sri Lanka of a 98/2 cotton/spandex blend.\n These pants are in good pre-owned condition with a couple of faint spot stains near the right leg opening.",
+    "price": 200,
+    "image": ["quan3.webp","quan3_1.webp","quan3_2.webp","quan3_3.webp","quan3_4.webp"],
+    "isSale": false,
+    "saleOff": "",
+    "quantity": 80,
+    "quality": "",
+    "rating": 4,
+    "ratingCount": 80,
+    "category": "2"
+}

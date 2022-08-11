@@ -1,0 +1,14 @@
+{
+    "id": 15,
+    "name": "Franco Sarto",
+    "description": "Here we have a pair of penny loafers by Franco Sarto in a Women's Size 6.5 M.\n These shoes are navy blue featuring soft pebbled leather, block heels, a pointed toe, and are slip-on.\n They measure about 10.25 heel to toe, 3.75 across the ball of the foot, 3.5 from the bottom of the heel to the top of the shoe, and a 1 heel. \n These shoes were made in Vietnam with a leather upper and a synthetic insole/lining. \n They come to you in very good pre-owned condition with a small scuff on the toe of the left shoe. Gently used. See photo. ",
+    "price": 500,
+    "image":["giay3.webp","giay3_1.webp","giay3_2.webp","giay3_3.webp","giay3_4.webp"],
+    "isSale": true,
+    "saleOff": "70%",
+    "quantity": 50,
+    "quality": "70%",
+    "rating": 5,
+    "ratingCount": 50,
+    "category": "3"
+}
