@@ -1,7 +1,7 @@
 [
         {
             "id": 1,
-            "name": "Product 1",
+            "name": "non vang",
             "description": "This is a product1",
             "price": 100,
             "image": ["image1_1.jpg", "image1_2.jpg"],
@@ -46,7 +46,7 @@
             "name": "Product 4",
             "description": "This is a product4",
             "price": 400,
-            "image": ["image4_1.jpg", "image4_2.jpg"],
+            "image": ["image4_1.jpg"],
             "isSale": false,
             "saleOff": "",
             "quantity": 40,
