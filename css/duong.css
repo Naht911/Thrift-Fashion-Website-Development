@@ -12,7 +12,9 @@ nav div ul {
 .nav-custom {
     border-bottom: #dbc3da solid 1px;
     background-color: #eecfbf;
-    border-radius: 0.25rem !important
+    border-radius: 0.25rem !important;
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 100px;
 }
 
 coler-primary {
@@ -37,14 +39,19 @@ body {
 }
 
 .primary-custom {
-    background-color: #e9d5ca;
-    border-color: #deb29a;
+    background-color: #e9d5ca !important;
+    border-color: #deb29a !important;
 }
 
 .primary-custom:hover {
     background-color: #eec8b3;
     border-color: #e3a888;
 }
+.card.primary-custom {
+    background-color: #e8c7b5 !important;
+    border-color: #deb29a !important;
+}
+
 
 .web_title {
     color: #d54d7b;

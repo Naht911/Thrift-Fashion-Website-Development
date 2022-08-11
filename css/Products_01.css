@@ -56,6 +56,141 @@
 .active{
     background: rgb(241, 53, 53);
 }
+.Selling{
+    text-align: center;
+    font-family:"Poppins";
+    margin-top: 10px;
+    padding: 20px 10px;
+}
+.total_selling li {
+    list-style: none 
+}
+.total_selling a{
+    text-decoration: none;
+
+}
+.total_selling{
+    position:relative;
+}
+.total_selling img{
+    border-radius: 5px;
+    
+}
+.menu_selling{
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 30px;
+    
+}
+.menu_selling a{
+    color: rgb(243, 96, 128);
+}
+.img_all{
+    width: 50px;
+    border-radius: 50%;
+    background-color:  none;
+}
+.container_all{
+    background-color: none;
+}
+.img_all img{
+    float: left;
+}
+/* body{
+    background: #222225;
+    color: white;
+    margin: 100px auto;
+    } */
+    
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+    
+    
+.rating > input{
+     display:none;
+}
+    
+.rating > label {
+    position: relative;
+    width: 1.1em;
+    font-size: 40px;
+    color: #FFD700;
+    cursor: pointer;
+}
+    
+.rating > label::before{
+    content: "\2605";
+    position: absolute;
+    opacity: 0;
+}
+    
+.rating > label:hover:before,
+.rating > label:hover ~ label:before {
+    opacity: 1 !important;
+}
+    
+.rating > input:checked ~ label:before{
+    opacity:1;
+    }
+    
+.rating:hover > input:checked ~ label:before{ 
+    opacity: 0.4; 
+}
+.products-content-right-products-name{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.msp, .products-content-right-products-price{
+
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height:normal;
+    padding: 5px 5px;
+    
+}
+.products-content-right-products-price{
+    color: rgb(237, 71, 71);
+    margin-top: 20px;
+}
+
+.products-content-right-products-Quantity{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.products-content-right-products-Quantity input{
+    width: 60px;
+    border-radius: 5px;
+    border: none;
+}
+.products-content-right-products-button{
+    width: 100px;
+    text-align: center;
+    padding: 20px 20px;
+}
+.products-content-right-products-button a{
+    width: 100px;
+    display: flex;
+}
+.product_des{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 30px 20px;
+}
+.product_h3{
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace
+}
+.product_p{
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+    
+
+    
 @keyframes slideLeft{
     0%{
         transform: translateX(100%);
