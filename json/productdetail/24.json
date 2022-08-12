@@ -1,0 +1,14 @@
+{
+    "id": 24,
+    "name": "Ella Moss",
+    "description": "Chic pair of lightweight, textured, slim leg pants from Ella Moss in black with the style name Serena featuring a pleated waistband and side zip closure.\n These pants are a women's size XS and measures 15 across the waist laid flat with an inseam of 28 and a rise of 10. \n These pants are made of a polyester and spandex blend crepe and are new and unused with the tag still attached.\n Original retail $178.",
+    "price": 150,
+    "image":["quan6.webp","quan6_1.webp","quan6_2.webp","quan6_3.wevp","quan6_4.webp"],
+    "isSale": true,
+    "saleOff": "70%",
+    "quantity": 50,
+    "quality": "70%",
+    "rating": 5,
+    "ratingCount": 50,
+    "category": "4"
+}

@@ -1,0 +1,14 @@
+{
+    "id": 25,
+    "name": "Molsion Eyewear",
+    "description": "For busy young people who are always looking for the perfect balance between work and personal life, MOLSION offers Rylan frames, designed with professional office style but with flexible and durable properties. suitable for all activities of the day. The combination of alloy and acetate resin brings lightness and comfort to the frame so that the owner's experience is raised to a new level.\n Glass bezel material: Alloy \n Glass body material: Acetate \n Glasses style: Polygonal eye \n Dimensions: 53 - 18 - 147 mm (lens length - bridge - lens).",
+    "price": 800,
+    "image":["kinh1.webp","kinh1_1.webp","kinh1_2.webp"],
+    "isSale": true,
+    "saleOff": "70%",
+    "quantity": 50,
+    "quality": "70%",
+    "rating": 5,
+    "ratingCount": 50,
+    "category": "5"
+}

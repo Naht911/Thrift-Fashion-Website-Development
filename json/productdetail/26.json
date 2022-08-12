@@ -1,0 +1,14 @@
+{
+    "id": 26,
+    "name": "CON",
+    "description": "Classy, classy eyewear for the discerning gentleman \n - Products include: 1 glasses + 1 glasses case + cleaning cloth + brand card \n - Color: black, water spinach green, tea brown \n - Dimensions: 55mm x 20mm \n - Frames are designed with 3-layer electrostatically plated multi-element alloy. Anti-oxidation in all environments \n - Lenses are made of high-grade lenses with UV protection, glare removal, shatterproof, scratch-resistant to help you see more clearly when on the road. ",
+    "price": 800,
+    "image":["kinh2.jpg","kinh2_1.jpg","kinh2_2.jpg","kinh2_3.jpg","kinh2_4.jpg"],
+    "isSale": true,
+    "saleOff": "70%",
+    "quantity": 50,
+    "quality": "70%",
+    "rating": 5,
+    "ratingCount": 50,
+    "category": "5"
+}

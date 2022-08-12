@@ -1,0 +1,14 @@
+{
+    "id": 23,
+    "name": "Nau Organic ",
+    "description": "This is a pair of women's pants made by Nau in a size 6.\n The pants are brown and feature a denim fabric, a zip-up and button front closure, and a classic 5-pocket layout. \n These pants measure about 16 across the waist with a 29.5 inseam and a 7.75 rise when laid flat. They were made in Thailand of 100% cotton for the body and a 97/3 cotton/spandex blend for the trim. \n The garment is in very good pre-owned condition. ",
+    "price": 800,
+    "image":["quan5.webp","quan5_1.webp","quan5_2.webp","quan5_3.webp","quan5_4."],
+    "isSale": true,
+    "saleOff": "70%",
+    "quantity": 50,
+    "quality": "70%",
+    "rating": 5,
+    "ratingCount": 50,
+    "category": "4"
+}

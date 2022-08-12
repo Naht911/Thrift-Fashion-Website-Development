@@ -1,0 +1,14 @@
+{
+    "id": 19,
+    "name": "Classic Fit",
+    "description": "This is a pair of women's Classic Fit pants made by Charter Club in a size 10. \n The pants are black and feature two front slash pockets, a zip-up, hook and loop, and button front closure, and two back button-up pockets.  \n They measure approximately 16 across the waist with a 27 inseam and a 29.5 inseam, and 9.5 rise when laid flat. \n These pants were made in Vietnam and are made of a 97/3 cotton/spandex blend for the body and an 83/17 nylon/spandex blend for the panel. \n The garment comes in good pre-owned condition. ",
+    "price": 800,
+    "image":["quan1.webp","quan1_1.webp","quan1_2.webp","quan1_3.webp","quan1_4.webp"],
+    "isSale": true,
+    "saleOff": "70%",
+    "quantity": 50,
+    "quality": "70%",
+    "rating": 5,
+    "ratingCount": 50,
+    "category": "3"
+}

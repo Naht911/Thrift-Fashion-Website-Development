@@ -1,0 +1,14 @@
+{
+    "id": 14,
+    "name": "Florsheim",
+    "description": "This is a pair of men's Oxford dress shoes from Florsheim in size 9. \n They are dark brown and feature a square toe, lace-up closure, and a low-top ankle. \n Each one of the shoes measures about 11.75 heel to toe and 4.5 across the ball of the foot. They were made in India with leather and man-made materials. \n These shoes are in very good pre-owned condition, the only signs of wear are some small creases in the leather out near the toes.",
+    "price": 1.500,
+    "image":["giay2.webp","giay2_1.webp","giay2_2.webp","giay2_3.webp","giay2_4.webp"],
+    "isSale": true,
+    "saleOff": "70%",
+    "quantity": 50,
+    "quality": "70%",
+    "rating": 5,
+    "ratingCount": 50,
+    "category": "3"
+}

@@ -1,0 +1,14 @@
+{
+    "id": 17,
+    "name": "Florsheim in Men's",
+    "description": "This is a pair of unique dress shoes made by Florsheim in Men's size 7 1/2 Wide/D fit.\n They are burgundy/brown and feature a wooden under-sole & heel, stitched & imprinted patterns and a cut leather flap with a double tassle stringed to front. This pair also comes in with fitted, vintage metal & wooden shoe horns. \n They were made in India with leather and wooden materials. \n The shoes measure 11 from heel to toe, 4 at the ball of foot and 3 1/2 up the shaft of the heel. \n These dress shoes come in good pre-owned condition with slight scuffs here and there and a slightly worn under-sole.",
+    "price": 800,
+    "image":["giay5.webp","giay5_1.webp","giay5_2.webp","giay5_3.webp","giay5_4.webp"],
+    "isSale": true,
+    "saleOff": "70%",
+    "quantity": 50,
+    "quality": "70%",
+    "rating": 5,
+    "ratingCount": 50,
+    "category": "3"
+}
