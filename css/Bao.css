@@ -11,7 +11,8 @@ input.mFormCustom {
     font-size: 16px;
     width: 100%;
     border-radius: 10px;
-   
+  outline:none;
+   padding-left:20px;
     border: 1px solid #ccc;
     height: 60px;
     margin-bottom: 30px;
@@ -26,6 +27,9 @@ textarea.mFormCustom {
     border: 1px solid #ccc;
     height: 60px;
     margin-bottom: 30px;
+   padding-left:20px;
+   padding-top:20px;
+outline:none;
   
 }
 
@@ -56,4 +60,8 @@ div.addr{
     height: 100%;
     
 
-};
+}
+
+.text-center{
+    
+}
