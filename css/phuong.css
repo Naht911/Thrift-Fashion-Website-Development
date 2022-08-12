@@ -1,12 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
-.fixmargin{
-  padding: 0 !important;
-  margin: 0 !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-
-}
-.snip1552 {
+.bestSeller {
   height: 95%;
   max-height: 500px;
   font-family: 'Source Sans Pro', sans-serif;
@@ -23,20 +16,20 @@
   background-color: #fff;
 }
 
-.snip1552 * {
+.bestSeller * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.45s ease;
   transition: all 0.45s ease;
 }
 
-.snip1552 img {
+.bestSeller img {
   vertical-align: top;
   max-width: 100%;
   backface-visibility: hidden;
 }
 
-.snip1552 figcaption {
+.bestSeller figcaption {
   position: absolute;
   top: 40px;
   bottom: 40px;
@@ -46,14 +39,14 @@
   bottom: 0;
 }
 
-.snip1552 h3,
-.snip1552 p {
+.bestSeller h3,
+.bestSeller p {
   margin: 0;
   opacity: 0;
   letter-spacing: 1px;
 }
 
-.snip1552 h3 {
+.bestSeller h3 {
   text-align: center;
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
@@ -63,7 +56,7 @@
   margin-bottom: 5px;
 }
 
-.snip1552 p {
+.bestSeller p {
   font-weight: normal;
   font-style: italic;
   color: #888;
@@ -73,7 +66,7 @@
   transform: translateX(-25px);
 }
 
-.snip1552 a {
+.bestSeller a {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -82,15 +75,15 @@
   z-index: 1;
 }
 
-.snip1552:hover > img,
-.snip1552.hover > img {
+.bestSeller:hover > img,
+.bestSeller.hover > img {
   opacity: 0.1;
 }
 
-.snip1552:hover h3,
-.snip1552.hover h3,
-.snip1552:hover p,
-.snip1552.hover p {
+.bestSeller:hover h3,
+.bestSeller.hover h3,
+.bestSeller:hover p,
+.bestSeller.hover p {
   -webkit-transform: translateY(0);
   transform: translateY(0);
   opacity: 1;
@@ -120,7 +113,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Slabo+27px);
 @import url(https://fonts.googleapis.com/css?family=Lato);
-.snip1523 {
+.onSale {
   max-height: 300px;
   font-family: 'Lato', sans-serif;
   position: relative;
@@ -135,20 +128,20 @@
   background-color: #1A1A1A;
 }
 
-.snip1523 * {
+.onSale * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.45s ease;
   transition: all 0.45s ease;
 }
 
-.snip1523 img {
+.onSale img {
   vertical-align: top;
   max-width: 100%;
   backface-visibility: hidden;
 }
 
-.snip1523 figcaption {
+.onSale figcaption {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -163,31 +156,31 @@
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
 
-.snip1523 h2,
-.snip1523 h3,
-.snip1523 p {
+.onSale h2,
+.onSale h3,
+.onSale p {
   margin: 0;
 }
 
-.snip1523 h2,
-.snip1523 h3 {
+.onSale h2,
+.onSale h3 {
   font-family: 'Slabo 27px', serif;
   line-height: 1.2em;
 }
 
-.snip1523 h2 {
+.onSale h2 {
   font-size: 1.9em;
   color: #35ADF9;
 }
 
-.snip1523 h3 {
+.onSale h3 {
   color: #EBEBEB;
   font-size: 1.3em;
   font-weight: normal;
   letter-spacing: 1px;
 }
 
-.snip1523 p {
+.onSale p {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 0.9em;
   margin-top: 12px;
@@ -195,7 +188,7 @@
   line-height: 1.5em;
 }
 
-.snip1523 a {
+.onSale a {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -204,14 +197,14 @@
   z-index: 1;
 }
 
-.snip1523:hover > img,
-.snip1523.hover > img {
+.onSale:hover > img,
+.onSale.hover > img {
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
 }
 
-.snip1523:hover figcaption,
-.snip1523.hover figcaption {
+.onSale:hover figcaption,
+.onSale.hover figcaption {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
 }
