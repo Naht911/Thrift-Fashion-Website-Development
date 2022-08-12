@@ -71,6 +71,10 @@ body{
     margin-left: 40px;
 }
 
+#name_type:hover {
+    width: 210px;
+}
+
 #saveName {
     padding: 0;
     max-width: 200px;

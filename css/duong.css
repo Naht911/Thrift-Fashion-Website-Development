@@ -39,10 +39,6 @@ body {
     z-index: -1;
 }
 
-.btn-primary-custom:hover {
-    color:#d54d7b;
-}
-
 .primary-custom {
     background-color: #e9d5ca !important;
     border-color: #deb29a !important;
