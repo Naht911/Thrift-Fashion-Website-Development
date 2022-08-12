@@ -40,8 +40,7 @@ body {
 }
 
 .btn-primary-custom:hover {
-    background-color: #eec8b3;
-    border-color: #e3a888;
+    color:#d54d7b;
 }
 
 .primary-custom {
