@@ -1,76 +1,80 @@
 div.mFormCustom {
-    /* width: 100%; */
-    background-color: bisque;
-    height:auto;
-    border-radius: 10px;
-    box-shadow: 3px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  /* width: 100%; */
+  background-color: bisque;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 3px 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 input.mFormCustom {
-    /* margin-top: 1%; */
-    font-size: 16px;
-    width: 100%;
-    border-radius: 10px;
-  outline:none;
-   padding-left:20px;
-    border: 1px solid #ccc;
-    height: 60px;
-    margin-bottom: 30px;
-   
+  /* margin-top: 1%; */
+  font-size: 16px;
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+  padding-left: 20px;
+  border: 1px solid #ccc;
+  height: 60px;
+  margin-bottom: 30px;
+
 }
 
 textarea.mFormCustom {
-    margin-top: 1%;
-    font-size: 16px;
-    width: 100%;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    height: 60px;
-    margin-bottom: 30px;
-   padding-left:20px;
-   padding-top:20px;
-outline:none;
-  
+  margin-top: 1%;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  height: 60px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  padding-top: 20px;
+  outline: none;
+
 }
 
 form.mFormCustom {
-    font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .card.mCardCustom {
-    background-color: transparent;
-    border: none;
-    color: black;
-    
+  background-color: transparent;
+  border: none;
+  color: black;
 
-   
+
+
 }
 
 img.contact {
-    max-width: 100%;
-    margin-top: 45px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /* margin-top: auto; */
-}
-div.addr{
-    background-color:#ccc;
-    width: 100%;
-    height: 100%;
-    
-
+  max-width: 100%;
+  margin-top: 45px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-top: auto; */
 }
 
-.huchua-icon{
- position:relative;
+div.addr {
+  background-color: #ccc;
+  width: 100%;
+  height: 100%;
 
-};
-.link-icon{
-    position:absolute;
-    bottom:0;
-    left:0;
-   
+
+}
+
+.huchua-icon {
+  position: relative;
+
+}
+
+;
+
+.link-icon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
 }
 
 
@@ -78,41 +82,64 @@ div.addr{
 
 .mContactLink a {
 
-    color: black;
-    position: relative;
+  color: black;
+  position: relative;
 
-    text-decoration: none;
-  }
+  text-decoration: none;
+}
 
-  .mContactLink a:before,
-  .mContactLink a:after {
-    position: absolute;
-    -webkit-transition: all 0.35s ease;
-    transition: all 0.35s ease;
-  }
-  .mContactLink a:before {
+.mContactLink a:before,
+.mContactLink a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
 
-    display: block;
-    height: 3px;
-    width: 0%;
-    content: "";
-    background-color: #d54d7b;
-  }
-  .mContactLink a:after {
+.mContactLink a:before {
 
-    content: attr(data-hover);
-    color: #393434;
-    white-space: nowrap;
-    max-width: 0%;
-    overflow: hidden;
-  }
-  .mContactLink a:hover:before,
-  .mContactLink .current a:before {
-    opacity: 1;
-    width: 100%;
-  }
-  .mContactLink a:hover:after,
-  .mContactLink .current a:after {
-    max-width: 100%;
-  }
-  
+  display: block;
+  height: 3px;
+  width: 0%;
+  content: "";
+  background-color: #d54d7b;
+}
+
+.mContactLink a:after {
+
+  content: attr(data-hover);
+  color: #393434;
+  white-space: nowrap;
+  max-width: 0%;
+  overflow: hidden;
+}
+
+.mContactLink a:hover:before,
+.mContactLink .current a:before {
+  opacity: 1;
+  width: 140%;
+}
+
+.mContactLink a:hover:after,
+.mContactLink .current a:after {
+  max-width: 100%;
+}
+
+.icon-about {
+  border: 10px solid black;
+  border-radius: 100%;
+  width: 250px;
+  line-height: 285px;
+  margin: auto;
+  height: 250px;
+}
+
+.mCutom-icon {
+  margin: 0 50px;
+  font-size: 100px;
+  line-height: 250px
+}
+
+.mAboutInfo {
+  letter-spacing: 2px;
+  font-size: 20px;
+}
