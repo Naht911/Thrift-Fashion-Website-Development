@@ -89,10 +89,10 @@
 
 .snip1512:hover img,
 .snip1512.hover img {
-  zoom: 1;
-  filter: alpha(opacity=30);
-  -webkit-opacity: 0.3;
-  opacity: 0.3;
+  zoom: 0.8;
+  filter: alpha(opacity=80);
+  -webkit-opacity: 0.75;
+  opacity: 0.;
   -webkit-transform: translateY(-40px);
   transform: translateY(-40px);
 }

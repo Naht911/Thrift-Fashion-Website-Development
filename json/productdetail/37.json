@@ -1,0 +1,15 @@
+{
+    "id": 37,
+    "name": "fashion earrings",
+    "description": "This is a pair of women's fashion earrings.\n They are black and white with an animal print pattern and feature a hoop/loop style with an open end, and a smooth texture. \n Each hoop measures approximately 2 in diameter. \n They are in very good pre-owned condition.",
+    "price": 200,
+    "image":["trangsuc4.webp","trangsuc4_1.webp","trangsuc4_2.webp","trangsuc4_3.webp","trangsuc4_4.webp"],
+    "isSale": true,
+    "saleOff": "20%",
+    "quantity": 50,
+    "quality": "70%",
+    "rating": 5,
+    "ratingCount": 50,
+    "bestSelling": false,
+    "category": "6"
+}
