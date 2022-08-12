@@ -4,7 +4,9 @@
     {"id": "2", "name": "Shirt"},
     {"id": "3", "name": "Shoes"},
     {"id": "4", "name": "Pants"},
-    {"id": "5", "name": "Glasses"}
+    {"id": "5", "name": "Glasses"},
+    {"id": "6", "name": "Earrings"},   
+    {"id": "10", "name": "Bag"}    
 ]
 
 }
