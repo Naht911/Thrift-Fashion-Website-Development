@@ -1,236 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="Description" content="Enter your description here" />
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- <script src="js/Tri.js"></script> -->
-    <link rel="stylesheet" href="/css/style.css" />
-    <title>Title</title>
-  </head>
+<html lang="en" ng-app="myApp" ng-controller="myController">
 
-  <body ng-app="myApp" ng-controller="myController">
-    <nav class="navbar navbar-expand-sm navbar-light fixed-top nav-custom">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#!/">Thrift Fashion</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mynavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mynavbar">
-          <ul class="navbar-nav me-auto mNavLinkEff">
-            <li class="nav-item">
-              <a class="nav-link" data-hover="Product" href="#!prod">Product</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-hover="About Us" href="#!ab">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-hover="Contact Us" href="#!contact"
-                >Contact Us</a
+<head >
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta name="Description" content="Enter your description here" />
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-resource.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+	<link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+	<link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- <script src="js/Tri.js"></script> -->
+	<link rel="stylesheet" href="/css/style.css" />
+	<title ng-bind="'Thrift Fashion - ' + title">Thrift Fashion - Home</title>
+</head>
+
+<body >
+	<nav class="navbar navbar-expand-sm navbar-light fixed-top nav-custom">
+		<div class="container-fluid"> <a class="navbar-brand" href="#!/">Thrift Fashion</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar"> <span class="navbar-toggler-icon"></span> </button>
+			<div class="collapse navbar-collapse" id="mynavbar">
+				<ul class="navbar-nav me-auto mNavLinkEff">
+					<li class="nav-item"> <a class="nav-link" data-hover="Product" href="#!prod">Product</a> </li>
+					<li class="nav-item"> <a class="nav-link" data-hover="About Us" href="#!ab">About Us</a> </li>
+					<li class="nav-item"> <a class="nav-link" data-hover="Contact Us" href="#!contact">Contact Us</a
               >
             </li>
           </ul>
           <ul class="navbar-nav">
             <form class="d-flex">
               <li class="nav-item">
-                <a href="#!cart" class="nav-link"
-                  ><button class="btn btn-primary-custom" type="button">
-                    <i class="fa-solid fa-cart-shopping"></i></button
-                ></a>
-              </li>
-            </form>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <div ng-view style="margin-top: 50px"></div>
-    <script src="/js/qui.js"></script>
-    <script>
-      var app = angular.module("myApp", ["ngRoute"]);
-      app.controller("myController", function ($scope, $rootScope) {
-        $scope.saveName = function () {
-          $scope.hideForm = !$scope.hideForm;
-        };
-
-        $scope.checkvalues = function (user) {
-          var category_id = $('input[name="category_id"]:checked').val();
-          console.log(category_id);
-          if (category_id) {
-            return user.category == category_id;
-          }
-          return user.category != 0;
-        };
-      });
-      app.config(function ($routeProvider) {
-        $routeProvider
-          .when("/", {
-            templateUrl: "home.html",
-          })
-          .when("/prod", {
-            templateUrl: "Product.html",
-          })
-          .when("/product/:id", {
-            templateUrl: "productDetail.html",
-          })
-          .when("/ab", {
-            templateUrl: "AboutUS.html",
-          })
-          .when("/cart", {
-            templateUrl: "Cart.html",
-          })
-          .when("/contact", {
-            templateUrl: "ContactUS.html",
-          })
-          .otherwise({
-            redirectTo: "/",
-          });
-      });
-
-      // $routeProvider
-      app.run(function ($rootScope, $http) {
-        $http.get("json/category.json").then(function (rsp) {
-          $rootScope.list = rsp.data.category;
-        });
-      });
-      app.run(function ($rootScope, $http) {
-        $http.get("json/products.json").then(function (rsp) {
-          $rootScope.data = rsp.data;
-
-          // console.log($rootScope.data);
-        });
-      });
-      
-      app.run(function ($rootScope, $http) {
-        $http.get("json/products.json").then(function (rsp) {
-          
-          var obj = rsp.data;
-          $rootScope.dataBest = [];
-           for (const key in obj) {
-            
-            if(obj[key].bestSelling==true){
-              $rootScope.dataBest.push(obj[key])
-            }
-           }
-           console.log($rootScope.dataBest)
-        });
-      });
-      app.run(function ($rootScope, $http) {
-        $http.get("json/products.json").then(function (rsp) {
-          
-          var obj = rsp.data;
-          $rootScope.dataSale = [];
-          var i = 0;
-           for (const key in obj) {
-            
-            if(obj[key].isSale==true && i < 6){
-              i++;
-              $rootScope.dataSale.push(obj[key])
-            }
-           }
-           console.log($rootScope.dataSale)
-        });
-      });
-
-      $(".hover").mouseleave(function () {
-        $(this).removeClass("hover");
-      });
-    </script>
-
-      <footer style="margin-bottom: 25px;">
-      <div class="container footer">
-        <hr>
-          <div class="row">
-              <div class="col-sm-4">
-                  <div class="contact infor">
-                      <h3 class="text-center">Contact US</h3>
-                      <br>
-                      <div class="inforBox">
-                          <div>
-                              <span><i class="fa-solid fa-earth-americas iconmoi"></i></span>Cannaught Palace, New
-                              Delhi,
-                              VietNam
-                          </div>
-                          <div>
-                              <span><i class="fa-solid fa-envelope iconmoi"></i></span><a
-                                  href="mailto:aptech.fpt@fe.edu.vn">aptech.fpt@fe.edu.vn</a>
-                          </div>
-                          <div>
-                              <span><i class="fa-solid fa-phone iconmoi"></i></span><a href="tel:+84352074902">+098
-                                  157 89
-                                  20</a>
-                          </div>
-                          <div>
-                              <span><i class="fa-solid fa-business-time iconmoi"></i></span>6:00 AM- 22:00 PM Everyday
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-sm-4">
-                  <h3 class="text-center">Usefull link</h3>
-                  <br>
-                  <div class="footer-usefullLink ">
-                      <i class="fa-solid fa-box-open iconmoi"></i><a href="#!prod">Product</a><br>
-                      <i class="fa-solid fa-circle-info iconmoi"></i><a href="#!ab">About Us</a><br>
-                      <i class="fa-solid fa-inbox iconmoi"></i></i><a href="#!contact">Contact Us</a>
-                  </div>
-              </div>
-              <div class="col-sm-4">
-                  <div class="footer-map text-center">
-                      <iframe class="footer-mapmap"
-                          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15677.2773997461!2d106.6662743!3d10.7868348!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd2ecb62e0d050fe9!2sFPT-Aptech%20Computer%20Education%20HCM!5e0!3m2!1sen!2s!4v1660183373398!5m2!1sen!2s"
-                          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  </div>
-                  <div style="margin-top: 10px;">
-                      <h3 class="text-center">Connect US</h3>
-                      <div class="footer-connectUs">
-                        <div class="container-fluid link-outsite text-center">
-
-                          <a href="https://www.facebook.com/aptech.fpt"><i
-                                  class="fa-brands fa-facebook icon-social"></i></a>
-                          <a href="https://twitter.com"><i class="fa-brands fa-twitter icon-social"></i></a>
-                          <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin-in icon-social"></i></a>
-                          <a href="https://www.instagram.com"><i
-                                  class="fa-brands fa-instagram-square icon-social"></i></a>
-                        </div>
-                          
-                      </div>
-                  </div>
-              </div>
+                <a href="#!cart" class="nav-link">
+                  <button class="btn btn-primary-custom" type="button"><i class="fa-solid fa-cart-shopping"></i></button>
+                </a> </li>
+					</form>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div ng-view style="margin-top: 100px"></div>
+	<script src="/js/app.js"></script>
+	<footer style="margin-bottom: 25px;">
+		<div class="container footer">
+			<hr>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="contact infor">
+						<h3 class="text-center">Contact US</h3>
+						<br>
+						<div class="inforBox">
+							<p> <span><i class="fa-solid fa-earth-americas iconmoi"></i></span>Cannaught Palace, New Delhi, VietNam </p>
+							<p> <span><i class="fa-solid fa-envelope iconmoi"></i></span><a href="mailto:aptech.fpt@fe.edu.vn">aptech.fpt@fe.edu.vn</a> </p>
+							<p> <span><i class="fa-solid fa-phone iconmoi"></i></span><a href="tel:+84352074902">+098                                 157 89                                  20</a> </p>
+							<p> <span><i class="fa-solid fa-business-time iconmoi"></i></span>6:00 AM- 22:00 PM Everyday </p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<h3 class="text-center">Usefull link</h3>
+					<br>
+					<div class="footer-usefullLink "> 
+            <p><a href="#!prod"><i class="fa-solid fa-box-open iconmoi"></i>Product</a></p>
+            <p><a href="#!ab"><i class="fa-solid fa-circle-info iconmoi"></i>About Us</a></p>
+            <p><a href="#!contact"><i class="fa-solid fa-inbox iconmoi"></i>Contact Us</a> </p>  
           </div>
-      </div>
-      </div>
-  </footer>
+				</div>
+				<div class="col-sm-4">
+					<div class="footer-map text-center">
+						<iframe class="footer-mapmap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15677.2773997461!2d106.6662743!3d10.7868348!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd2ecb62e0d050fe9!2sFPT-Aptech%20Computer%20Education%20HCM!5e0!3m2!1sen!2s!4v1660183373398!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+					<div style="margin-top: 10px;">
+						<h3 class="text-center">Connect US</h3>
+						<div class="footer-connectUs">
+							<div class="container-fluid link-outsite text-center">
+								<a href="https://www.facebook.com/aptech.fpt"> <i class="fa-brands fa-facebook icon-social"></i> </a>
+								<a href="https://twitter.com"> <i class="fa-brands fa-twitter icon-social"></i> </a>
+								<a href="https://www.linkedin.com"> <i class="fa-brands fa-linkedin-in icon-social"></i> </a>
+								<a href="https://www.instagram.com"> <i class="fa-brands fa-instagram-square icon-social"></i> </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
 
-    
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
-  </body>
 </html>
