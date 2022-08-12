@@ -1,9 +1,6 @@
-#cart-container {
+.cart-container {
     width: 70%;
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
+    box-sizing: border-box;
 }
 
 @media (min-width: 576px) {
@@ -14,15 +11,30 @@
     }
 }
 
+.item-container {
+    background-color: rgb(255, 230, 230);
+}
+
+#a {
+    background-color: rgb(222, 222, 255);
+}
+
 .btn-remove {
     color: #A91101;
     margin-top: 40px;
     text-decoration: none;
 }
 
-#item-title {
+.item-title {
     display: flex;
     flex-direction: column;
+    padding-left: 20px;
+}
+
+.item-quantity {
+    width: 50px;
+    background-color: rgb(255, 230, 230);
+    border: none;
 }
 
 .btn-coupon-add {
@@ -43,8 +55,8 @@
 }
 
 .btn-checkOut {
-    width: 278px;
-    height: 58px;
+    width: 100%;
+    height: 70px;
     font-size: 23px;
     border-radius: 3px;
     background-color: #EFB24C;
@@ -56,12 +68,13 @@
 
 .btn-keepShopping {
     border-radius: 3px;
-    color: rgb(2, 130, 130);
+    color: rgb(3, 147, 147);
     text-decoration: dashed;
+    font-size: 1.25rem;
 }
 
 .btn-keepShopping:hover {
-    color: #EFB24C;
+    color: #100a00;
 }
 
 #add:hover {
@@ -69,6 +82,9 @@
 }
 
 .btn-remove:hover {
-    color: #EFB24C;
+    color: #080500;
     width: 110%;
+}
+.text-bonus {
+    margin-top: 400px;
 }
