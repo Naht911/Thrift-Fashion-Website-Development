@@ -46,10 +46,10 @@
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4" ng-repeat="s in dataSale ">
           <figure class="onSale">
-            <img src="IMG/prod/{{s.image}}" alt="sample85" />
+            <img src="IMG/prod/{{s.image}}" >
             <figcaption>
-              <h2>{{s.name}}</h2>
-              <p>{{s.description}}</p>
+              <h2>{{s.name}}</h2><br>
+              <span>{{s.description}}</span>
             </figcaption>
             <a href="#!product/{{s.id}}"></a>
           </figure>

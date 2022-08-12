@@ -110,32 +110,40 @@
 }
 
 
-
-@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
-@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Monsterrat:400,700;);
 .onSale {
-  max-height: 400px;
-  font-family: 'Lato', sans-serif;
-  position: relative;
-  overflow: hidden;
+  height: 350px;
+  background-color: #222222;
+  color: #ffffff;
+  font-family: 'Monsterrat', sans-serif;
+  font-size: 16px;
   margin: 10px;
   min-width: 130px;
   max-width: 500px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
   width: 100%;
-  color: #ffffff;
-  text-align: left;
-  font-size: 16px;
-  /* background-color: #1A1A1A; */
 }
-
 .onSale img{
-  max-height: 315px;
+  height: 350px;
   width: 100%;
 }
-
 .onSale * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.onSale:after {
+  background-color: #B46E3C;
+  bottom: 0;
+  content: '';
+  height: 0%;
+  right: 0;
+  position: absolute;
+  width: 10px;
   -webkit-transition: all 0.45s ease;
   transition: all 0.45s ease;
 }
@@ -152,45 +160,26 @@
   bottom: 0;
   left: 0;
   right: 0;
+  align-items: center;
   z-index: 1;
-  padding: 30px;
-  background-color: #202123;
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-}
-
-.onSale h2,
-.onSale h3,
-.onSale p {
-  margin: 0;
-}
-
-.onSale h2,
-.onSale h3 {
-  font-family: 'Slabo 27px', serif;
-  line-height: 1.2em;
-}
-
-.onSale h2 {
-  font-size: 1.9em;
-  color: #35ADF9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1em;
+  opacity: 0;
 }
 
 .onSale h3 {
-  color: #EBEBEB;
-  font-size: 1.3em;
-  font-weight: normal;
+  font-size: 1em;
+  font-weight: 400;
   letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
 }
 
-.onSale p {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 0.9em;
-  margin-top: 12px;
-  padding: 12px 0 15px;
-  line-height: 1.5em;
+.onSale h3 span {
+  display: block;
+  font-weight: 700;
 }
 
 .onSale a {
@@ -204,12 +193,15 @@
 
 .onSale:hover > img,
 .onSale.hover > img {
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
+  opacity: 0.1;
+}
+
+.onSale:hover:after,
+.onSale.hover:after {
+  height: 100%;
 }
 
 .onSale:hover figcaption,
 .onSale.hover figcaption {
-  -webkit-transform: translateX(0%);
-  transform: translateX(0%);
+  opacity: 1;
 }
