@@ -47,6 +47,7 @@
 }
 
 .bestSeller h3 {
+  color: #d54d7b;  
   text-align: center;
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
@@ -59,7 +60,7 @@
 .bestSeller p {
   font-weight: normal;
   font-style: italic;
-  color: #888;
+  color: rgb(135, 135, 135);
   font-size: 1.3em;
   padding-left: 15px;
   -webkit-transform: translateX(-25px);
@@ -129,6 +130,12 @@
   height: 350px;
   width: 100%;
 }
+.onSale h2{
+  color: #e34479;
+}
+.onSale span{  
+  color: rgb(204, 204, 204);
+}
 .onSale * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -137,7 +144,8 @@
 }
 
 .onSale:after {
-  background-color: #B46E3C;
+  background-color:#d54d7b;  
+  ;
   bottom: 0;
   content: '';
   height: 0%;
