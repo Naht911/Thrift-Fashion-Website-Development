@@ -125,6 +125,38 @@
           // console.log($rootScope.data);
         });
       });
+      
+      app.run(function ($rootScope, $http) {
+        $http.get("json/products.json").then(function (rsp) {
+          
+          var obj = rsp.data;
+          $rootScope.dataBest = [];
+           for (const key in obj) {
+            
+            if(obj[key].bestSelling==true){
+              $rootScope.dataBest.push(obj[key])
+            }
+           }
+           console.log($rootScope.dataBest)
+        });
+      });
+      app.run(function ($rootScope, $http) {
+        $http.get("json/products.json").then(function (rsp) {
+          
+          var obj = rsp.data;
+          $rootScope.dataSale = [];
+          var i = 0;
+           for (const key in obj) {
+            
+            if(obj[key].isSale==true && i < 6){
+              i++;
+              $rootScope.dataSale.push(obj[key])
+            }
+           }
+           console.log($rootScope.dataSale)
+        });
+      });
+
       $(".hover").mouseleave(function () {
         $(this).removeClass("hover");
       });

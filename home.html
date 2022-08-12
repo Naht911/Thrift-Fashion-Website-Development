@@ -30,128 +30,28 @@
     <hr style="height: 2px;">
       <h2 class="head2">BEST SELLER</h2>
       <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="col-sm-12 col-md-6 col-lg-4" ng-repeat="d in dataBest">
               <figure class="bestSeller">
-                  <img src="img/prod/kinh1.webp" class="ImageH">
+                  <img src="/img/prod/{{d.image}}" class="ImageH">
                   <figcaption class="fig">
-                    <h3>Molsion eyewear</h3>
-                    <p>Suitable for men and women from any age, easy to wear, light and durable</p>
+                    <h3>{{d.name}}</h3>
+                    <p>{{d.description}}</p>
                   </figcaption>
-                  <a href="#"></a>
-                </figure>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4">
-              <figure class="bestSeller">
-                  <img src="img/prod/aosomi1.webp" class="ImageH">
-                  <figcaption class="fig">
-                    <h3>Long-sleeve</h3>
-                    <p>Men's gray long-sleeved shirt suitable for height over 1m7 and from 65-80kg</p>
-                  </figcaption>
-                  <a href="#"></a>
-                </figure>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4">
-              <figure class="bestSeller">
-                  <img src="img/prod/daynich1.jpg" class="ImageH">
-                  <figcaption class="fig">
-                    <h3>Express Nickel Buckle</h3>
-                    <p>Leather belt with no holes. Perfect fit for everyone</p>
-                  </figcaption>
-                  <a href="#"></a>
-                </figure>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4">
-              <figure class="bestSeller">
-                  <img src="img/prod/aosomi2.webp" class="ImageH">
-                  <figcaption class="fig">
-                    <h3>St John's Bay Shirt</h3>
-                    <p>St John's Bay Shirt Long Sleeve Plaid Brown White Green Button Down Men's Size L</p>
-                  </figcaption>
-                  <a href="#"></a>
-                </figure>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4">
-              <figure class="bestSeller">
-                  <img src="img/prod/non3_2.jpeg" class="ImageH">
-                  <figcaption class="fig">
-                    <h3>MLB Roockie Ball</h3>
-                    <p>NEW BACK MLB Rookie Ball Cap LA Dodgers Green</p>
-                  </figcaption>
-                  <a href="#"></a>
-                </figure>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4">
-              <figure class="bestSeller">
-                  <img src="img/prod/non4_1.webp" class="ImageH">
-                  <figcaption class="fig">
-                    <h3>Bucket Futura Wash</h3>
-                    <p>Suitable men's and women's sports hats HO21-3967</p>
-                  </figcaption>
-                  <a href="#"></a>
+                  <a href="#!product/{{d.id}}"></a>
                 </figure>
           </div>
       </div>
     <hr style="height: 2px;">
       <h2 class="head2">ON SALE</h2>
       <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-sm-12 col-md-6 col-lg-4" ng-repeat="s in dataSale ">
           <figure class="onSale">
-            <img src="IMG/prod/kinh2.jpg" alt="sample85" />
+            <img src="IMG/prod/{{s.image}}" >
             <figcaption>
-              <h2>CON</h2>
-              <p>Classy, classy eyewear for the discerning gentleman. Anti-oxidation in all environments. Lenses are made of high-grade lenses with UV protection, glare removal, shatterproof, scratch-resistant to help you see more clearly when on the road.</p>
+              <h2>{{s.name}}</h2><br>
+              <span>{{s.description}}</span>
             </figcaption>
-            <a href="#"></a>
-          </figure>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <figure class="onSale">
-            <img src="img/prod/trangsuc1.webp" alt="sample85" />
-            <figcaption>
-              <h2>Lot of 2</h2>
-              <p>This is a lot of 2 pairs of pierced earrings. A  pair of copper filigree leaf earrings with 18mm gold-tone hooks and a pair of earrings that features three decorative beads and a rectangular stone at the end of a two-pronged chain and one larger bead at the end of the other</p>
-            </figcaption>
-            <a href="#"></a>
-          </figure>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 top">
-          <figure class="onSale">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample85.jpg" alt="sample85" />
-            <figcaption>
-              <h2>Benjamin Evalent</h2>
-              <p>I'm learning real skills that I can apply throughout the rest of my life ... Procrastinating and rationalizing.</p>
-            </figcaption>
-            <a href="#"></a>
-          </figure>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <figure class="onSale">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample85.jpg" alt="sample85" />
-            <figcaption>
-              <h2>Benjamin Evalent</h2>
-              <p>I'm learning real skills that I can apply throughout the rest of my life ... Procrastinating and rationalizing.</p>
-            </figcaption>
-            <a href="#"></a>
-          </figure>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <figure class="onSale">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample85.jpg" alt="sample85" />
-            <figcaption>
-              <h2>Benjamin Evalent</h2>
-              <p>I'm learning real skills that I can apply throughout the rest of my life ... Procrastinating and rationalizing.</p>
-            </figcaption>
-            <a href="#"></a>
-          </figure>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <figure class="onSale">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample85.jpg" alt="sample85" />
-            <figcaption>
-              <h2>Benjamin Evalent</h2>
-              <p>I'm learning real skills that I can apply throughout the rest of my life ... Procrastinating and rationalizing.</p>
-            </figcaption>
-            <a href="#"></a>
+            <a href="#!product/{{s.id}}"></a>
           </figure>
         </div>
       </div>
