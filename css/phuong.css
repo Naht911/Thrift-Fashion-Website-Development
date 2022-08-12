@@ -1,6 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+.col-sm-12{
+  height: 400px;;
+}
 .snip1552 {
   height: 80%;
+  max-height: 500px;
   font-family: 'Source Sans Pro', sans-serif;
   position: relative;
   display: inline-block;
@@ -99,7 +103,7 @@
 }
 
 
-h2{
+.head2{
   color: #d54d7b;  
   font-family: 'Allan';
   font-style: italic;
@@ -108,9 +112,6 @@ h2{
   font-size: 80px;
 }
 
-.bottom{
-  margin-bottom: -60px;
-}
 
 
 @import url(https://fonts.googleapis.com/css?family=Slabo+27px);
