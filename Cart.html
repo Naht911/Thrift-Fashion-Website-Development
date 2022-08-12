@@ -1,23 +1,80 @@
 <div>
-    <div class="container">
+    <div class="container cart-container">
         <div class="row">
-            <div class="col-sm-8">
+            <div class="col-sm-8 item-container">
                 <div class="item-number" id="number-item">
                     <h2>1 item in your cart</h2>
                 </div>
                 <hr>
                 <div class="row">
-                    <div class="col-sm-2">
-                        <div id="item-image">
-                            <image src="#" width="100px" height="100px">
-                        </div>
+                    <div class="col-sm-2 item-image" >
+                            <img src="/img/prod/{{d.image}}" alt="sample83" />
                     </div>
-                    <div class="col-sm-6">6</div>
-                    <div class="col-sm-2">2</div>
-                    <div class="col-sm-2">2</div>
+                    <div class="col-sm-6 item-title">
+                        <div class="title">
+                            123
+                        </div>
+                        <a href="#" class="btn-remove">Remove</a>
+                    </div>
+                    <div class="col-sm-2">
+                        <input type="number" class="item-quantity" value="1">
+                    </div>
+                    <div class="col-sm-2" class="item-price">
+                        123
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-4">adada</div>
+            <div class="col-sm-4" id="a">
+                <h2>&nbsp;</h2>
+                <hr>
+                <div class="total-cart">
+                    <div class="total-title d-flex flex-row justify-content-between">
+                        <h5>Total:</h5>
+                        <div></div>
+                        <h5 class="total-price">100</h5>
+                    </div>
+                </div>
+                <br>
+                <div class="btn-coupon">
+                    <h7>Coupon Code:</h7>
+                    <input class="btn-coupon-add" type="text"><button id="add" type="button">ADD</button>
+                </div>
+                <div class="btn-end">
+                    <br>
+                    <button class="btn-checkOut">Process to Checkout</button>
+                    <br>
+                    <a href="#" class="btn-keepShopping"><i class="fa-solid fa-angles-left"></i>Keep Shopping</a>
+                </div>
+            </div>
+        </div>
+        <div class="row text-bonus">
+            <div class="col-sm-4">
+                <div class="tup-ui-heading-sm u-ml-2x">Your credit card is safe with us.</div>
+                <p>Shopping on our website is safe and secure. We use a best-in-class third party payment system to
+                    process and
+                    store your payment methods.</p>
+            </div>
+            <div class="col-sm-4">
+                <div class="tup-ui-heading-sm u-ml-2x">We take your privacy seriously.</div>
+                <p>All information is encrypted and transmitted without risk using a Secure Sockets Layer (SSL)
+                    protocol.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <div class="tup-ui-heading-sm u-ml-2x">Only worry-free returns here.</div>
+                <p>If you are unsatisfied with your purchase from thredUP.com for any reason, you may return it in its
+                    original
+                    condition within 14 days. In order to keep our prices low and pass the savings to you, returned
+                    items
+                    are
+                    subject to a $1.99 restocking fee.</p>
+            </div>
         </div>
     </div>
 </div>
+<script>
+
+
+
+
+</script>
