@@ -493,7 +493,53 @@
             "ratingCount": 50,
             "bestSelling": false,
             "category": "10"
+        },
+        {
+            "id": 34,
+            "name": "Lot of 2 ",
+            "description": "Lot of 2 Pairs Dangle Earrings Orange Browns Leaves Fall Statement Fashion Tan",
+            "price": 800,
+            "image":"trangsuc1.webp",
+            "isSale": true,
+            "saleOff": "20%",
+            "quantity": 50,
+            "quality": "70%",
+            "rating": 5,
+            "ratingCount": 50,
+            "bestSelling": true,
+            "category": "6"
+        },
+        {
+            "id": 35,
+            "name": "Lot of 6 ",
+            "description": "Lot of 6 Women's Stud Style Fashion Earrings Gold Tone Love Heart Flower Pink",
+            "price": 800,
+            "image":"trangsuc2.webp",
+            "isSale": true,
+            "saleOff": "20%",
+            "quantity": 50,
+            "quality": "70%",
+            "rating": 5,
+            "ratingCount": 50,
+            "bestSelling": false,
+            "category": "6"
+        },
+        {
+            "id": 36,
+            "name": "Lot of 6 ",
+            "description": "Lot of 6 Women's Stud Style Fashion Earrings Gold Tone Love Heart Flower Pink",
+            "price": 800,
+            "image":"trangsuc3.webp",
+            "isSale": true,
+            "saleOff": "20%",
+            "quantity": 50,
+            "quality": "70%",
+            "rating": 5,
+            "ratingCount": 50,
+            "bestSelling": false,
+            "category": "6"
         }
+       
        
        
        

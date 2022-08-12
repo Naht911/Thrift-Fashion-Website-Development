@@ -1,0 +1,15 @@
+{
+    "id": 34,
+    "name": "Lot of 2 ",
+    "description": "This is a lot of 2 pairs of pierced earrings.\n Included are: \n ~ A  pair of copper filigree leaf earrings with 18mm gold-tone hooks.\n ~ A pair of earrings that features three decorative beads and a rectangular stone at the end of a two-pronged chain and one larger bead at the end of the other. The earrings have a 16mm silver-tone hook.\n These earrings are in very good pre-owned condition.",
+    "price": 200,
+    "image":["trangsuc1.webp","trangsuc1_1.webp","trangsuc1_2.webp","trangsuc1_3.webp","trangsuc1_4.webp"],
+    "isSale": true,
+    "saleOff": "20%",
+    "quantity": 50,
+    "quality": "70%",
+    "rating": 5,
+    "ratingCount": 50,
+    "bestSelling": false,
+    "category": "6"
+}
