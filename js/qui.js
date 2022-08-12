@@ -3,6 +3,7 @@ var listImg = document.querySelectorAll('.list-image img')
 var prevBtn =document.querySelector('.prev')
 var nextBtn = document.querySelector('.next')
 var currentIndex = 0;
+
 function updateImageByIndex(index){
     // remove active class
     document.querySelectorAll('.list-image div').forEach(item =>{
