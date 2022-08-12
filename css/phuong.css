@@ -1,9 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
-.col-sm-12{
-  height: 400px;;
+.fixmargin{
+  padding: 0 !important;
+  margin: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+
 }
 .snip1552 {
-  height: 80%;
+  height: 95%;
   max-height: 500px;
   font-family: 'Source Sans Pro', sans-serif;
   position: relative;
