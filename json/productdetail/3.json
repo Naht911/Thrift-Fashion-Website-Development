@@ -1,14 +1,15 @@
 {
     "id": 3,
     "name": "MLB Rookie ",
-    "description": "This is a product3",
+    "description": "This is a baseball hat made by USGA. \n The hat is navy blue and features a bill, a round shape, and an adjustable back buckle strap.  On the front are the words U.S. Open 2020 Winged Foot embroidered in white thread. Embroidered on the back is USGA MEMBER in red and white thread. \n It measures about 4.75 tall, 6.75 wide, 6 wide across the brim, and 6.5 long not including the bill. \n This item comes in good pre-owned condition. ",
     "price": 300,
-    "image": ["non3_1.jpeg","non3_2.jpeg","non3_3.jpeg","non3_4.jpeg","non3_5.jpeg","non3_6.jpeg"],
+    "image": ["non7.webp","non7_1.webp","non7_2.webp","non7_3.webp","non7_4.webp"],
     "isSale": true,
     "saleOff": "80%",
-    "quantity": 30,
+    "quantity": 0,
     "quality": "80%",
     "rating": 3,
     "ratingCount": 30,
-    "category": "3"
+    "bestSelling": true,
+    "category": "1"
 }

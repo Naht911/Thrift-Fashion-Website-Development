@@ -1,9 +1,9 @@
 {
     "id": 11,
-    "name": "MLB Bucket",
-    "description": "Made of high quality materials, durable throughout use, can be comfortably waterproof \n The seam of the hat is extremely delicate and meticulous, conquering even the most demanding customers. The MLB hat is breathable, easy to wash and easy to maintain. \n Embroidered motifs add a fashionable style to the hat \n Modern bucket hat design \n Design inspired by baseball association MLB \n Baseball logo details prominently printed on the front \n Soft fabric, good absorbency \n Modern color palette that is easy to coordinate with many outfits and accessories",
+    "name": "The Game Pro",
+    "description": "This is a cap made by The Game Pro in a size 7.\n The hat is navy blue and features a bill, 6 vent holes on the top, and a round shape.  On the front are the letters NC embroidered in light blue thread. \n It measures approximately 4.5 tall, 6 wide across the brim, 6.75 wide, and 8.25 deep from front to back.",
     "price": 500,
-    "image":["non6.webp","non6_1.webp","non6_2.webp","non6_3.webp","non6_4.webp0"],
+    "image":["non9.webp","non9_1.webp","non9_2.webp","non9_3.webp","non9_4.webp"],
     "isSale": true,
     "saleOff": "70%",
     "quantity": 50,

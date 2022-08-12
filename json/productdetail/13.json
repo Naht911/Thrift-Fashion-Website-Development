@@ -1,14 +1,17 @@
 {
     "id": 13,
-    "name": "ADIDAS",
-    "description": "Adidas Ultra Boost 3.0 Legendary walking shoes \n Adidas ultra boost shoes with a design of 3000 Boost beads, so it can be said that wearing this Adidas ultraboost shoe is super smooth. Can't fault it at any point \n ",
-    "price": 500,
-    "image":["home.jpg","menu2.jpg","menu3.jpg","menu5.jpg","menu6.jpg","menu8.jpg"],
+    "name": "Nashbar ",
+    "description": "This is a pair of men's cycling shoes made by Nashbar in a size 10.\n  The shoes are black, gray, and red in a geometric pattern and feature two easy fastening straps along one side of each shoe, a mesh fabric along the sides, two bolt cleats on the bottom of each shoe, and a round toe. \n They measure approximately 11 long from front to back, 3.25 wide across the balls of the feet, and 3.5 tall.\n This item was made in Italy. \n These shoes come in good pre-owned condition with some scuffing. ",
+    "price": 150,
+    "image":["giay9D"],"
+    "bestSelling": false,
+    "category": "3""],
     "isSale": true,
     "saleOff": "70%",
     "quantity": 50,
     "quality": "70%",
     "rating": 5,
     "ratingCount": 50,
+    "bestSelling": false,
     "category": "3"
 }

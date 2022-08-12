@@ -6,10 +6,10 @@
     "image": ["nonsua1.jpg", "nonsua2.jpg","nonsua3.jpg","nonsua4.jpg","nonsua5.jpg"],
     "isSale": true,
     "saleOff": "90%",
-    "quantity": 0,
+    "quantity": 10,
     "quality": "90%",
     "rating": 4,
     "ratingCount": 10,
-    "bestSelling": true,
+    "bestSelling": false,
     "category": "1"
 }

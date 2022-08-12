@@ -1,14 +1,15 @@
 {
     "id": 5,
-    "name": "GUCCI",
-    "description": "Gucci Print Gucci Leather Baseball Hat",
-    "price": 500,
-    "image":["non5_1.jpg","non5_2.jpg","non5_3.jpg","non5_4.jpg","non5_5.jpg"],
+    "name": "Columbia",
+    "description": "This is a beanie made by Columbia Sportswear in a Boy's One Size fits all. \n The hat is navy blue with royal blue stripes, a small leather Columbia logo, very soft black fleece lining. \n It was made in Taiwan with: shell: 85% acrylic, 15% wool, lining: 100% polyester. \n The beanie measures 10 across and 8 tall when laid flat.\n This hat comes in good pre-owned condition with some slight pilling.",
+    "price": 80,
+    "image":["non8.webp","non8_1.webp","non8_2,webp","non8_3.webp","non8_4.webp"],
     "isSale": true,
     "saleOff": "70%",
     "quantity": 50,
     "quality": "70%",
     "rating": 5,
     "ratingCount": 50,
+    "bestSelling": false,
     "category": "1"
 }
