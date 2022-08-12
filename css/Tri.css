@@ -1,0 +1,59 @@
+#cart-container {
+    width: 70%;
+    padding-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+@media (min-width: 576px) {
+    #a.col-sm-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+        padding: 0 25px;
+    }
+}
+
+.btn-remove {
+    border-radius: 3px;
+    background-color: #A91101;
+    width: fit-content;
+    margin-top: 40px;
+}
+
+#item-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-coupon-add {
+    justify-content: center;
+    width: 240.59px;
+}
+
+#add{
+    border-radius: 3px;
+    background-color: grey;
+}
+
+.btn-end {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-checkOut {
+    width: 278px;
+    height: 58px;
+    font-size: 23px;
+    border-radius: 3px;
+    background-color: #EFB24C;
+}
+
+.btn-keepShopping {
+    border-radius: 3px;
+    background-color: rgb(2, 130, 130);
+    text-decoration: dashed;
+}

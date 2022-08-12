@@ -1,0 +1,14 @@
+{
+    "id": 4,
+    "name": "Nike",
+    "description": "This is a product4",
+    "price": 400,
+    "image": ["non4_1.webp","non4_2.webp","non4_3.webp"],
+    "isSale": false,
+    "saleOff": "",
+    "quantity": 40,
+    "quality": "",
+    "rating": 4,
+    "ratingCount": 40,
+    "category": "4"
+}

@@ -1,0 +1,14 @@
+{
+    "id": 18,
+    "name": "OshKosh Bgosh",
+    "description": "Here we have a pair of deck shoes made by OshKosh Bgosh in a Boys Size 11.\n They are brown and feature brown & yellow laces, white topstitching, a beige sole, and a two-eyelet shoelace closure.\n These loafers were made in China with synthetic man-made materials.\n They come to you in very good pre-owned condition with minimal playwear.",
+    "price": 800,
+    "image":["giay6.webp","giay6_1.webp","giay6_2,webp","giay6_3.webp","giay6_4.webp"],
+    "isSale": true,
+    "saleOff": "70%",
+    "quantity": 50,
+    "quality": "70%",
+    "rating": 5,
+    "ratingCount": 50,
+    "category": "3"
+}

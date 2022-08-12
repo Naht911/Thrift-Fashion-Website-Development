@@ -1,0 +1,14 @@
+{
+    "id": 16,
+    "name": "Columbia ",
+    "description": "This is a pair of Columbia Rocky Pine shoes in men's size 9.5. \n  The shoes are brown slip-ons with a black rubber sole. \n Each shoe measures approximately 11.5 from heel to toe, 4.5 tall, and 4.5 across the ball of the foot. \n These shoes were made in China. \n Both shoes have some wear and creasing and light discoloration but come in good pre-owned condition. ",
+    "price": 200,
+    "image":["giay4.webp","giay4_1.webp","giay4_2.webp","giay4_3.webp","giay4_4webp"],
+    "isSale": true,
+    "saleOff": "70%",
+    "quantity": 50,
+    "quality": "70%",
+    "rating": 5,
+    "ratingCount": 50,
+    "category": "3"
+}

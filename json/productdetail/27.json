@@ -1,0 +1,14 @@
+{
+    "id": 27,
+    "name": "SoLex",
+    "description": "- High quality plated material with 14k western gold composition \n - Premium glass lenses \n - Made in malaysia \n Beautiful, plated glasses and high-quality glass lenses that change color or are coated with oil always help players feel secure about quality and elegance.",
+    "price": 800,
+    "image":["kinh3.jpg","kinh3_1.jpg","kinh3_2.jpg","kinh3_3.jpg","kinh3_4.jpg"],
+    "isSale": true,
+    "saleOff": "70%",
+    "quantity": 50,
+    "quality": "70%",
+    "rating": 5,
+    "ratingCount": 50,
+    "category": "5"
+}

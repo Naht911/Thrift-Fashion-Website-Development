@@ -1,0 +1,14 @@
+{
+    "id": 20,
+    "name": "Eddie Bauer ",
+    "description": "This is a pair of petite women's ski pants made by Eddie Bauer in a size 16. \n The pants are black and feature a stretch material, a water-resistant fabric, a D-ring on the left side of the waistline, a zip-up and double hook and loop front closure, a zip-up front pocket, and stirrups at the leg openings.\n They measure approximately 16.25 across the waist with a 24 inseam, 13.75 for the rise, and 6 across the leg opening when laid flat. \n These pants were made in Bangladesh and are made of a 56/35/5/4 nylon/acrylic/wool/spandex blend for the shell and an 82/18 nylon/spandex blend for the stirrups. \n The pants come in great pre-owned condition with the original tags still attached.",
+    "price": 800,
+    "image":["quan2.webp","quan2_1.webp","quan2_2.webp","quan2_3.webp","quan2_4.webp"],
+    "isSale": true,
+    "saleOff": "70%",
+    "quantity": 50,
+    "quality": "70%",
+    "rating": 5,
+    "ratingCount": 50,
+    "category": "4"
+}

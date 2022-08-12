@@ -1,0 +1,14 @@
+{
+    "id": 5,
+    "name": "GUCCI",
+    "description": "Gucci Print Gucci Leather Baseball Hat",
+    "price": 500,
+    "image":["non5_1.jpg","non5_2.jpg","non5_3.jpg","non5_4.jpg","non5_5.jpg"],
+    "isSale": true,
+    "saleOff": "70%",
+    "quantity": 50,
+    "quality": "70%",
+    "rating": 5,
+    "ratingCount": 50,
+    "category": "1"
+}
