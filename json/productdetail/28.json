@@ -1,0 +1,15 @@
+{
+    "id": 28,
+    "name": "SoLex",
+    "description": "This is a lot of 2 crossbody bags.\n Included are: \n ~ A black bag that features a faux leather textured material, an adjustable shoulder strap, and a snap closure for the main bag. Inside the main bag is a zip-up pocket on one side. It measures about 9 tall without the strap, 23.25 tall with the strap, 7.5 wide, 5.5 deep. There was a bag inside the bag but it was cut off. \n ~ A black bag that features a faux leather textured material, an adjustable shoulder strap, a snap front pocket, and a zip-up closure for the main bag. Inside the main bag is a zip-up pocket on one side and two open pockets on the other side. It measures about 8.5 tall without the strap, 31 tall with the strap, 8 wide, and 1.5 deep.\n These items come in good pre-owned condition with stains.",
+    "price": 800,
+    "image":["tui1.webp","tui1_1webp","tui1_2webp","tui1_3webp","tui1_4webp"],
+    "isSale": true,
+    "saleOff": "70%",
+    "quantity": 50,
+    "quality": "70%",
+    "rating": 5,
+    "ratingCount": 50,
+    "bestSelling": true,
+    "category": "10"
+}

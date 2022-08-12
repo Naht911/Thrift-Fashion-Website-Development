@@ -403,6 +403,21 @@
             "ratingCount": 50,
             "bestSelling": true,
             "category": "5"
+        },
+        {
+            "id": 28,
+            "name": "SoLex",
+            "description": "Lot of 2 Faux Leather Handbags Black Crossbody Shoulder Bags Bucket Style",
+            "price": 800,
+            "image":"tui1.webp",
+            "isSale": true,
+            "saleOff": "70%",
+            "quantity": 50,
+            "quality": "70%",
+            "rating": 5,
+            "ratingCount": 50,
+            "bestSelling": true,
+            "category": "10"
         }
        
        
