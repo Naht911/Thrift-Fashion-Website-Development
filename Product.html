@@ -1,24 +1,28 @@
 <div class="container" style="margin-top: 100px;">
 	<style>
-	@media only screen and (max-width: 764px) {
-		.fix-block {
-			display: inline;
+		@media only screen and (max-width: 764px) {
+			.fix-block {
+				display: inline;
+			}
 		}
-	}
 	</style>
 	<div class="row">
-		<div class="col-sm-12 col-md-3">
+		<div class="col-sm-12 col-md-3 category-header">
 			<form action="#" method="get" return false ng-hide="hideForm">
 				<div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
 					<div class="input-group">
 						<div class="input-group-prepend">
-							<button id="button-addon2" type="submit" class="btn btn-link text-warning"><i class="fa fa-search"></i></button>
+							<button id="button-addon2" type="submit" class="btn btn-link text-warning"><i
+									class="fa fa-search"></i></button>
 						</div>
-						<input type="search" placeholder="What're you searching for?" aria-describedby="button-addon2" class="form-control border-0 bg-light" id="saveName" ng-model="searchName"> </div>
+						<input type="search" placeholder="What're you searching for?" aria-describedby="button-addon2"
+							class="form-control border-0 bg-light" id="saveName" ng-model="searchName">
+					</div>
 				</div>
 			</form>
 			<div ng-repeat="s in list_category" class="fix-block">
-				<input type="radio" name="category_id" id="checkCat{{s.id}}" ng-model="category_id" style="display: none;" value="{{s.id}}" class="checkCat">
+				<input type="radio" name="category_id" id="checkCat{{s.id}}" ng-model="category_id"
+					style="display: none;" value="{{s.id}}" class="checkCat">
 				<label for="checkCat{{s.id}}" class="btn btn-primary-custom" id="name_type">Buy {{s.name}}</label>
 				<!-- <p ng-click="loadProduct(s.id)"> {{s.name}}</p> -->
 				<!-- {{category_id}} -->
@@ -47,11 +51,14 @@
 							<!-- <figure class="snip1268"> -->
 							<div class="card-header">
 								<div class="image">
-									<a href="#!product/{{d.id}}"> <img src="/img/prod/{{d.image}}" width="100%" class="img-prod product_list "></a>
-									<div class="icons"> </div> <a href="#" class="add-to-cart">Add to Cart</a> </div>
+									<a href="#!product/{{d.id}}"> <img src="/img/prod/{{d.image}}" width="100%"
+											class="img-prod product_list "></a>
+									<div class="icons"> </div> <a href="#" class="add-to-cart">Add to Cart</a>
+								</div>
 							</div>
 							<div class="card-body">
-								<h3 class="name_color"><a href="#!product/{{d.id}}" class="product_list">{{d.name}}</a></h3>
+								<h3 class="name_color"><a href="#!product/{{d.id}}" class="product_list">{{d.name}}</a>
+								</h3>
 								<p class="card_p">{{d.description}}</p>
 								<a href="#!product/{{d.id}}" class="price-body">
 									<p>price: $100</p>
