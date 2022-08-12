@@ -60,37 +60,25 @@ app.run(function ($rootScope, $http) {
   $http.get("json/products.json").then(function (rsp_products) {
     $rootScope.data_products = rsp_products.data;
   });
-
-});
-
-
-app.run(function ($rootScope, $http) {
-  $http.get("json/products.json").then(function (rsp) {
-    var obj = rsp.data;
+  $http.get("json/products.json").then(function (rsp_bestSelling) {
+    var obj_bestSelling = rsp_bestSelling.data;
     $rootScope.dataBest = [];
-    for (const key in obj) {
-      if (obj[key].bestSelling == true) {
-        $rootScope.dataBest.push(obj[key]);
+    for (const key in obj_bestSelling) {
+      if (obj_bestSelling[key].bestSelling == true) {
+        $rootScope.dataBest.push(obj_bestSelling[key]);
       }
     }
-    console.log($rootScope.dataBest);
-  });
-});
-app.run(function ($rootScope, $http) {
-  $http.get("json/products.json").then(function (rsp) {
-    var obj = rsp.data;
-    $rootScope.dataSale = [];
-    var i = 0;
-    for (const key in obj) {
-      if (obj[key].isSale == true && i < 6) {
-        i++;
-        $rootScope.dataSale.push(obj[key]);
+    $http.get("json/products.json").then(function (rsp_Sales) {
+      var obj_Sales = rsp_Sales.data;
+      $rootScope.dataSale = [];
+      var i = 0;
+      for (const key in obj_Sales) {
+        if (obj_Sales[key].isSale == true && i < 6) {
+          i++;
+          $rootScope.dataSale.push(obj_Sales[key]);
+        }
       }
-    }
-    console.log($rootScope.dataSale);
+    });
   });
 });
 
-$(".hover").mouseleave(function () {
-  $(this).removeClass("hover");
-});
