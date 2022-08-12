@@ -14,7 +14,7 @@ body{
     margin: auto;
     width: 100%;
     height: auto;
-    background: #272d40;
+    background:none;
     padding: 20px;
     border-radius: 15px ;
     color: white;
@@ -60,7 +60,6 @@ body{
 .card_size span{
     padding: 1px 10px;
     background: #dadada;
-    color:black;
     border-radius: 5px;
     margin: 0 2px;
     cursor: pointer;
@@ -129,7 +128,7 @@ body{
     margin-top: -30px;
 }
 .card-footer{
-    background-color:#272d40;
+   
     margin: auto;
     border: none;
 }

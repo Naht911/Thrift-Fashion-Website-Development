@@ -1,0 +1,15 @@
+{
+    "id": 35,
+    "name": "Lot of 6 ",
+    "description": "This is a lot of 6 pairs of women's earrings. \n Included are: \n ~ A  pair of gold-colored earrings that feature an ivory-colored heart on the end. \n ~ A  pair of gold-colored earrings that feature an ivory-colored flower on the end with a rhinestone in the middle. \n ~ A  pair of gold-colored earrings that feature a cluster of rhinestones in the shape of a flower on the end. \n ~ A  pair of gold-colored earrings that feature rhinestone on the end. \n ~ A  pair of gold-colored earrings that feature a pink square-shaped stone on the end. \n ~ A  pair of gold-colored earrings that feature the word love on the end with a rhinestone in the middle of the o. \n These earrings come in good pre-owned condition",
+    "price": 300,
+    "image":["trangsuc2.webp","trangsuc2_1.webp","trangsuc2_2.webp","trangsuc2_3.webp","trangsuc2_4.webp"],
+    "isSale": true,
+    "saleOff": "20%",
+    "quantity": 50,
+    "quality": "70%",
+    "rating": 5,
+    "ratingCount": 50,
+    "bestSelling": false,
+    "category": "6"
+}
