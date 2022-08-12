@@ -62,6 +62,13 @@ div.addr{
 
 }
 
-.text-center{
-    
+.huchua-icon{
+ position:relative;
+
+};
+.link-icon{
+    position:absolute;
+    bottom:0;
+    left:0;
+   
 }
