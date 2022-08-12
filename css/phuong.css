@@ -114,18 +114,23 @@
 @import url(https://fonts.googleapis.com/css?family=Slabo+27px);
 @import url(https://fonts.googleapis.com/css?family=Lato);
 .onSale {
-  max-height: 300px;
+  max-height: 400px;
   font-family: 'Lato', sans-serif;
   position: relative;
   overflow: hidden;
   margin: 10px;
-  min-width: 230px;
-  max-width: 315px;
+  min-width: 130px;
+  max-width: 500px;
   width: 100%;
   color: #ffffff;
   text-align: left;
   font-size: 16px;
-  background-color: #1A1A1A;
+  /* background-color: #1A1A1A; */
+}
+
+.onSale img{
+  max-height: 315px;
+  width: 100%;
 }
 
 .onSale * {
