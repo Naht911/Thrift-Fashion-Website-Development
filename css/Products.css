@@ -23,8 +23,11 @@ body{
     background-color: #f4cbb5 !important;
     border-color: #f4cbb5 !important;
 }
-.card-header,.card-body{
+.card-header,.card-body {
     border: none;
+}
+.card-body a{
+    color:rgb(246, 114, 70) ;
 }
 .card-header{
     background-color: transparent;
@@ -43,8 +46,8 @@ body{
     
     text-align: center;
     margin-bottom: 15px;
-  font-size: 0.85em;
-  font-weight: 500;
+    font-size: 0.85em;
+    font-weight: 500;
    
 }
 .card img{
