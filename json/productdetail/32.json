@@ -1,0 +1,15 @@
+{
+    "id": 32,
+    "name": "Nike N7 ",
+    "description": "This is a lined drawstring backpack/gym bag made by Nike. \n The bag is navy blue in color and features a silvery diamond pattern, an outside zipper pocket, decorative black mesh, double rope drawstring/backpack straps, the Nike swoosh and the text You're an athlete. Train like one.\n The bag measures about 18.5 tall and 12.5 wide.\n It is in great pre-owned condition with the original tags still attached. ",
+    "price": 800,
+    "image":["tui5.webp","tui5_1.webp","tui5_2.webp","tui5_3.webp","tui5_4.webp"],
+    "isSale": true,
+    "saleOff": "20%",
+    "quantity": 50,
+    "quality": "70%",
+    "rating": 5,
+    "ratingCount": 50,
+    "bestSelling": false,
+    "category": "10"
+}

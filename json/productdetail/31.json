@@ -1,0 +1,15 @@
+{
+    "id": 31,
+    "name": "Lot of 3 ",
+    "description": "This is a lot of 3 reusable shopping tote bags. Included in this lot are : \n -  A red bag that says Better Not on one side and on the other in Spanish Says ¡MJOR ! 12 wide, 8 thick and 13 in height \n -  An orange bag that says Think About It on one side and on the other in Spanish Says ¡PENSARLO! 12 wide, 8 thick and 13 in height \n This lot comes in great pre-owned condition. ",
+    "price": 800,
+    "image":["tui4.webp","tui4_1.webp","tui4_2.webp","tui4_3.webp","tui4_3.webp"],
+    "isSale": true,
+    "saleOff": "70%",
+    "quantity": 50,
+    "quality": "70%",
+    "rating": 5,
+    "ratingCount": 50,
+    "bestSelling": false,
+    "category": "10"
+}

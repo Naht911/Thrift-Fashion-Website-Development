@@ -1,0 +1,15 @@
+{
+    "id": 30,
+    "name": "Brown",
+    "description": "This is a tote bag. \n The bag is multicolored in a striped layered fabric pattern and features a faux leather textured material, two handles, and a zip-up closure for the main bag.  Inside the main bag is a zip-up pocket on one side and two open pockets on the other side. \n It measures about 12 tall, 23.5 tall with the handles, 14.5 wide, and 3.75 deep. \n This item comes in good pre-owned condition with some faint spot stains.",
+    "price": 800,
+    "image":["tui3.webp","tui3_1.webp","tui3_2.webp","tui3_3.webp","tui3_4.webp"],
+    "isSale": true,
+    "saleOff": "70%",
+    "quantity": 50,
+    "quality": "70%",
+    "rating": 5,
+    "ratingCount": 50,
+    "bestSelling": false,
+    "category": "10"
+}
