@@ -31,16 +31,45 @@
 			<div class="row">
 				<div class="col-sm-12 col-md-4" ng-repeat="d in data | filter:checkvalues | filter:searchName">
 					<div class="col-sm">
-						<div class="card">
-                            <div class="card-header">
-								<a href="#!product/{{d.id}}"> <img src="/img/prod/{{d.image}}"  width="100%" class="img-prod product_list"></a>
-								</div>
-                            <div class="card-body">
-								<h3 class="name_color"><a href="#!product/{{d.id}}" class="product_list">{{d.name}}</a></h3>
-								<p class="card_p">{{d.description}}</p>
-								<p>price: 100$</p> 
+
+						<!-- <figure class="snip1268">
+							<div class="image">
+							  <div class="icons">
+								<a href="#"><i class="ion-star"></i></a>
+								<a href="#"> <i class="ion-share"></i></a>
+								<a href="#"> <i class="ion-search"></i></a>
+							  </div>
+							  <a href="#" class="add-to-cart">Add to Cart</a>
 							</div>
-                            
+							<figcaption>
+							  <h2>Denim Shirt</h2>
+							  <p>My family is dysfunctional and my parents won't empower me. Consequently I'm not self actualized.</p>
+							  <div class="price">$65.00 </div>
+							</figcaption>
+						  </figure> -->
+
+
+
+
+
+						<div class="card productCard">
+							<!-- <figure class="snip1268"> -->
+								<div class="card-header">
+									<div class="image">
+										<a href="#!product/{{d.id}}"> <img src="/img/prod/{{d.image}}"  width="100%" class="img-prod product_list"></a>
+										<div class="icons">
+										
+										</div>
+										<a href="#" class="add-to-cart">Add to Cart</a>
+									</div>
+									
+								</div>
+								<div class="card-body">
+									<h3 class="name_color"><a href="#!product/{{d.id}}" class="product_list">{{d.name}}</a></h3>
+									<p class="card_p">{{d.description}}</p>
+									<a href="#!product/{{d.id}}" class="price-body"> <p>price: $100</p> </a>
+								</div>
+							<!-- </figure> -->
                         </div>
 
 						
