@@ -1,12 +1,15 @@
 {
     "id": 1,
-    "name": "MLB Korea",
-    "description": " 👉 PRODUCT DESCRIPTION: \n MLB  is made of high quality cotton, durable during use The seam of the hat is extremely delicate and meticulous conquering even the most demanding customers the breathable mlb hat is easy to wash and easy to maintain /n 👉 HOW TO KEEP SHOES: /n We have gone through a careful screening process, choosing the best products, in order to give customers the best choice./n ✔️ SHOP COMMITMENT /n ➡️ 100% STANDARD AS PICTURES /n ➡️ 100% MONEY BACK IF NOT LIKE THE PHOTO /n ➡️ SUPPORT FOR EXCHANGE AND RETURN WITHIN 30 DAYS /n  ",
+    "name": "Jewel SHINE",
+    "description": " 🛵 If you like to travel to Sapa, Da Lat ... places with cool weather, what are you waiting for, stop by the GreenStore hat shop to own yourself many hats, cap, cap, cap , geezer hat, geezer hat, geezer hat, geezer hat,\n 💃 Hats are suitable for high fashion style, suitable for traveling, walking and 📸 taking beautiful pictures.\n  You can use it in daily activities walking around, or picnic \n Material: Unique Korean style fashion hat.Fashionable design ", 
     "price": 100,
-    "image": ["non1.jpg", "non2.jpg","non3.jpg","non4.jpg","non5.jpg"],
+    "image": ["nonsua1.jpg", "nonsua2.jpg","nonsua3.jpg","nonsua4.jpg","nonsua5.jpg"],
     "isSale": true,
     "saleOff": "90%",
-    "quantity": 10,
+    "quantity": 0,
     "quality": "90%",
+    "rating": 4,
+    "ratingCount": 10,
+    "bestSelling": true,
     "category": "1"
 }
