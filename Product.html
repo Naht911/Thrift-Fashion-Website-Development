@@ -13,7 +13,7 @@
 				<input type="input" class="form__field" name="name" id="saveName" ng-model="searchName" required /> </form>
 			<div ng-repeat="s in list" class="fix-block">
 				<input type="radio" name="category_id" id="checkCat{{s.id}}" ng-model="category_id" style="display: none;" value="{{s.id}}" class="checkCat">
-				<label for="checkCat{{s.id}}" class="btn btn-primary-custom">Buy {{s.name}}</label>
+				<label for="checkCat{{s.id}}" class="btn btn-primary-custom" id="name_type">Buy {{s.name}}</label>
 				<!-- <p ng-click="loadProduct(s.id)"> {{s.name}}</p> -->
 				<!-- {{category_id}} -->
 			</div>
@@ -22,23 +22,22 @@
 			<div class="row">
 				<div class="col-sm-12 col-md-4" ng-repeat="d in data | filter:checkvalues | filter:searchName">
 					<div class="col-sm">
-						<!--  -->
+						<div class="card">
+                            <div class="card-header">
+								<a href="#!product/{{d.id}}"> <img src="/img/prod/{{d.image}}"  width="100%" class="img-prod product_list"></a>
+								</div>
+                            <div class="card-body">
+								<h3 class="name_color"><a href="#!product/{{d.id}}" class="product_list">{{d.name}}</a></h3>
+								<p class="card_p">{{d.description}}</p>
+								<p>price: 100$</p> 
+							</div>
+                            
+                        </div>
+
 						
 						
-						<figure class="snip1512">
-							<img src="/img/prod/{{d.image}}" alt="sample83" />
-							<figcaption>
-							  <h3 style="font-size: 20px;">{{d.name}}</h3>
-							  <p>{{d.description}}</p>
-							</figcaption>
-							<a href="#!product/{{d.id}}"></a>
-						  </figure>
-						<!--  -->
-							<!-- <a href="#!product/{{d.id}}"> <img src="/img/prod/{{d.image}}"  width="100%" class="img-prod product_list"></a>
-						<h1><a href="#!product/{{d.id}}" class="product_list">{{d.name}}</a></h1>
-						<p>{{d.description}}</p>
-						<p>{{d.name}}</p>
-						<p></p> -->
+							 
+				
 					</div>
 				</div>
 			</div>
