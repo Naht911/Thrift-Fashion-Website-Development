@@ -1,0 +1,15 @@
+{
+    "id": 29,
+    "name": "J Castro M.",
+    "description": "This is a leather bucket bag from J Castro M. \n The bag is brown and features a drawstring closure on top and embossed pictures of cattle, carts, and a farmhouse all around it. \n It measures about 8 wide, 7.75 tall, and 5 deep \n This bag comes in good pre-owned condition with some tears on each side seam of the top half of the bag. The bag is being sold for repair",
+    "price": 800,
+    "image":["tui2.webp","tui2_1.webp","tui2_2.webp","tui2_3.webp","tui2_4.webp"],
+    "isSale": true,
+    "saleOff": "70%",
+    "quantity": 50,
+    "quality": "70%",
+    "rating": 5,
+    "ratingCount": 50,
+    "bestSelling": false,
+    "category": "10"
+}

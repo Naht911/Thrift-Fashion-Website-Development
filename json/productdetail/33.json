@@ -1,0 +1,15 @@
+{
+    "id": 33,
+    "name": "Nascar ",
+    "description": "This is a duffle bag made by Nascar. \n The bag is red, black, and white and features a shoulder strap, two handles, a pocket on each side with a zip-up closure, and a zip-up closure for the main bag.\n It measures approximately 9.75 tall, 19.25 wide from left to right, and 9 deep from front to back. \n This item comes in good pre-owned condition with some faint stains.",
+    "price": 800,
+    "image":["tui6.webp","tui6_1.webp","tui6_2.webp","tui6_3.webp","tui6_4.webp"],
+    "isSale": true,
+    "saleOff": "20%",
+    "quantity": 50,
+    "quality": "70%",
+    "rating": 5,
+    "ratingCount": 50,
+    "bestSelling": false,
+    "category": "10"
+}
