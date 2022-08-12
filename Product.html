@@ -23,15 +23,35 @@
 				<div class="col-sm-12 col-md-4" ng-repeat="d in data | filter:checkvalues | filter:searchName">
 					<div class="col-sm">
 						<!--  -->
+						<figure class="snip1268">
+							<div class="image">
+								<img src="/img/prod/{{d.image}}" alt="sample83" />
+							  <div class="icons">
+								<a href="#"><i class="ion-star"></i></a>
+								<a href="#"> <i class="ion-share"></i></a>
+								<a href="#"> <i class="ion-search"></i></a>
+							  </div>
+							  <a href="#" class="add-to-cart">Add to Cart</a>
+							</div>
+							<figcaption>
+								<img src="/img/prod/{{d.image}}" alt="sample83" />
+								<figcaption>
+								  <h3 style="font-size: 20px;">{{d.name}}</h3>
+								  <p>{{d.description}}</p>
+								</figcaption>
+								<a href="#!product/{{d.id}}"></a>
+							  <div class="price">$65.00 </div>
+							</figcaption>
+						  </figure>
 						
-						<figure class="snip1512">
+						<!-- <figure class="snip1512">
 							<img src="/img/prod/{{d.image}}" alt="sample83" />
 							<figcaption>
 							  <h3 style="font-size: 20px;">{{d.name}}</h3>
 							  <p>{{d.description}}</p>
-							</figcaption><i class="ion-plus"></i>
+							</figcaption>
 							<a href="#!product/{{d.id}}"></a>
-						  </figure>
+						  </figure> -->
 						<!--  -->
 							<!-- <a href="#!product/{{d.id}}"> <img src="/img/prod/{{d.image}}"  width="100%" class="img-prod product_list"></a>
 						<h1><a href="#!product/{{d.id}}" class="product_list">{{d.name}}</a></h1>
