@@ -16,10 +16,9 @@
 }
 
 .btn-remove {
-    border-radius: 3px;
-    background-color: #A91101;
-    width: fit-content;
+    color: #A91101;
     margin-top: 40px;
+    text-decoration: none;
 }
 
 #item-title {
@@ -34,7 +33,7 @@
 
 #add{
     border-radius: 3px;
-    background-color: grey;
+    background-color: rgb(251, 224, 171);
 }
 
 .btn-end {
@@ -54,6 +53,6 @@
 
 .btn-keepShopping {
     border-radius: 3px;
-    background-color: rgb(2, 130, 130);
+    color: rgb(2, 130, 130);
     text-decoration: dashed;
 }
