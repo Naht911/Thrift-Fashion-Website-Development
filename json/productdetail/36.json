@@ -1,0 +1,15 @@
+{
+    "id": 36,
+    "name": "Orange Glass",
+    "description": "This is an orange glass bead choker necklace with orange glass bead pierced earrings. \n The necklace has orange glass beads set into gold tone floral settings with a chain on each end. it measures 20.25 long and has a lobster claw clasp. \n The pierced earrings are clusters of orange and red glass beads. They measure approximately 1.75 long and 1' in diameter.\n These pretty pieces are in very good preowned condition.",
+    "price": 200,
+    "image":["trangsuc3.webp","trangsuc3_1.webp","trangsuc3_2.webp","trangsuc3_3.webp","trangsuc3_4.webp"],
+    "isSale": true,
+    "saleOff": "20%",
+    "quantity": 50,
+    "quality": "70%",
+    "rating": 5,
+    "ratingCount": 50,
+    "bestSelling": false,
+    "category": "6"
+}
