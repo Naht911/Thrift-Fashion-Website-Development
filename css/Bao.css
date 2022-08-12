@@ -116,7 +116,7 @@ div.addr {
 .mContactLink a:hover:before,
 .mContactLink .current a:before {
   opacity: 1;
-  width: 100%;
+  width: 140%;
 }
 
 .mContactLink a:hover:after,
