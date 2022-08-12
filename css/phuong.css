@@ -213,3 +213,8 @@
 .onSale.hover figcaption {
   opacity: 1;
 }
+@media only screen and (max-width: 764px) {
+  .head2{
+    font-size: 45px;
+  }
+}
