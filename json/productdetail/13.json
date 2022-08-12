@@ -3,14 +3,12 @@
     "name": "Nashbar ",
     "description": "This is a pair of men's cycling shoes made by Nashbar in a size 10.\n  The shoes are black, gray, and red in a geometric pattern and feature two easy fastening straps along one side of each shoe, a mesh fabric along the sides, two bolt cleats on the bottom of each shoe, and a round toe. \n They measure approximately 11 long from front to back, 3.25 wide across the balls of the feet, and 3.5 tall.\n This item was made in Italy. \n These shoes come in good pre-owned condition with some scuffing. ",
     "price": 150,
-    "image":["giay9D"],"
-    "bestSelling": false,
-    "category": "3""],
-    "isSale": true,
+    "image":["giay7_1.webp","giay7_2.webp","giay7_3.webp","giay7+4.webp"],
+     "isSale": true,
     "saleOff": "70%",
     "quantity": 50,
     "quality": "70%",
-    "rating": 5,
+     "rating": 5,
     "ratingCount": 50,
     "bestSelling": false,
     "category": "3"
