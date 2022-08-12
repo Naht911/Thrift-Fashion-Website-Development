@@ -45,6 +45,12 @@ app.config(function ($routeProvider) {
       redirectTo: "/",
     });
 });
+app.run(function ($rootScope, $location) {
+    $rootScope.$on("$routeChangeSuccess", function (event, current, previous) {
+        $rootScope.title = current.$$route.title;
+        console.log(current.$$route.title);
+    });
+});
 
 // $routeProvider
 app.run(function ($rootScope, $http) {
