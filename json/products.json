@@ -5,7 +5,7 @@
             "description": "Jewel SHINE Yankees Heroes Adjustable Cap",
             "price": 100,
             "image": "hinhnonsualai.png",
-            "isSale": true,
+            "isSale": false,
             "saleOff": "90%",
             "quantity": 10,
             "quality": "90%",
