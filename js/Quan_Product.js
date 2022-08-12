@@ -44,11 +44,11 @@ fetch(postAPI)
     };
     search.addEventListener("input", () => searchStates(search.value));
 
-// ==========Search Money
-document.getElementById("Quan_all").onclick = function () {
-  var table = "";
-  let getAll = data.filter((data) => {  
-      table += `<td style="display: inline-block;">
+    // ==========Search Money
+    document.getElementById("Quan_all").onclick = function () {
+      var table = "";
+      let getAll = data.filter((data) => {
+        table += `<td style="display: inline-block;">
       <figure class="snip1423">
                <img src="${data.image}" alt="sample57" />
            <figcaption>
@@ -61,129 +61,128 @@ document.getElementById("Quan_all").onclick = function () {
           <button>Add</button>           
       </figure>
 
-      </td>`
-    document.getElementById("myTable").innerHTML = table
-  })
-}; 
-// ================Search 1 < 20=========
-document.getElementById("1-20").onclick = function () {
-  var table = "";
-  let getMoney1 = data.filter((data) => {
-    if (data.price <= 20) {
-      table += `<td style="display: inline-block;"> 
+      </td>`;
+        document.getElementById("myTable").innerHTML = table;
+      });
+    };
+    // ================Search 1 < 20=========
+    document.getElementById("1-20").onclick = function () {
+      var table = "";
+      let getMoney1 = data.filter((data) => {
+        if (data.price <= 20) {
+          table += `<td style="display: inline-block;"> 
         <img style="width: 183px;" src="${data.image}" />
         <h2>${data.category}</h2>
         <p>${data.description}</p>
         <p>$${data.price}</p>
         <button>Add</button>
-        </td>`
-    }
-    document.getElementById("myTable").innerHTML = table
-  })
-};
-// ================Search 20 < 50=========
-document.getElementById("20-50").onclick = function () {
-  var table = "";
-  let getMoney2 = data.filter((data) => {
-    if (data.price >=20 && data.price <= 50 ) {
-      table += `<td style="display: inline-block;"> 
+        </td>`;
+        }
+        document.getElementById("myTable").innerHTML = table;
+      });
+    };
+    // ================Search 20 < 50=========
+    document.getElementById("20-50").onclick = function () {
+      var table = "";
+      let getMoney2 = data.filter((data) => {
+        if (data.price >= 20 && data.price <= 50) {
+          table += `<td style="display: inline-block;"> 
         <img style="width: 183px;" src="${data.image}" />
         <h2>${data.category}</h2>
         <p>${data.description}</p>
         <p>$${data.price}</p>
         <button>Add</button>
-        </td>`
-    }
-    document.getElementById("myTable").innerHTML = table
-  })
-};
-// ================Search > 50=========
-document.getElementById("100").onclick = function () {
-  var table = "";
-  let getMoney3 = data.filter((data) => {
-    if (data.price > 50) {
-      table += `<td style="display: inline-block;"> 
+        </td>`;
+        }
+        document.getElementById("myTable").innerHTML = table;
+      });
+    };
+    // ================Search > 50=========
+    document.getElementById("100").onclick = function () {
+      var table = "";
+      let getMoney3 = data.filter((data) => {
+        if (data.price > 50) {
+          table += `<td style="display: inline-block;"> 
         <img style="width: 183px;" src="${data.image}" />
         <h2>${data.category}</h2>
         <p>${data.description}</p>
         <p>$${data.price}</p>
         <button>Add</button>
-        </td>`
-    }
-    document.getElementById("myTable").innerHTML = table
-  })
-};
-// ==============Categories Tree ============
-// ==============Man Clothes
-document.getElementById("man-clothes").onclick = function () {
-  var table = "";
-  let getItem1 = data.filter((data) => {
-    if (data.category === "men's clothing") {
-      table += `<td style="display: inline-block;"> 
+        </td>`;
+        }
+        document.getElementById("myTable").innerHTML = table;
+      });
+    };
+    // ==============Categories Tree ============
+    // ==============Man Clothes
+    document.getElementById("man-clothes").onclick = function () {
+      var table = "";
+      let getItem1 = data.filter((data) => {
+        if (data.category === "men's clothing") {
+          table += `<td style="display: inline-block;"> 
         <img style="width: 183px;" src="${data.image}" />
         <h2>${data.title}</h2>
         <p>${data.description}</p>
         <p>$${data.price}</p>
         <button>Add</button>
-        </td>`
-    }
-    document.getElementById("myTable").innerHTML = table
-  })
-};
+        </td>`;
+        }
+        document.getElementById("myTable").innerHTML = table;
+      });
+    };
 
-// =================Women Clothes
-document.getElementById("women-clothes").onclick = function () {
-  var table = "";
-  let getItem2 = data.filter((data) => {
-    if (data.category === "women's clothing") {
-      table += `<td style="display: inline-block;"> 
+    // =================Women Clothes
+    document.getElementById("women-clothes").onclick = function () {
+      var table = "";
+      let getItem2 = data.filter((data) => {
+        if (data.category === "women's clothing") {
+          table += `<td style="display: inline-block;"> 
         <img style="width: 183px;" src="${data.image}" />
         <h2>${data.title}</h2>
         <p>${data.description}</p>
         <p>$${data.price}</p>
         <button>Add</button>
-        </td>`
-    }
-    document.getElementById("myTable").innerHTML = table
-  })
-};
-// =====================Jewelery
-document.getElementById("jewelery").onclick = function () {
-  var table = "";
-  let getItem3 = data.filter((data) => {
-    if (data.category === "jewelery") {
-      table += `<td style="display: inline-block;"> 
+        </td>`;
+        }
+        document.getElementById("myTable").innerHTML = table;
+      });
+    };
+    // =====================Jewelery
+    document.getElementById("jewelery").onclick = function () {
+      var table = "";
+      let getItem3 = data.filter((data) => {
+        if (data.category === "jewelery") {
+          table += `<td style="display: inline-block;"> 
         <img style="width: 183px;" src="${data.image}" />
         <h2>${data.title}</h2>
         <p>${data.description}</p>
         <p>$${data.price}</p>
         <button>Add</button>
-        </td>`
-    }
-    document.getElementById("myTable").innerHTML = table
-  })
-};
-// =====================Electronics
-document.getElementById("electronics").onclick = function () {
-  var table = "";
-  let getItem4 = data.filter((data) => {
-    if (data.category === "electronics") {
-      table += `<td style="display: inline-block;"> 
+        </td>`;
+        }
+        document.getElementById("myTable").innerHTML = table;
+      });
+    };
+    // =====================Electronics
+    document.getElementById("electronics").onclick = function () {
+      var table = "";
+      let getItem4 = data.filter((data) => {
+        if (data.category === "electronics") {
+          table += `<td style="display: inline-block;"> 
         <img style="width: 183px;" src="${data.image}" />
         <h2>${data.title}</h2>
         <p>${data.description}</p>
         <p>$${data.price}</p>
          <button>Add</button>
-        </td>`
-    }
-    document.getElementById("myTable").innerHTML = table
-  })
-};
-});
+        </td>`;
+        }
+        document.getElementById("myTable").innerHTML = table;
+      });
+    };
+  });
 
 // ==========Carl========
 $(".hover").mouseleave(function () {
   $(this).removeClass("hover");
 });
-// ==========End Carl======== 
-
+// ==========End Carl========
