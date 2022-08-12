@@ -20,7 +20,7 @@
 					</div>
 				</div>
 			</form>
-			<div ng-repeat="s in list" class="fix-block">
+			<div ng-repeat="s in list_category" class="fix-block">
 				<input type="radio" name="category_id" id="checkCat{{s.id}}" ng-model="category_id" style="display: none;" value="{{s.id}}" class="checkCat">
 				<label for="checkCat{{s.id}}" class="btn btn-primary-custom" id="name_type">Buy {{s.name}}</label>
 				<!-- <p ng-click="loadProduct(s.id)"> {{s.name}}</p> -->
@@ -29,7 +29,7 @@
 		</div>
 		<div class="col-sm-12 col-md-9" style="margin-top: 10px;">
 			<div class="row">
-				<div class="col-sm-12 col-md-4" ng-repeat="d in data | filter:checkvalues | filter:searchName">
+				<div class="col-sm-12 col-md-4" ng-repeat="d in data_products | filter:checkvalues | filter:searchName">
 					<div class="col-sm">
 
 						<!-- <figure class="snip1268">
