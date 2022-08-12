@@ -88,3 +88,36 @@
 .text-bonus {
     margin-top: 400px;
 }
+
+footer {
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    display: flex;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+.footer-connectUS {
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    display: inline-block;
+}
+
+.iconmoi {
+    font-size: 25px;
+    color:#d98b04;
+    padding-right: 20px;
+}
+
+.footer-mapmap {
+    width: 450px;
+    height: 200px;
+}
+
+footer a:hover {
+    color: #EFB24C;
+}
