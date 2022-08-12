@@ -2,7 +2,6 @@
     width: 70%;
     padding-top: 20px;
     display: flex;
-    align-items: flex-start;
     justify-content: center;
     margin-top: 100px;
 }
@@ -31,7 +30,7 @@
     width: 240.59px;
 }
 
-#add{
+#add {
     border-radius: 3px;
     background-color: rgb(251, 224, 171);
 }
@@ -51,8 +50,25 @@
     background-color: #EFB24C;
 }
 
+.btn-checkOut:hover {
+    width: 105%;
+}
+
 .btn-keepShopping {
     border-radius: 3px;
     color: rgb(2, 130, 130);
     text-decoration: dashed;
+}
+
+.btn-keepShopping:hover {
+    color: #EFB24C;
+}
+
+#add:hover {
+    color: #EFB24C;
+}
+
+.btn-remove:hover {
+    color: #EFB24C;
+    width: 110%;
 }

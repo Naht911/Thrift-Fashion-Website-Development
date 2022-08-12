@@ -22,13 +22,21 @@
 			<div class="row">
 				<div class="col-sm-12 col-md-4" ng-repeat="d in data | filter:checkvalues | filter:searchName">
 					<div class="col-sm">
-						
-							<a href="#!product/{{d.id}}"> <img src="/img/prod/{{d.image}}"  width="100%" class="img-prod product_list"></a>
+						<!--  -->
+						<figure class="snip1512">
+							<img src="/img/prod/{{d.image}}" alt="sample83" />
+							<figcaption>
+							  <h3 style="font-size: 20px;">{{d.name}}</h3>
+							  <p>{{d.description}}</p>
+							</figcaption><i class="ion-plus"></i>
+							<a href="#!product/{{d.id}}"></a>
+						  </figure>
+						<!--  -->
+							<!-- <a href="#!product/{{d.id}}"> <img src="/img/prod/{{d.image}}"  width="100%" class="img-prod product_list"></a>
 						<h1><a href="#!product/{{d.id}}" class="product_list">{{d.name}}</a></h1>
 						<p>{{d.description}}</p>
 						<p>{{d.name}}</p>
-						<p></p>
-
+						<p></p> -->
 					</div>
 				</div>
 			</div>
