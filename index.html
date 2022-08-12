@@ -25,7 +25,7 @@
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- <script src="js/Tri.js"></script> -->
-    <link rel="stylesheet" href="/css/style.css" />    
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Title</title>
   </head>
 
@@ -43,21 +43,25 @@
         </button>
         <div class="collapse navbar-collapse" id="mynavbar">
           <ul class="navbar-nav me-auto mNavLinkEff">
-            <li class="nav-item ">
-              <a class="nav-link"  data-hover="Product" href="#!prod">Product</a>
+            <li class="nav-item">
+              <a class="nav-link" data-hover="Product" href="#!prod">Product</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" data-hover="About Us" href="#!ab">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-hover="Contact Us" href="#!contact">Contact Us</a>
+              <a class="nav-link" data-hover="Contact Us" href="#!contact"
+                >Contact Us</a
+              >
             </li>
           </ul>
-          <ul class="navbar-nav">   
+          <ul class="navbar-nav">
             <form class="d-flex">
               <li class="nav-item">
-                
-                <a href="#!cart" class="nav-link"><button class="btn btn-primary-custom" type="button"><i class="fa-solid fa-cart-shopping"></i></button></a>
+                <a href="#!cart" class="nav-link"
+                  ><button class="btn btn-primary-custom" type="button">
+                    <i class="fa-solid fa-cart-shopping"></i></button
+                ></a>
               </li>
             </form>
           </ul>
@@ -99,7 +103,7 @@
           })
           .when("/cart", {
             templateUrl: "Cart.html",
-          })            
+          })
           .when("/contact", {
             templateUrl: "ContactUS.html",
           })
@@ -121,13 +125,151 @@
           // console.log($rootScope.data);
         });
       });
-      $(".hover").mouseleave(
-        function () {
-          $(this).removeClass("hover");
-        }
-      );
-
+      $(".hover").mouseleave(function () {
+        $(this).removeClass("hover");
+      });
     </script>
+    <div style="margin-top: 70px; margin-bottom: 50px" class="container">
+      <hr>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 huchua-icon">
+          <div class="contact infor">
+            <h3 class="">Contact US</h3>
+            <div class="infoBox">
+              <div style="margin-bottom: 5px">
+                <div>
+                  <span style="margin-right: 15px"
+                    ><i
+                      style="font-size: 20px; line-height: 40px"
+                      class="fa-solid fa-earth-americas"
+                    ></i></span
+                  >Cannaught Palace, New Delhi, VietNam
+                </div>
+              </div>
+              <div style="margin-bottom: 5px">
+                <div>
+                  <span style="margin-right: 15px"
+                    ><i
+                      style="font-size: 20px; line-height: 40px"
+                      class="fa-solid fa-envelope"
+                    ></i></span
+                  ><a
+                    style="text-decoration: none; color: black"
+                    href="mailto:aptech.fpt@fe.edu.vn"
+                    >aptech.fpt@fe.edu.vn</a
+                  >
+                </div>
+              </div>
+              <div style="margin-bottom: 5px">
+                <div>
+                  <span style="margin-right: 15px"
+                    ><i
+                      style="font-size: 20px; line-height: 40px"
+                      class="fa-solid fa-phone"
+                    ></i></span
+                  ><a
+                    style="text-decoration: none; color: black"
+                    href="tel:+84352074902"
+                    >+098 157 89 20</a
+                  >
+                </div>
+              </div>
+              <div style="margin-bottom: 5px">
+                <div>
+                  <span style="margin-right: 10px"
+                    ><i
+                      style="font-size: 20px; line-height: 40px"
+                      class="fa-solid fa-business-time"
+                    ></i></span
+                  >6:00 AM- 22:00 PM Everyday
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="link-chuyentiep mContactLink">
+            <h3 style="margin-top: 20px">Usefull link</h3>
+            <div>
+              <div style="margin-bottom: 5px">
+                <i style="margin-right: 5px" class="fa-solid fa-box-open"></i
+                ><a style="text-decoration: none" href="#!prod">Product</a>
+              </div>
+              <div style="margin-bottom: 5px">
+                <i
+                  style="margin-left: 5px; margin-right: 9px"
+                  class="fa-solid fa-question"
+                ></i
+                ><a style="text-decoration: none" href="#!ab">About Us</a>
+              </div>
+              <div style="margin-bottom: 5px">
+                <i
+                  style="margin-right: 5px"
+                  class="fa-brands fa-connectdevelop"
+                ></i
+                ><a style="text-decoration: none" href="#!contact"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            style="position: absolute; bottom: 0; left: 0; width: 100%"
+            class="link-icon"
+          >
+            <h3>Connect US</h3>
+            <div
+              style="
+                display: flex;
+                justify-content: space-around;
+                justify-items: center;
+                width: 30%;
+              "
+            >
+              <div style="display: inline-block">
+                <a href="https://www.facebook.com/aptech.fpt"
+                  ><i
+                    class="fa-brands fa-facebook"
+                    style="font-size: 20px; color: #d54d7b"
+                  ></i
+                ></a>
+              </div>
+              <div style="display: inline-block">
+                <a href="https://twitter.com"
+                  ><i
+                    class="fa-brands fa-twitter"
+                    style="font-size: 20px; color: #d54d7b"
+                  ></i
+                ></a>
+              </div>
+              <div style="display: inline-block">
+                <a href="https://www.linkedin.com"
+                  ><i
+                    class="fa-brands fa-linkedin-in"
+                    style="font-size: 20px; color: #d54d7b"
+                  ></i
+                ></a>
+              </div>
+              <div style="display: inline-block">
+                <a href="https://www.instagram.com"
+                  ><i
+                    class="fa-brands fa-instagram-square"
+                    style="font-size: 20px; color: #d54d7b"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15677.2773997461!2d106.6662743!3d10.7868348!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd2ecb62e0d050fe9!2sFPT-Aptech%20Computer%20Education%20HCM!5e0!3m2!1sen!2s!4v1660183373398!5m2!1sen!2s"
+            style="border: 0; width: 100%; height: 400px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
