@@ -90,10 +90,11 @@
 }
 
 footer {
-    position: fixed;
+    /* position: fixed; */
     bottom: 0%;
     width: 100%;
-    display: flex;
+    /* display: flex; */
+    margin-bottom: 10px;
 }
 
 footer a {
@@ -108,9 +109,22 @@ footer a {
 }
 
 .iconmoi {
+    max-width: 25px;
+    font-size: 25px;
+    color:#d98b04;
+    padding-right: 10px;
+}
+.icon-social {
+    max-width: 25px;
     font-size: 25px;
     color:#d98b04;
     padding-right: 20px;
+    /* padding-left: 9%; */
+    display: inline-flex;
+}
+.link-outsite{
+    max-width: 100%;
+    /* background-color: #080500; */
 }
 
 .footer-mapmap {
