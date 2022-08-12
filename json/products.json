@@ -1,10 +1,10 @@
 [
         {
             "id": 1,
-            "name": "MLB Korea",
-            "description": "MLB New York Yankees Heroes Adjustable Cap",
+            "name": "Jewel SHINE",
+            "description": "Jewel SHINE Yankees Heroes Adjustable Cap",
             "price": 100,
-            "image": "non1.jpg",
+            "image": "nonsua1.jpg",
             "isSale": true,
             "saleOff": "90%",
             "quantity": 0,
@@ -19,7 +19,7 @@
             "name": "Fedora",
             "description": "European style high-end men's felt hat MP013",
             "price": 200,
-            "image": "non2.2.jpg",
+            "image": "nonsualai2.jpg",
             "isSale": false,
             "saleOff": "",
             "quantity": 20,

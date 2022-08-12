@@ -1,14 +1,15 @@
 {
     "id": 2,
     "name": "Fedora",
-    "description": "This is a product2",
-    "price": 200,
-    "image": ["non2.1.jpg","non2.2.jpg","non2.3.jpg","non2.4.jpg","non2.5.jpg","non2.6.jpg"],
+    "description": "European style high-end men's felt hat MP013",
+    "price": 50,
+    "image": ["nonsualai2.jpg","nonsualai2_1.jpg","nonsualai2_2.jpg"],
     "isSale": false,
     "saleOff": "",
     "quantity": 20,
     "quality": "",
     "rating": 5,
     "ratingCount": 20,
-    "category": "2"
+    "bestSelling": false,
+    "category": "1"
 }
