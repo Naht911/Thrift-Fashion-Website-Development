@@ -1,18 +1,22 @@
 
 <div style="margin-top: 100px">
   <div class="container mt-3">
-    <h2>Card Header and Footer</h2>
+    <h2 class="text-center">Login</h2>
     <div class="card primary-custom">
-      <div class="card-header primary-custom text-center">Header</div>
+     
       <div class="card-body">
-        <form action="">
+        <form action="#" ng-submit="login()">
+          <p style="color: red;" class="text-center">{{ login_err ? login_err : null}}</p>
+          <p style="color: green;" class="text-center">{{ logned_msg ? logned_msg : null}}</p>
           <label for="username">username</label>
-          <input type="text" class="form-control" id="username" />
+          <input type="text" class="form-control" id="username" name="username" />
           <label for="password">password.</label>
-          <input type="password" class="form-control" id="password" />
+          <input type="password" class="form-control" id="password" name="password" />
         </form>
       </div>
-      <div class="card-footer primary-custom ">Footer</div> 
+      <div class="card-footer primary-custom text-center">
+        <button class="btn btn-primary-custom" type="button" ng-click="login()"> Login </button>
+      </div> 
     </div>
   </div>
 </div>

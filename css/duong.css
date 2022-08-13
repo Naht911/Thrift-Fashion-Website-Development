@@ -79,12 +79,21 @@ p.mCustom {
 }
 
 span.mName {
-    color: #d54d7b;
+    margin-top: 10px;
+    
+    font-family: 'Allan';
+    /* font-style: italic; */
+    font-weight: bold;
+    font-size: 20px;
+}
+span.mName2 {
+    margin-top: 10px;
+    color: #d54d7b !important;
     font-family: 'Allan';
     font-style: italic;
     font-weight: bold;
+    font-size: 20px;
 }
-
 .navbar-brand {
     color: #d54d7b !important;
     font-family: 'Allan';
