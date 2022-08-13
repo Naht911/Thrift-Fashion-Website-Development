@@ -36,13 +36,13 @@
 
           <div class="card mCardCustom">
             <div class="card-body">
-              <h5 class="card-title">Contact Us</h5>
+              <h2 class="card-title">Contact Us</h2>
               <p class="card-text">
               <div id="main" ng-app="demoApp" ng-controller="RegisterCtrl">
                 <form id="register-form" class="form-horizontal" name="form" ng-submit="register()" novalidate>
                   <!-- User Name -->
-                  <div class="form-group">
-                    <label for="username" class="col-xs-3 control-label required">User Name
+                  <div class="form-group" style="margin-bottom:20px">
+                    <label for="username" style="font-size:20px;margin-bottom:2px" class="col-xs-3 control-label required">User Name <span style="color: red">*</span>
                     </label>
                     <div class="col-xs-9">
                       <input name="username" type="text" class="form-control" placeholder="Name"
@@ -60,18 +60,18 @@
                     </div>
                   </div>
                   <!-- Email -->
-                  <div class="form-group">
-                    <label for="email" class="col-xs-3 control-label required">Email</label>
+                  <div class="form-group" style="margin-bottom:20px">
+                    <label for="email"  style="font-size:20px;margin-bottom:2px"class="col-xs-3 control-label required">Email <span style="color: red">*</span></label>
                     <div class="col-xs-9">
                       <input name="email" type="email" class="form-control" placeholder="Email" ng-model="email"
                         autocomplete="off" required>
 
                     </div>
                   </div>
-                  <div class="form-group">
-                    <label style="font-size:130%;" for="content">Content <span style="color: red">*</span></label>
+                  <div class="form-group" style="margin-bottom:20px">
+                    <label style="font-size:20px;margin-bottom:2px" for="content">Content <span style="color: red">*</span></label>
                     <textarea name="" id="" cols="30" rows="30" name="content" class="mFormCustom"
-                      placeholder="Enter your content" style="height:200px;" required></textarea>
+                      placeholder="Enter your content" style="height:300px;" required></textarea>
                   </div>
                  
 
