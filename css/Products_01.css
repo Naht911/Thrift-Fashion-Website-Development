@@ -130,6 +130,7 @@
 .products-content-right-products-name{
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#d54d7b; ;
 }
 .msp, .products-content-right-products-price{
 
@@ -140,9 +141,14 @@
     
     
 }
+.msp{
+    margin-top: 40px;
+    margin-left: 50px;
+}
 .products-content-right-products-price{
     /* color: rgb(237, 71, 71); */
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-left: 50px;
 }
 .products-content-right-products-price span{
     color: rgb(222, 46, 46);
@@ -152,6 +158,7 @@
     font-size: 20px;
     margin-top: 5px;
     padding: 5px 6px;
+    margin-left: 50px;
 }
 .products-content-right-products-Quantity input{
     width: 60px;
@@ -162,10 +169,12 @@
     width: 100px;
     text-align: center;
     padding: 20px 20px;
+    
 }
 .products-content-right-products-button a{
     width: 100px;
     display: flex;
+    margin: center;
 }
 .product_des{
     font-size: 40px;
@@ -183,6 +192,8 @@
 .cart-quantity:invalid{
     color: red;
 }
+
+
 
     
 
