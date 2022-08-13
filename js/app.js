@@ -104,7 +104,17 @@ app.controller("myController", function ($scope, $rootScope, $http, $location) {
     $scope.logned_msg = "";
 
   };
+  var productDetail = [];
+  $http.get("json/products.json").then(function (rsp) {
+    productDetail = rsp.data;
+  });
+  $rootScope.viewDetails = function (id) {
+    //#!product/{{d.id}}
+    console.log(productDetail.id);
 
+    $location.url("/product/" + id);
+    
+  }
 
 
 

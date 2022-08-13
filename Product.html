@@ -42,10 +42,10 @@
 								</div>
 							</div>
 							<div class="card-body">
-								<h3 class="name_color"><a href="#!product/{{d.id}}" class="product_list">{{d.name}}</a>
+								<h3 class="name_color"><a  ng-click="viewDetails(d.id)" href="#!product/{{d.id}}" class="product_list">{{d.name}}</a>
 								</h3>
 								<p class="card_p">{{d.description}}</p>
-								<a href="#!product/{{d.id}}" class="price-body">
+								<a ng-click="viewDetails(d.id)" class="price-body">
 									<p>price: $100</p>
 								</a>
 							</div>
