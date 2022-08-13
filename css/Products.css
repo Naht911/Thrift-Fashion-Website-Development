@@ -92,5 +92,9 @@ body{
 }
 
 #saveName {
-    height: 38px;
+    height: 42px;
+}
+
+.btn.btn-link.text-warning {
+    height: 42px;
 }
