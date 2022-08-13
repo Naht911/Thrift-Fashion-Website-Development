@@ -64,15 +64,16 @@ body{
     width: 185px;
     text-align: center;
     font-size: larger;
-    color: #D54D7B;
+    color: #0c0b0c;
     border-radius: 100px;
     margin-left: 0;
-    background-color: #f4cbb5;
+    background-color: #f6dddd;
     margin-left: 35px;
 }
 
 #name_type:hover {
     width: 210px;
+    background-color:#f4ab84 ;
 }
 
 #saveName {
@@ -84,4 +85,16 @@ body{
 
 .fix-block {
     padding-left: 0;
+}
+
+.rounded {
+    height: 50px;
+}
+
+#saveName {
+    height: 42px;
+}
+
+.btn.btn-link.text-warning {
+    height: 42px;
 }

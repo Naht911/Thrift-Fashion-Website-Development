@@ -1,6 +1,47 @@
-<div style="margin-top: 500px;">
-    dsd
-<div ng-repeat="d in carItems">
-    {{d}}
+
+<table id="cart">
+    <tr id="head">
+        <td class="cartName">Name</td>
+        <td class="cartPrice">Price</td>
+        <td class="cartQuan">Quantity</td>
+    </tr>
+    <tr ng-repeat="d in carItems" id="body">
+        <td class="cartName">{{d.name}}</td>
+        <td class="cartPrice">{{d.price}}</td>
+        <td class="cartQuan">{{d.quantity}}</td>
+    </tr>
+</table>
+<div>
+    <i class="fa-solid fa-store"></i>Back to store
+
 </div>
-</div>
+
+
+<style>
+    #cart{
+        background-color: rgb(211, 137, 88);
+        margin: auto;
+        border: solid;
+        font-weight: bold;
+        border-radius: 2px;
+    }
+    #head{
+        border: solid;
+    }
+    .cartName{
+        padding: 10px;
+        width: 150px;
+    }
+    .cartPrice{        
+        padding: 10px;
+        width: 150px;
+        text-align: center;
+    }
+    .cartQuan{
+        padding: 10px;
+        width: 50px;
+        text-align: center;
+    }
+</style>
+
+
