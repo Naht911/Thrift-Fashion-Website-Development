@@ -2,28 +2,28 @@
     "users": [
         {
             "id": 1,
-            "name": "John",
+            "name": "Mr. Demo 1",
             "age": 30,
             "username": "demo1",
             "password": "demo1"
         },
         {
             "id": 2,
-            "name": "Mary",
+            "name": "Dr. Demo 2",
             "age": 25,
             "username": "demo2",
             "password": "demo2"
         },
         {
             "id": 3,
-            "name": "Peter",
+            "name": "Mrs. Demo 3",
             "age": 35,
             "username": "demo3",
             "password": "demo3"
         },
         {
             "id": 4,
-            "name": "James",
+            "name": "Ms. Demo 4",
             "age": 40,
             "username": "demo4",
             "password": "demo4"

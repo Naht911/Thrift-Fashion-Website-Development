@@ -1,5 +1,5 @@
 var app = angular.module("myApp", ["ngRoute"]);
-app.controller("myController", function ($scope, $rootScope) {
+app.controller("myController", function ($scope, $rootScope, $http, $location) {
   $scope.saveName = function () {
     $scope.hideForm = !$scope.hideForm;
   };
@@ -56,6 +56,58 @@ app.controller("myController", function ($scope, $rootScope) {
     localStorage.setItem("itemsArray", JSON.stringify(oldItems));
   };
   $rootScope.carItems = JSON.parse(localStorage.getItem("itemsArray")) || [];
+  var users = [];
+  $http.get("json/user.json").then(function (rsp_user) {
+    users = rsp_user.data.users;
+  });
+
+
+  $rootScope.login = function () {
+    username = $('input[name="username"]').val();
+    password = $('input[name="password"]').val();
+
+    for (const key in users) {
+      if (users[key].username == username && users[key].password == password) {
+        $rootScope.user = users[key];
+        console.log($rootScope.user);
+        // var isLogin = true;
+        $scope.isLogin = true;
+        localStorage.setItem("isLogin", true);
+        localStorage.setItem("user", JSON.stringify($rootScope.user));
+        // localStorage.setItem("isLogin", true);
+        var url = $location.url();
+        $location.url('/#')
+        console.log(url);
+        $scope.logned_msg = "Welcome " + $rootScope.user.name;
+        return true;
+      }
+    }
+    console.log("false");
+    $scope.login_err = 'Username or password is incorrect';
+    return false;
+  };
+  $scope.isLogin = JSON.parse(localStorage.getItem("isLogin")) || false;
+  if($scope.isLogin){
+    user = JSON.parse(localStorage.getItem("user"));
+    
+    $scope.name = user.name;
+    console.log(user.name);
+  }else{
+     var logned_msg = "";
+  }
+  
+  console.log(logned_msg);
+  $rootScope.logout = function () {
+    localStorage.setItem("isLogin", false);
+    localStorage.setItem("user", null);
+    $scope.isLogin = false;
+    $scope.logned_msg = "";
+
+  };
+
+
+
+
 });
 app.config(function ($routeProvider) {
   $routeProvider
