@@ -68,6 +68,10 @@ app.config(function ($routeProvider) {
       title: "Product",
       templateUrl: "Product.html",
     })
+    .when("/login", {
+      title: "Login",
+      templateUrl: "login.html",
+    })
     .when("/product/:id", {
       title: "productDetail",
       templateUrl: "productDetail.html",
