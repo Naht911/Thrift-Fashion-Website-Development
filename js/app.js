@@ -87,4 +87,21 @@ app.run(function ($rootScope, $http) {
     });
   });
 });
+//  show arlet
+app.controller('app', ['$scope', function($app) {
+  $app.alert = function() {
+      alert("Thank's you");
+  }
+}]);
+// validate from
+app.controller( "RegisterCtrl", ['$scope', function($scope) {
+$scope.success = false;
+$scope.register = function() {
+$scope.success=true;
+$scope.register =function(){
+  alert('Your message has sent to us successful')
+}
+}
+}]);
+
 

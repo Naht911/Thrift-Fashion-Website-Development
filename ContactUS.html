@@ -1,5 +1,25 @@
+<style>
+  input.ng-dirty {
+    border-bottom: 2px solid yellow;
+  }
 
-<div class="container" style="background-color: #e9d5ca;">
+  input.ng-invalid.ng-dirty {
+    border-bottom: 2px solid red;
+  }
+
+  input.ng-valid.ng-dirty {
+    border-bottom: 2px solid green;
+  }
+
+  input.ng-invalid-minlength.ng-dirty {
+    border-bottom: 2px solid blue;
+  }
+
+  input.ng-invalid-maxlength.ng-dirty {
+    border-bottom: 2px solid blue;
+  }
+</style>
+<div class="container" style="background-color: #e9d5ca;" ng-controller="app">
   <div class="Bao-w85-center">
     <h1 class="web_title" style="font-size: 100px;">
       Contact Us
@@ -11,8 +31,6 @@
           <div class="text-center">
             <img src="/img/contact.png" alt="" srcset="" class="rounded contact">
           </div>
-
-
         </div>
         <div class="col-sm-12 col-md-7">
 
@@ -20,33 +38,55 @@
             <div class="card-body">
               <h5 class="card-title">Contact Us</h5>
               <p class="card-text">
-                
-              <form action="" method="get" style="margin-top: 10px;" class="mFormCustom">
+              <div id="main" ng-app="demoApp" ng-controller="RegisterCtrl">
+                <form id="register-form" class="form-horizontal" name="form" ng-submit="register()" novalidate>
+                  <!-- User Name -->
+                  <div class="form-group">
+                    <label for="username" class="col-xs-3 control-label required">User Name
+                    </label>
+                    <div class="col-xs-9">
+                      <input name="username" type="text" class="form-control" placeholder="Name"
+                        ng-model="username" ng-minlength="6" ng-maxlength="50" ng-pattern="/^[a-zA-Z]+$/" required>
+                      <i class="fa fa-check text-success" ng-show="form.username.$dirty && form.username.$valid">
+                      </i>
+                      <div ng-show="form.username.$dirty && form.username.$invalid" class="text-danger">
+                        <i class="fa fa-times text-danger"></i>
+                        <span ng-show="form.username.$error.required">Username cannot be empty </span>
+                        <span ng-show="form.username.$error.minlength">Username must at least 6 characters</span>
+                        <span ng-show="form.username.$error.maxlength">Username must maximum 50 characters</span>
+                        <span ng-show="form.username.$error.pattern">Username must only contain a-z or A-Z
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Email -->
+                  <div class="form-group">
+                    <label for="email" class="col-xs-3 control-label required">Email</label>
+                    <div class="col-xs-9">
+                      <input name="email" type="email" class="form-control" placeholder="Email" ng-model="email"
+                        autocomplete="off" required>
 
-                <label style="font-size:130%;" for="name">Full Name <span style="color: red">*</span></label><br>
-                <input type="text" placeholder="Enter your name" class="mFormCustom" name="name"><br>
-                <label style="font-size:130%;" for="email">Email <span style="color: red">*</span></label><br>
-                <input type="email" placeholder="Enter your email" name="email" class="mFormCustom"><br>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label style="font-size:130%;" for="content">Content <span style="color: red">*</span></label>
+                    <textarea name="" id="" cols="30" rows="30" name="content" class="mFormCustom"
+                      placeholder="Enter your content" style="height:200px;" required></textarea>
+                  </div>
+                 
 
-                <label style="font-size:130%;" for="content">Content <span style="color: red">*</span></label>
-                <textarea name="" id="" cols="30" rows="30" name="content" class="mFormCustom"
-                  placeholder="Enter your content" style="height:200px;"></textarea>
-                <button type="submit" class="btn btn-primary-custom">Submit</button>
+                  <button type="submit" class="btn btn-primary"
+                    ng-disabled="!form.$dirty || (form.$dirty && form.$invalid)">
+                    Submit <i class="fa fa-sign-in"  ></i></button>
 
-              </form>
+                </form>
+              </div>
+
               </p>
             </div>
           </div>
-
-
-
-
         </div>
       </div>
-
     </div>
   </div>
-
-
 </div>
-

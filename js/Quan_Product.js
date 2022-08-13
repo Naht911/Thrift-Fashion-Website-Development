@@ -186,3 +186,6 @@ $(".hover").mouseleave(function () {
   $(this).removeClass("hover");
 });
 // ==========End Carl========
+function show(){
+  alert('hello')
+}
