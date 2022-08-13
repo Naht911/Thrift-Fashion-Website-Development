@@ -13,7 +13,7 @@ body{
 .productCard{
     margin: auto;
     width: 100%;
-    height: 400px;
+    height: 450px;
     background:none;
     margin-top: 23px;
     border-radius: 10px ;
@@ -68,7 +68,7 @@ body{
     border-radius: 100px;
     margin-left: 0;
     background-color: #f4cbb5;
-    margin-left: 40px;
+    margin-left: 35px;
 }
 
 #name_type:hover {

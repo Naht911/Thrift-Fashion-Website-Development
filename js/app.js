@@ -20,32 +20,30 @@ app.controller("myController", function ($scope, $rootScope) {
     }
     return -1;
   };
-  $rootScope.carItems = [];
-  var cartItems = $rootScope.carItems;
+
   $rootScope.addtocart = function (id, name, price, quantity) {
     var oldItems = JSON.parse(localStorage.getItem("itemsArray")) || [];
-    if (oldItems.length == 0 || oldItems == null) {
-      var newItem = {
-        id: id,
-        name: name,
-        price: price,
-        quantity: quantity,
-      };
-
-      oldItems.push(newItem);
-
-      localStorage.setItem("itemsArray", JSON.stringify(oldItems));
-    }
+    // if (oldItems.length == 0 || oldItems == null) {
+    //   var newItem = {
+    //     id: id,
+    //     name: name,
+    //     price: price,
+    //     quantity: quantity,
+    //   };
+    //   oldItems.push(newItem);
+    //   localStorage.setItem("itemsArray", JSON.stringify(oldItems));
+    // }
     var count = 0;
     for (const key in oldItems) {
       if (oldItems[key].id == id) {
         count++;
-        console.log(oldItems[i].name + "dsd");
-        oldItems[key].quantity = oldItems[key].quantity + 1;
-
-        // return false;
+        console.log(oldItems[key].name + "dsd");
+        oldItems[key].quantity = oldItems[key].quantity + quantity;
+        console.log(quantity);
+        console.log("oldItems[key].quantity: " + oldItems[key].quantity);
       }
     }
+
     if (count == 0) {
       var newItem = {
         id: id,
@@ -53,40 +51,11 @@ app.controller("myController", function ($scope, $rootScope) {
         price: price,
         quantity: quantity,
       };
-
       oldItems.push(newItem);
-
-      localStorage.setItem("itemsArray", JSON.stringify(oldItems));
     }
-
-    for (const key in oldItems) {
-      if (oldItems[key].id) {
-        console.log(oldItems[key].id);
-        console.log(typeof oldItems[key]);
-        console.log("tìm thấy item trong localStorage: ");
-      }
-      // else{
-      //   console.log(' không tìm thấy item trong localStorage');
-      //   var newItem = {
-      //     id: id,
-      //     name: name,
-      //     price: price,
-      //     quantity: quantity,
-      //   };
-
-      //   oldItems.push(newItem);
-
-      //   localStorage.setItem("itemsArray", JSON.stringify(oldItems));
-      // }
-      //  console.log(oldItems[key].id.includes(id))
-    }
-
-    const includesTwenty = oldItems.includes(id);
-    if (!includesTwenty) {
-    }
-
-    console.log(oldItems); //true
+    localStorage.setItem("itemsArray", JSON.stringify(oldItems));
   };
+  $rootScope.carItems = JSON.parse(localStorage.getItem("itemsArray")) || [];
 });
 app.config(function ($routeProvider) {
   $routeProvider
@@ -124,7 +93,7 @@ app.config(function ($routeProvider) {
 app.run(function ($rootScope, $location) {
   $rootScope.$on("$routeChangeSuccess", function (event, current, previous) {
     $rootScope.title = current.$$route.title;
-    console.log(current.$$route.title);
+    // console.log(current.$$route.title);
   });
 });
 
@@ -141,7 +110,6 @@ app.run(function ($rootScope, $http) {
   });
   $http.get("json/products.json").then(function (rsp_products) {
     $rootScope.data_products = rsp_products.data;
-    
   });
   $http.get("json/products.json").then(function (rsp_bestSelling) {
     var obj_bestSelling = rsp_bestSelling.data;
@@ -163,32 +131,38 @@ app.run(function ($rootScope, $http) {
       }
     });
   });
-  $http.get("json/products.json").then(function(rsp_rating){
+  $http.get("json/products.json").then(function (rsp_rating) {
     var obj_Rating = rsp_rating.data;
     $rootScope.dataRating = [];
-    var a =0;
-    for(const key in obj_Rating){
-      if(obj_Rating[key].rating  === 5 && a <4 ){
+    var a = 0;
+    for (const key in obj_Rating) {
+      if (obj_Rating[key].rating === 5 && a < 4) {
         a++;
         $rootScope.dataRating.push(obj_Rating[key]);
       }
     }
-  })
+  });
 });
 
 //  show arlet
-app.controller('app', ['$scope', function($app) {
-  $app.alert = function() {
+app.controller("app", [
+  "$scope",
+  function ($app) {
+    $app.alert = function () {
       alert("Thank's you");
-  }
-}]);
+    };
+  },
+]);
 // validate from
-app.controller( "RegisterCtrl", ['$scope', function($scope) {
-$scope.success = false;
-$scope.register = function() {
-$scope.success=true;
-$scope.register =function(){
-  alert('Your message has sent to us successful')
-}
-}
-}]);
+app.controller("RegisterCtrl", [
+  "$scope",
+  function ($scope) {
+    $scope.success = false;
+    $scope.register = function () {
+      $scope.success = true;
+      $scope.register = function () {
+        alert("Your message has sent to us successful");
+      };
+    };
+  },
+]);
