@@ -342,19 +342,9 @@
       letter-spacing: 1px;
       text-decoration: none;
     }
-    .snip1135 a:before,
-    .snip1135 a:after {
-      position: absolute;
-      -webkit-transition: all 0.35s ease;
-      transition: all 0.35s ease;
-    }
     .snip1135 a:before {
-      bottom: 0;
-      display: none;
-      height: 3px;
-      width: 0%;
-      content: "";
-      background-color: #2980b9;
+      border: none;
+      border-bottom:1px solid #d54d7b ;
     }
     .snip1135 a:after {
       left: 9.65em;
@@ -362,7 +352,6 @@
       padding: 0.5em 0;
       position: absolute;
       content: attr(data-hover);
-      color: #ffffff;
       white-space: nowrap;
       max-width: 0%;
       overflow: hidden;
@@ -371,8 +360,9 @@
     }
     .snip1135 a:hover:before,
     .snip1135 .current a:before {
+      margin-left: 140px;
       opacity: 1;
-      width: 100%;
+      width: 30%;
     }
     .snip1135 a:hover:after,
     .snip1135 .current a:after {
