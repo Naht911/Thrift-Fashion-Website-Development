@@ -85,3 +85,11 @@ body{
 .fix-block {
     padding-left: 0;
 }
+
+.rounded {
+    height: 50px;
+}
+
+#saveName {
+    height: 38px;
+}
