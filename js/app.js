@@ -65,6 +65,7 @@ app.run(function ($rootScope, $http) {
   });
   $http.get("json/products.json").then(function (rsp_products) {
     $rootScope.data_products = rsp_products.data;
+    
   });
   $http.get("json/products.json").then(function (rsp_bestSelling) {
     var obj_bestSelling = rsp_bestSelling.data;
@@ -86,6 +87,17 @@ app.run(function ($rootScope, $http) {
       }
     });
   });
+  $http.get("json/products.json").then(function(rsp_rating){
+    var obj_Rating = rsp_rating.data;
+    $rootScope.dataRating = [];
+    var a =0;
+    for(const key in obj_Rating){
+      if(obj_Rating[key].rating  === 5 && a <4 ){
+        a++;
+        $rootScope.dataRating.push(obj_Rating[key]);
+      }
+    }
+  })
 });
 //  show arlet
 app.controller('app', ['$scope', function($app) {
