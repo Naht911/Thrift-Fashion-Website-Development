@@ -3,7 +3,7 @@ app.controller("myController", function ($scope, $rootScope, $http, $location) {
   $scope.saveName = function () {
     $scope.hideForm = !$scope.hideForm;
   };
-
+$rootScope.quantity = 1;
   $scope.checkvalues = function (user) {
     var category_id = $('input[name="category_id"]:checked').val();
     console.log(category_id);
@@ -109,6 +109,13 @@ app.controller("myController", function ($scope, $rootScope, $http, $location) {
     productDetail = rsp.data;
   });
   $rootScope.viewDetails = function (id) {
+    for (const key in productDetail) {
+    if(productDetail[key].id == id){
+      $rootScope.product = productDetail[key];
+      console.log($rootScope.product);
+      // $location.url('/product-detail');
+    }
+    }
     //#!product/{{d.id}}
     console.log(productDetail.id);
 

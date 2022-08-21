@@ -10,14 +10,9 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="/img/prod/home.jpg" class="d-block w-100 carousel-img" alt="...">
+                <img src="/img/prod/{{product.image}}" class="d-block w-100 carousel-img" alt="...">
               </div>
-              <div class="carousel-item">
-                <img src="/img/prod/menu2.jpg" class="d-block w-100 carousel-img"  alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="/img/prod/menu3.jpg" class="d-block w-100 carousel-img" alt="...">
-              </div>
+              
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -32,24 +27,24 @@
       <div class="col-sm-6">
         <div class="">
           <div class="products-content-right-products-name">
-            <h1>ADIDAS ULTRA BOOST 3.0</h1>
+            <h1>{{product.name}}</h1>
           </div>
           <div>
             
           </div>
-          <div class="msp"><b>MSP:</b></div>
+          <div class="msp"><b>PID: {{product.id}}</b></div>
 
           <div class="products-content-right-products-price">
-            <p><b>Price:</b>   <span></span></p>
+            <p><b>Price:</b>   <span>{{product.price}}</span></p>
           </div>
           <div class="products-content-right-products-Quantity">
             <p style="font-weight: bold">
               Quatity:
-              <input type="number" pattern="[0-9]" min="1" max="10" value="1" class="cart-quantity" name="" id="" />
+              <input type="number" pattern="[0-9]" min="1" max="10" class="cart-quantity" name="" id="" ng-model="quantity" value="1" />
             </p>
           </div>
           <div class="products-content-right-products-button">
-            <a href="" class="btn btn-primary-custom" id="btn_cart" type="button">Add Cart</a>
+            <a href="" class="btn btn-primary-custom" id="btn_cart" type="button" ng-click="addtocart(product.id, product.name, product.price, quantity)">Add Cart</a>
           </div>
         </div>
       </div>
@@ -58,36 +53,9 @@
     <div class="row">
       <div class="col-sm-12">
         <h1 class="product_des">Product Description</h1>
-        <h3 class="product_h3">👉 PRODUCT DESCRIPTION:</h3>
-        <p class="product_p">
-          ➡️ Adidas Ultra Boot 30 sports shoes are made of breathable flyknit
-          fabric, soft rubber soles, meticulous and delicate stitching, steps
-          become light and smooth. On the upper part of the shoe, there are
-          decorations and motifs that make the shoes stand out and have a more
-          stylish personality. As a Adidas fanatic, you can't miss Ultra Boost
-          30.
-        </p>
-        <h3 class="product_h3">👉 HOW TO KEEP SHOES:</h3>
-        <p product_p>
-          ➡️ You can use eraser, toothpaste, baking soda to clean; Deodorize
-          shoes by placing them in the freezer or using baby powder. Keeping the
-          sneaker clean, clean and always like new can speak to the personality
-          of the wearer. Normally, a pair of sneaker shoes do not need to be
-          washed too much, frequent washing will cause them to lose their
-          original color, in case the shoes are soaked in water, use shredded
-          paper, round them and put them inside the shoes to keep them. shape,
-          leave shoes in a dry, airy place, absolutely do not rush to dry shoes
-          at high temperature or dry in direct sunlight.
-        </p>
-        <h3 class="product_h3">✔️ SHOP COMMITMENT:</h3>
-        <p product_p>
-          ➡️ 100% STANDARD AS PICTURES <br />
-          ➡️ 100% MONEY BACK IF NOT LIKE THE PHOTO <br />
-          ➡️ SUPPORT FOR EXCHANGE AND RETURN WITHIN 30 DAYS <br />
-          Any questions about the product, message the shop immediately, so that
-          the shop can always consult. Thank you all for visiting our shop, have
-          a nice day. ❤️❤️❤️
-        </p>
+        <h3 class="product_h3">  {{product.description}}</h3>
+       
+        
         <hr>
         <h3 class="Selling">Related Products</h3>
         <div class="container-fluid">
@@ -98,16 +66,16 @@
                 <div class="card productCard">
                   <div class="card-header">
                     <div class="image">
-                      <a href="#!product/{{d.id}}"> <img src="/img/prod/{{d.image}}" width="100%"
+                      <a ng-click="viewDetails(d.id)" > <img src="/img/prod/{{d.image}}" width="100%"
                           class="img-prod product_list "></a>
-                      <div class="icons"> </div> <a href="#!product/{{d.id}}" class="add-to-cart">Add to Cart</a>
+                      <div class="icons"> </div> <a ng-click="addtocart(d.id, d.name, d.price, 1)"  class="add-to-cart">Add to Cart</a>
                     </div>
                   </div>
                   <div class="card-body">
-                    <h3 class="name_color"><a href="#!product/{{d.id}}" class="product_list">{{d.name}}</a>
+                    <h3 class="name_color"><a ng-click="viewDetails(d.id)"  class="product_list">{{d.name}}</a>
                     </h3>
                     <p class="card_p">{{d.description}}</p>
-                    <a href="#!product/{{d.id}}" class="price-body">
+                    <a ng-click="viewDetails(d.id)"  class="price-body">
                       <p>price: $100</p>
                     </a>
                   </div>
