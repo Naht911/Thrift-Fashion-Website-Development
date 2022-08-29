@@ -3,7 +3,7 @@
  
 
  <table id="cart">
-    <h6 class="text-center">Please reload this pages if the cart do not updated</h6>
+    <!-- <h6 class="text-center">Please reload this pages if the cart do not updated</h6> -->
     <tr id="head">
         <td class="cartName">Name</td>
         <td class="cartPrice">Price</td>
@@ -33,7 +33,7 @@
         </tr>
    
 </table>
-<p style="text-align: right;">
+<p style="text-align: right;" ng-show="showCheckoutBt">
     <!-- <button class="btn btn-primary-custom bg-danger" id="btn_cart" type="button" ng-click="removeallcart()">Clear Cart <i class="fa-solid fa-xmark"></i></button> -->
     <button class="btn btn-primary-custom bg-success" id="btn_cart" type="button" ng-click="checkout()">Check out <i class="fa-solid fa-bag-shopping"></i></button>
 </p>

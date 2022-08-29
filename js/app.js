@@ -3,6 +3,25 @@ app.controller("myController", function ($scope, $rootScope, $http, $location) {
   $scope.saveName = function () {
     $scope.hideForm = !$scope.hideForm;
   };
+  
+$rootScope.CountFunct = function(){
+  $rootScope.countVisit = localStorage.getItem("countVisit");
+  if ($rootScope.countVisit == null) {
+
+    $rootScope.countVisit = 0;
+
+  }else{
+    $rootScope.countVisit++;
+  }
+  localStorage.setItem("countVisit", $rootScope.countVisit);
+}
+$rootScope.CountFunct();
+  // if(!$rootScope.countVisit){
+  //   $rootScope.countVisit = 0;
+  // }else{
+  //   $rootScope.countVisit++;
+  // }
+  
 $rootScope.quantity = 1;
   $scope.checkvalues = function (user) {
     var category_id = $('input[name="category_id"]:checked').val();
@@ -52,6 +71,7 @@ $rootScope.quantity = 1;
     localStorage.setItem("itemsArray", JSON.stringify(oldItems));
     $rootScope.carItems = JSON.parse(localStorage.getItem("itemsArray"));
     $rootScope.calTotal();
+    $rootScope.countProdFunct();
   };
   $rootScope.removefromcart = function (id) {
     var oldItems = JSON.parse(localStorage.getItem("itemsArray")) || [];
@@ -60,6 +80,7 @@ $rootScope.quantity = 1;
     $rootScope.carItems = oldItems;
     localStorage.setItem("itemsArray", JSON.stringify(oldItems));
     $rootScope.calTotal();
+    $rootScope.countProdFunct();
     
   }
   $rootScope.removeallcart = function () {
@@ -67,6 +88,8 @@ $rootScope.quantity = 1;
     $rootScope.carItems = [];
     $rootScope.total = 0;
     $rootScope.showCheckout = false;
+    $rootScope.countProd = 0;
+    $rootScope.calTotal();
   }
   
 
@@ -83,7 +106,7 @@ $rootScope.quantity = 1;
     console.log("checkoutsubmit");
     $rootScope.showCheckout = false;
     $rootScope.removeallcart();
-    alert("Thank you for your purchase!");
+    alert("Your order is received!");
     $location.url("/cart");
     // return false;
   }
@@ -99,6 +122,10 @@ $rootScope.quantity = 1;
     }
     if($rootScope.total == 0){
       $rootScope.showCheckout = false;
+      $rootScope.showCheckoutBt = false;
+    }else{
+      // $rootScope.showCheckout = true;
+      $rootScope.showCheckoutBt = true;
     }
   }
   $rootScope.showCheckout = false;
@@ -111,7 +138,11 @@ $rootScope.quantity = 1;
     }
 
   }
-
+  $rootScope.countProd = 0;
+  $rootScope.countProd = $rootScope.carItems.length;
+  $rootScope.countProdFunct = function () {
+    $rootScope.countProd = $rootScope.carItems.length;
+  }
 
   $rootScope.login = function () {
     username = $('input[name="username"]').val();

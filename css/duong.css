@@ -265,3 +265,15 @@ a.product_list {
     font-size: larger;
     background-color: rgb(246, 209, 161);
 }
+.cartIcon{
+     position: relative;
+    /* font-size: 20px; */
+    /* top: 100px; */
+    /* left: 50px; */
+}
+.badge{
+    position:absolute;
+    /* left:20px; */
+    /* font-size: 10px; */
+    /* top: -100px; */
+}
