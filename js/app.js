@@ -23,28 +23,24 @@ $rootScope.quantity = 1;
 
   $rootScope.addtocart = function (id, name, price, quantity) {
     var oldItems = JSON.parse(localStorage.getItem("itemsArray")) || [];
-    // if (oldItems.length == 0 || oldItems == null) {
-    //   var newItem = {
-    //     id: id,
-    //     name: name,
-    //     price: price,
-    //     quantity: quantity,
-    //   };
-    //   oldItems.push(newItem);
-    //   localStorage.setItem("itemsArray", JSON.stringify(oldItems));
-    // }
+    
     var count = 0;
     for (const key in oldItems) {
       if (oldItems[key].id == id) {
         count++;
-        console.log(oldItems[key].name + "dsd");
+        // console.log(oldItems[key].name + "dsd");
         oldItems[key].quantity = oldItems[key].quantity + quantity;
-        console.log(quantity);
-        console.log("oldItems[key].quantity: " + oldItems[key].quantity);
+        // console.log(quantity);
+        // console.log("oldItems[key].quantity: " + oldItems[key].quantity);
+      }
+      if(oldItems[key].id == id && oldItems[key].quantity <= 0){
+        oldItems.splice(key, 1);
+      }else{
+        localStorage.setItem("itemsArray", JSON.stringify(oldItems));
       }
     }
 
-    if (count == 0) {
+    if (count == 0 && quantity > 0) {
       var newItem = {
         id: id,
         name: name,
@@ -54,12 +50,67 @@ $rootScope.quantity = 1;
       oldItems.push(newItem);
     }
     localStorage.setItem("itemsArray", JSON.stringify(oldItems));
+    $rootScope.carItems = JSON.parse(localStorage.getItem("itemsArray"));
+    $rootScope.calTotal();
   };
+  $rootScope.removefromcart = function (id) {
+    var oldItems = JSON.parse(localStorage.getItem("itemsArray")) || [];
+    var index = findIndexOfKey(id);
+    oldItems.splice(index, 1);
+    $rootScope.carItems = oldItems;
+    localStorage.setItem("itemsArray", JSON.stringify(oldItems));
+    $rootScope.calTotal();
+    
+  }
+  $rootScope.removeallcart = function () {
+    localStorage.removeItem("itemsArray");
+    $rootScope.carItems = [];
+    $rootScope.total = 0;
+    $rootScope.showCheckout = false;
+  }
+  
+
   $rootScope.carItems = JSON.parse(localStorage.getItem("itemsArray")) || [];
+  $rootScope.total = 0;
+  if($rootScope.carItems.length > 0){
+    $rootScope.total = 0;
+    for (const key in $rootScope.carItems) {
+      $rootScope.total = $rootScope.total + $rootScope.carItems[key].price * $rootScope.carItems[key].quantity;
+    }
+    // console.log($rootScope.total);
+  }
+  $rootScope.checkoutsubmit = function () {
+    console.log("checkoutsubmit");
+    $rootScope.showCheckout = false;
+    $rootScope.removeallcart();
+    alert("Thank you for your purchase!");
+    $location.url("/cart");
+    // return false;
+  }
+  
   var users = [];
   $http.get("json/user.json").then(function (rsp_user) {
     users = rsp_user.data.users;
   });
+  $rootScope.calTotal = function () {
+    $rootScope.total = 0;
+    for (const key in $rootScope.carItems) {
+      $rootScope.total = $rootScope.total + $rootScope.carItems[key].price * $rootScope.carItems[key].quantity;
+    }
+    if($rootScope.total == 0){
+      $rootScope.showCheckout = false;
+    }
+  }
+  $rootScope.showCheckout = false;
+  $rootScope.checkout = function () {
+    if($rootScope.carItems.length > 0){
+      $rootScope.showCheckout = !$rootScope.showCheckout;
+      // $location.url("/checkout");
+    }else{
+      alert("Your cart is empty");
+    }
+
+  }
 
 
   $rootScope.login = function () {
@@ -69,17 +120,19 @@ $rootScope.quantity = 1;
     for (const key in users) {
       if (users[key].username == username && users[key].password == password) {
         $rootScope.user = users[key];
-        console.log($rootScope.user);
+        // console.log($rootScope.user);
         // var isLogin = true;
         $scope.isLogin = true;
         localStorage.setItem("isLogin", true);
+
         localStorage.setItem("user", JSON.stringify($rootScope.user));
+        $rootScope.name = $rootScope.user.name;
         // localStorage.setItem("isLogin", true);
         var url = $location.url();
         $location.url('/#')
-        console.log(url);
+        // console.log(url);
         $scope.logned_msg = "Welcome " + $rootScope.user.name;
-        return true;
+        // return true;
       }
     }
     console.log("false");
@@ -90,18 +143,19 @@ $rootScope.quantity = 1;
   if($scope.isLogin){
     user = JSON.parse(localStorage.getItem("user"));
     
-    $scope.name = user.name;
+    $rootScope.name = user.name;
     console.log(user.name);
   }else{
      var logned_msg = "";
   }
   
-  console.log(logned_msg);
+  // console.log(logned_msg);
   $rootScope.logout = function () {
     localStorage.setItem("isLogin", false);
     localStorage.setItem("user", null);
     $scope.isLogin = false;
     $scope.logned_msg = "";
+    $rootScope.name = "";
 
   };
   var productDetail = [];
@@ -122,6 +176,7 @@ $rootScope.quantity = 1;
     $location.url("/product/" + id);
     
   }
+  
 
 
 
@@ -157,6 +212,7 @@ app.config(function ($routeProvider) {
       title: "ContactUS",
       templateUrl: "ContactUS.html",
     })
+       
     .otherwise({
       title: "Home",
       redirectTo: "/",

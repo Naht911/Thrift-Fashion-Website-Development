@@ -44,7 +44,7 @@
             </p>
           </div>
           <div class="products-content-right-products-button">
-            <a href="" class="btn btn-primary-custom" id="btn_cart" type="button" ng-click="addtocart(product.id, product.name, product.price, quantity)">Add Cart</a>
+            <button href="" class="btn btn-primary-custom" id="btn_cart" type="button" ng-click="addtocart(product.id, product.name, product.price, quantity)">Add Cart</button>
           </div>
         </div>
       </div>
@@ -68,11 +68,11 @@
                     <div class="image">
                       <a ng-click="viewDetails(d.id)" > <img src="/img/prod/{{d.image}}" width="100%"
                           class="img-prod product_list "></a>
-                      <div class="icons"> </div> <a ng-click="addtocart(d.id, d.name, d.price, 1)"  class="add-to-cart">Add to Cart</a>
+                      <div class="icons"> </div> <button ng-click="addtocart(d.id, d.name, d.price, 1)"  class="add-to-cart">Add to Cart</button>
                     </div>
                   </div>
                   <div class="card-body">
-                    <h3 class="name_color"><a ng-click="viewDetails(d.id)"  class="product_list">{{d.name}}</a>
+                    <h3 class="name_color"><a href="" ng-click="viewDetails(d.id)"  class="product_list">{{d.name}}</a>
                     </h3>
                     <p class="card_p">{{d.description}}</p>
                     <a ng-click="viewDetails(d.id)"  class="price-body">

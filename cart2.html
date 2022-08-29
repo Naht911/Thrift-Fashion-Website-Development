@@ -1,23 +1,97 @@
-<div>
-    <a href="#!product/{{d.id}}" class="back_to"><i class="fa-solid fa-store"></i>Back to store</a> 
+<div class="container">
+    <a href="#!" class="back_to"><i class="fa-solid fa-store"></i>Back to store</a> 
  
- </div>
+
  <table id="cart">
     <h6 class="text-center">Please reload this pages if the cart do not updated</h6>
     <tr id="head">
         <td class="cartName">Name</td>
         <td class="cartPrice">Price</td>
         <td class="cartQuan">Quantity</td>
+        <td class="cartQuan">Amount</td>
+        <td class="cartQuan">Action</td>
     </tr>
     <tr ng-repeat="d in carItems" id="body">
         <td class="cartName">{{d.name}}</td>
         <td class="cartPrice">${{d.price}}</td>
-        <td class="cartQuan">{{d.quantity}}</td>
+        <td class="cartQuan"><button class="btn btn-info" ng-click="addtocart(d.id, d.name, d.price, -1)">-</button> {{d.quantity}} <button class="btn btn-info" ng-click="addtocart(d.id, d.name, d.price, 1)">+</button> </td>
+        <td class="cartQuan">${{  d.quantity * d.price}}</td>
+        <td class="cartQuan">
+            <button class="btn btn-danger" ng-click="removefromcart(d.id)"><i class="fa-solid fa-xmark"></i></button>
+        </td>
     </tr>
+    
+    <tr id="footer">
+        <hr>
+        <td class="cartName">Total</td>
+        <td class="cartPrice"></td>
+        <td class="cartQuan"></td>
+        <td class="cartQuan">${{total}}</td>
+        <td class="cartQuan">
+            <button class="btn btn-primary-custom bg-danger" id="btn_cart" type="button" ng-click="removeallcart()">Clear Cart <i class="fa-solid fa-xmark"></i></button>        
+        </td>
+        </tr>
+   
 </table>
+<p style="text-align: right;">
+    <!-- <button class="btn btn-primary-custom bg-danger" id="btn_cart" type="button" ng-click="removeallcart()">Clear Cart <i class="fa-solid fa-xmark"></i></button> -->
+    <button class="btn btn-primary-custom bg-success" id="btn_cart" type="button" ng-click="checkout()">Check out <i class="fa-solid fa-bag-shopping"></i></button>
+</p>
+
+<div ng-show="showCheckout" class="container col-10 " style="border-radius: 15px;" id="head">
+    <div id="head" style=" margin-top: 20px; ">
+        <h3 class="text-center" >Checkout</h3>
+    </div>
+    
+    <form   id="head" name="form" novalidate return false ng-submit="checkoutsubmit()">
+       
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" ng-model="name" placeholder="Enter name" required>
+            <div ng-show="form.name.$dirty && form.name.$invalid" class="text-danger">
+                <i class="fa fa-times text-danger"></i>
+                <span ng-show="form.name.$error.required">Name cannot be empty </span>
+                </span>
+              </div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" ng-model="email" placeholder="Enter email" required>
+            <div ng-show="form.email.$dirty && form.email.$invalid" class="text-danger">
+                <i class="fa fa-times text-danger"></i>
+                <span ng-show="form.email.$error.required">Email cannot be empty </span>
+              </div>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="text" class="form-control" id="phone" name="phone" ng-model="phone" placeholder="Enter phone" required>
+            <div ng-show="form.phone.$dirty && form.phone.$invalid" class="text-danger">
+                <i class="fa fa-times text-danger"></i>
+                <span ng-show="form.phone.$error.required">Phone cannot be empty </span>
+              </div>
+        </div>
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" name="address" ng-model="address" placeholder="Enter address" required>
+            <div ng-show="form.address.$dirty && form.address.$invalid" class="text-danger">
+                <i class="fa fa-times text-danger"></i>
+                <span ng-show="form.address.$error.required">Address cannot be empty </span>
+              </div>
+        </div>
+        <div class="form-group">
+            <label for="note">Note</label>
+            <textarea class="form-control" id="note" name="note" placeholder="Enter note" ></textarea>
+        </div> 
+        <hr>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary" ng-disabled="!form.$dirty || (form.$dirty && form.$invalid)">Submit</button>
+        </div>
+        
+    </form>
+</div>
 <style>
     #cart{
-        width: 80%;
+        width: 100%;
         height: auto;
         background-color: rgb(247, 246, 246);
         margin: auto;
