@@ -12,7 +12,7 @@
         <td class="cartQuan">Action</td>
     </tr>
     <tr ng-repeat="d in carItems" id="body">
-        <td class="cartName">{{d.id}}</td>
+        <td class="cartName">{{d.name}}</td>
         <td class="cartPrice">${{d.price}}</td>
         <td class="cartQuan"><button class="btn btn-info" ng-click="addtocart(d.id, d.name, d.price, -1)">-</button> {{d.quantity}} <button class="btn btn-info" ng-click="addtocart(d.id, d.name, d.price, 1)">+</button> </td>
         <td class="cartQuan">${{  d.quantity * d.price}}</td>
